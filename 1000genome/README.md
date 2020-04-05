@@ -26,8 +26,8 @@ different tasks:
   1. `frequency_overlap_mutations` – This task calculates the frequency of
      overlapping mutations across subsamples of certain individuals.
 
-The figure below shows **a branch** of the workflow for the analysis of a
-**single chromossome**.
+The figure below shows **a branch** of the 1000Genome workflow for the analysis
+of a **single chromossome**.
 
 <img src="docs/images/1000genome.png?raw=true" width="450">
 
@@ -65,7 +65,7 @@ task runtime.
 
 ### Workflow Structure
 
-The 1000Genome workflow structure depend on the _number of chromosses_
+The 1000Genome workflow structure depends on the _number of chromosses_
 (`<NUM_CH>`) evaluated and the _number of sequences per chromossome_
 (`<NUM_SEQ>`). For a *single branch* (i.e., one chromossome):
 
