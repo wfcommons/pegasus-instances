@@ -30,7 +30,7 @@ This test case is composed of eight different tasks:
 
 The figure below shows an overview of the Montage workflow structure:
 
-<img src="docs/images/montage.png?raw=true" width="500">
+<img src="docs/images/montage.png?raw=true" width="600">
 
 ### Research Publication
 
