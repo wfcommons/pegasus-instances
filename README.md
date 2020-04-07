@@ -16,3 +16,11 @@ Workflow execution traces are organized into sub-folders within this
 repository. Each sub-folder represents a _workflow application_, which
 itself contains sub-folders for workflow executions in different
 _computing platforms_.
+
+## Summary of Workflow Execution Traces
+
+| Application | Science Domain | Computing Platforms | Total Workflow Executions |
+| --- | --- | --- | --- |
+| 1000Genome | Bioinformatics | 1 | 22 |
+| Montage | Astronomy | 1 | 8 |
+| SoyKB | Bioinformatics | 1 | 1 |
