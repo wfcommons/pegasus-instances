@@ -1,4 +1,5 @@
-<img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" />
+<a href="https://workflowhub.org" target="_blank"><img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" /></a>
+
 <img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
 
 # Pegasus Workflow Execution Traces
