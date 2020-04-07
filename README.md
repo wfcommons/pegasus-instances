@@ -3,5 +3,15 @@
 
 # Pegasus Workflow Execution Traces
 
+This repository contains workflow execution traces generated from
+[Pegasus](http://pegasus.isi.edu) workflow executions. The traces
+hosted in this repository use the
+[WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema)
+for describing workflow executions.
 
-This repository contains workflow execution traces generated from [Pegasus](http://pegasus.isi.edu) workflow executions. The traces hosted in this repository use the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema) for describing workflow executions.
+#### Repository Structure
+
+Workflow execution traces are organized into sub-folders within this
+repository. Each sub-folder represents a _workflow application_, which
+itself contains sub-folders for workflow executions in different
+_computing platforms_.
