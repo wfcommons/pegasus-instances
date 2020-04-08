@@ -23,4 +23,4 @@ _computing platforms_.
 | --- | --- | --- | --- |
 | 1000Genome | Bioinformatics | 1 | 22 |
 | Montage | Astronomy | 1 | 8 |
-| SoyKB | Bioinformatics | 1 | 4 |
+| SoyKB | Bioinformatics | 1 | 6 |
