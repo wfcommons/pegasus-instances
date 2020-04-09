@@ -22,6 +22,6 @@ _computing platforms_.
 | Application | Science Domain | Computing Platforms | Total Workflow Executions |
 | --- | --- | --- | --- |
 | 1000Genome | Bioinformatics | 1 | 22 |
-| Epigenomics | Bioinformatics | 1 | 14 |
+| Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
 | SoyKB | Bioinformatics | 1 | 10 |

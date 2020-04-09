@@ -1,0 +1,5038 @@
+{
+  "name": "genome-dax-0", 
+  "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org", 
+  "createdAt": "2020-04-08T22:43:44.872613Z", 
+  "schemaVersion": "1.0", 
+  "wms": {
+    "url": "http://pegasus.isi.edu", 
+    "version": "4.9.3", 
+    "name": "Pegasus"
+  }, 
+  "author": {
+    "name": "rafsilva", 
+    "email": "support@wrench-project.org"
+  }, 
+  "workflow": {
+    "makespan": 653.0, 
+    "jobs": [
+      {
+        "name": "chr21_chr21", 
+        "type": "compute", 
+        "runtime": 5.955, 
+        "parents": [
+          "mapMerge_mapMerge_080603_ILMN-GA001_0003_205WWAAXX_TAQ1"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.map", 
+            "size": 31938708
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.chr21.map", 
+            "size": 31938708
+          }
+        ], 
+        "avgCPU": 99.4458, 
+        "arguments": [
+          "-b", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.map", 
+          "chr21", 
+          "chr21.rev", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.chr21.map"
+        ], 
+        "machine": "compute-3", 
+        "priority": 90
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1", 
+        "type": "compute", 
+        "runtime": 3.005, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.fq", 
+            "size": 9631095
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.bfq", 
+            "size": 2779927
+          }
+        ], 
+        "avgCPU": 14.609, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10", 
+        "type": "compute", 
+        "runtime": 2.353, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.fq", 
+            "size": 9631735
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.bfq", 
+            "size": 2483359
+          }
+        ], 
+        "avgCPU": 18.2745, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11", 
+        "type": "compute", 
+        "runtime": 3.135, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.fq", 
+            "size": 9771586
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.bfq", 
+            "size": 2490766
+          }
+        ], 
+        "avgCPU": 14.3222, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12", 
+        "type": "compute", 
+        "runtime": 3.044, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.fq", 
+            "size": 9769891
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.bfq", 
+            "size": 2490816
+          }
+        ], 
+        "avgCPU": 14.8489, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13", 
+        "type": "compute", 
+        "runtime": 1.83, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.fq", 
+            "size": 9839101
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.bfq", 
+            "size": 2541626
+          }
+        ], 
+        "avgCPU": 23.7705, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14", 
+        "type": "compute", 
+        "runtime": 3.063, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.fq", 
+            "size": 9846445
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.bfq", 
+            "size": 2529461
+          }
+        ], 
+        "avgCPU": 15.2465, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15", 
+        "type": "compute", 
+        "runtime": 3.416, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.fq", 
+            "size": 9864933
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.bfq", 
+            "size": 2567368
+          }
+        ], 
+        "avgCPU": 12.7635, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16", 
+        "type": "compute", 
+        "runtime": 3.334, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.fq", 
+            "size": 9846905
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.bfq", 
+            "size": 2582702
+          }
+        ], 
+        "avgCPU": 12.8974, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17", 
+        "type": "compute", 
+        "runtime": 2.296, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.fq", 
+            "size": 9815818
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.bfq", 
+            "size": 2586019
+          }
+        ], 
+        "avgCPU": 19.4251, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18", 
+        "type": "compute", 
+        "runtime": 3.041, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.fq", 
+            "size": 9987831
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.bfq", 
+            "size": 2670128
+          }
+        ], 
+        "avgCPU": 15.0608, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19", 
+        "type": "compute", 
+        "runtime": 1.713, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.fq", 
+            "size": 9871525
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.bfq", 
+            "size": 2660634
+          }
+        ], 
+        "avgCPU": 25.3357, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2", 
+        "type": "compute", 
+        "runtime": 2.844, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.fq", 
+            "size": 9687326
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.bfq", 
+            "size": 2736994
+          }
+        ], 
+        "avgCPU": 15.1547, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20", 
+        "type": "compute", 
+        "runtime": 2.465, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.fq", 
+            "size": 9847610
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.bfq", 
+            "size": 2700677
+          }
+        ], 
+        "avgCPU": 19.2698, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21", 
+        "type": "compute", 
+        "runtime": 2.371, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.fq", 
+            "size": 9822615
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.bfq", 
+            "size": 2718692
+          }
+        ], 
+        "avgCPU": 17.7984, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22", 
+        "type": "compute", 
+        "runtime": 2.606, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.fq", 
+            "size": 9816352
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.bfq", 
+            "size": 2752662
+          }
+        ], 
+        "avgCPU": 17.9586, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23", 
+        "type": "compute", 
+        "runtime": 2.561, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.fq", 
+            "size": 9839884
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.bfq", 
+            "size": 2669935
+          }
+        ], 
+        "avgCPU": 16.8684, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24", 
+        "type": "compute", 
+        "runtime": 2.505, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.fq", 
+            "size": 9815123
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.bfq", 
+            "size": 2629913
+          }
+        ], 
+        "avgCPU": 16.3673, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25", 
+        "type": "compute", 
+        "runtime": 1.734, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.fq", 
+            "size": 9864813
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.bfq", 
+            "size": 2607837
+          }
+        ], 
+        "avgCPU": 26.1246, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26", 
+        "type": "compute", 
+        "runtime": 2.829, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.fq", 
+            "size": 9834820
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.bfq", 
+            "size": 2580859
+          }
+        ], 
+        "avgCPU": 15.6592, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27", 
+        "type": "compute", 
+        "runtime": 3.004, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.fq", 
+            "size": 9805635
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.bfq", 
+            "size": 2550072
+          }
+        ], 
+        "avgCPU": 14.98, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28", 
+        "type": "compute", 
+        "runtime": 3.023, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.fq", 
+            "size": 9781938
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.bfq", 
+            "size": 2510140
+          }
+        ], 
+        "avgCPU": 15.2167, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29", 
+        "type": "compute", 
+        "runtime": 2.143, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.fq", 
+            "size": 9754812
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.bfq", 
+            "size": 2509930
+          }
+        ], 
+        "avgCPU": 21.9785, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3", 
+        "type": "compute", 
+        "runtime": 2.382, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.fq", 
+            "size": 9680526
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.bfq", 
+            "size": 2691127
+          }
+        ], 
+        "avgCPU": 19.4794, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30", 
+        "type": "compute", 
+        "runtime": 1.244, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.fq", 
+            "size": 4522580
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.bfq", 
+            "size": 1156634
+          }
+        ], 
+        "avgCPU": 15.9968, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4", 
+        "type": "compute", 
+        "runtime": 2.556, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.fq", 
+            "size": 9703968
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.bfq", 
+            "size": 2680879
+          }
+        ], 
+        "avgCPU": 16.7058, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5", 
+        "type": "compute", 
+        "runtime": 2.862, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.fq", 
+            "size": 9712574
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.bfq", 
+            "size": 2629498
+          }
+        ], 
+        "avgCPU": 15.1992, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6", 
+        "type": "compute", 
+        "runtime": 2.708, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.fq", 
+            "size": 9717913
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.bfq", 
+            "size": 2613912
+          }
+        ], 
+        "avgCPU": 16.5805, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7", 
+        "type": "compute", 
+        "runtime": 2.535, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.fq", 
+            "size": 9657989
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.bfq", 
+            "size": 2574240
+          }
+        ], 
+        "avgCPU": 17.712, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8", 
+        "type": "compute", 
+        "runtime": 2.431, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.fq", 
+            "size": 9671632
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.bfq", 
+            "size": 2543774
+          }
+        ], 
+        "avgCPU": 19.3747, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9", 
+        "type": "compute", 
+        "runtime": 1.736, 
+        "parents": [
+          "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.fq", 
+            "size": 9535328
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.bfq", 
+            "size": 2507358
+          }
+        ], 
+        "avgCPU": 27.477, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.fq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 50
+      }, 
+      {
+        "name": "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence", 
+        "type": "compute", 
+        "runtime": 7.121, 
+        "parents": [], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.sfq", 
+            "size": 451139600
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.sfq", 
+            "size": 15029458
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.sfq", 
+            "size": 15194364
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.sfq", 
+            "size": 15192986
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.sfq", 
+            "size": 15191776
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.sfq", 
+            "size": 15190502
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.sfq", 
+            "size": 15190142
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.sfq", 
+            "size": 15190096
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.sfq", 
+            "size": 15190826
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.sfq", 
+            "size": 15190228
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.sfq", 
+            "size": 15258146
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.sfq", 
+            "size": 15379636
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.sfq", 
+            "size": 15379352
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.sfq", 
+            "size": 15379490
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.sfq", 
+            "size": 15380234
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.sfq", 
+            "size": 15379812
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.sfq", 
+            "size": 15380424
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.sfq", 
+            "size": 15380244
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.sfq", 
+            "size": 15380598
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.sfq", 
+            "size": 15380624
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.sfq", 
+            "size": 15380412
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.sfq", 
+            "size": 15379282
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.sfq", 
+            "size": 15375906
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.sfq", 
+            "size": 15376586
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.sfq", 
+            "size": 15376164
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.sfq", 
+            "size": 15375896
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.sfq", 
+            "size": 15375156
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.sfq", 
+            "size": 15375562
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.sfq", 
+            "size": 15374692
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.sfq", 
+            "size": 15372808
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.sfq", 
+            "size": 7138198
+          }
+        ], 
+        "avgCPU": 67.5186, 
+        "arguments": [
+          "100000", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 20
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1", 
+        "type": "compute", 
+        "runtime": 2.141, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.sfq", 
+            "size": 15029458
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.sfq", 
+            "size": 13022382
+          }
+        ], 
+        "avgCPU": 31.901, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10", 
+        "type": "compute", 
+        "runtime": 21.953, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.sfq", 
+            "size": 15258146
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.sfq", 
+            "size": 13087814
+          }
+        ], 
+        "avgCPU": 3.8491, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11", 
+        "type": "compute", 
+        "runtime": 21.914, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.sfq", 
+            "size": 15379636
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.sfq", 
+            "size": 13311212
+          }
+        ], 
+        "avgCPU": 3.5183, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12", 
+        "type": "compute", 
+        "runtime": 22.378, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.sfq", 
+            "size": 15379352
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.sfq", 
+            "size": 13308902
+          }
+        ], 
+        "avgCPU": 3.6107, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13", 
+        "type": "compute", 
+        "runtime": 19.447, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.sfq", 
+            "size": 15379490
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.sfq", 
+            "size": 13403258
+          }
+        ], 
+        "avgCPU": 4.16, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14", 
+        "type": "compute", 
+        "runtime": 22.448, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.sfq", 
+            "size": 15380234
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.sfq", 
+            "size": 13413338
+          }
+        ], 
+        "avgCPU": 3.6351, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15", 
+        "type": "compute", 
+        "runtime": 22.69, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.sfq", 
+            "size": 15379812
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.sfq", 
+            "size": 13438578
+          }
+        ], 
+        "avgCPU": 3.8167, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16", 
+        "type": "compute", 
+        "runtime": 22.39, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.sfq", 
+            "size": 15380424
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.sfq", 
+            "size": 13414114
+          }
+        ], 
+        "avgCPU": 3.649, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17", 
+        "type": "compute", 
+        "runtime": 21.87, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.sfq", 
+            "size": 15380244
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.sfq", 
+            "size": 13371596
+          }
+        ], 
+        "avgCPU": 3.8134, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18", 
+        "type": "compute", 
+        "runtime": 20.77, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.sfq", 
+            "size": 15380598
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.sfq", 
+            "size": 13605894
+          }
+        ], 
+        "avgCPU": 3.9047, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19", 
+        "type": "compute", 
+        "runtime": 22.513, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.sfq", 
+            "size": 15380624
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.sfq", 
+            "size": 13447586
+          }
+        ], 
+        "avgCPU": 3.7934, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2", 
+        "type": "compute", 
+        "runtime": 1.938, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.sfq", 
+            "size": 15194364
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.sfq", 
+            "size": 13144636
+          }
+        ], 
+        "avgCPU": 34.5717, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20", 
+        "type": "compute", 
+        "runtime": 1.554, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.sfq", 
+            "size": 15380412
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.sfq", 
+            "size": 13415020
+          }
+        ], 
+        "avgCPU": 46.4607, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21", 
+        "type": "compute", 
+        "runtime": 1.392, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.sfq", 
+            "size": 15379282
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.sfq", 
+            "size": 13380294
+          }
+        ], 
+        "avgCPU": 47.1983, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22", 
+        "type": "compute", 
+        "runtime": 1.532, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.sfq", 
+            "size": 15375906
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.sfq", 
+            "size": 13370576
+          }
+        ], 
+        "avgCPU": 49.2167, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23", 
+        "type": "compute", 
+        "runtime": 15.416, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.sfq", 
+            "size": 15376586
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.sfq", 
+            "size": 13402880
+          }
+        ], 
+        "avgCPU": 5.0272, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24", 
+        "type": "compute", 
+        "runtime": 13.649, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.sfq", 
+            "size": 15376164
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.sfq", 
+            "size": 13369270
+          }
+        ], 
+        "avgCPU": 5.5535, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25", 
+        "type": "compute", 
+        "runtime": 20.492, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.sfq", 
+            "size": 15375896
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.sfq", 
+            "size": 13436898
+          }
+        ], 
+        "avgCPU": 3.8503, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26", 
+        "type": "compute", 
+        "runtime": 22.246, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.sfq", 
+            "size": 15375156
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.sfq", 
+            "size": 13395776
+          }
+        ], 
+        "avgCPU": 4.0097, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27", 
+        "type": "compute", 
+        "runtime": 14.65, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.sfq", 
+            "size": 15375562
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.sfq", 
+            "size": 13355982
+          }
+        ], 
+        "avgCPU": 4.7577, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28", 
+        "type": "compute", 
+        "runtime": 15.027, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.sfq", 
+            "size": 15374692
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.sfq", 
+            "size": 13323636
+          }
+        ], 
+        "avgCPU": 4.5452, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29", 
+        "type": "compute", 
+        "runtime": 13.834, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.sfq", 
+            "size": 15372808
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.sfq", 
+            "size": 13286304
+          }
+        ], 
+        "avgCPU": 5.5082, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3", 
+        "type": "compute", 
+        "runtime": 0.676, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.sfq", 
+            "size": 15192986
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.sfq", 
+            "size": 13135428
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30", 
+        "type": "compute", 
+        "runtime": 5.377, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.sfq", 
+            "size": 7138198
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.sfq", 
+            "size": 6159904
+          }
+        ], 
+        "avgCPU": 6.0815, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4", 
+        "type": "compute", 
+        "runtime": 2.855, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.sfq", 
+            "size": 15191776
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.sfq", 
+            "size": 13166976
+          }
+        ], 
+        "avgCPU": 24.3783, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5", 
+        "type": "compute", 
+        "runtime": 2.908, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.sfq", 
+            "size": 15190502
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.sfq", 
+            "size": 13178572
+          }
+        ], 
+        "avgCPU": 24.6905, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6", 
+        "type": "compute", 
+        "runtime": 1.197, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.sfq", 
+            "size": 15190142
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.sfq", 
+            "size": 13185362
+          }
+        ], 
+        "avgCPU": 59.2314, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7", 
+        "type": "compute", 
+        "runtime": 7.512, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.sfq", 
+            "size": 15190096
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.sfq", 
+            "size": 13104322
+          }
+        ], 
+        "avgCPU": 9.2252, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8", 
+        "type": "compute", 
+        "runtime": 8.554, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.sfq", 
+            "size": 15190826
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.sfq", 
+            "size": 13122896
+          }
+        ], 
+        "avgCPU": 8.6626, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9", 
+        "type": "compute", 
+        "runtime": 10.624, 
+        "parents": [
+          "fastqSplit_fastqSplit_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.sfq", 
+            "size": 15190228
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.sfq", 
+            "size": 12938056
+          }
+        ], 
+        "avgCPU": 7.6337, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.sfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 30
+      }, 
+      {
+        "name": "mapMerge_mapMerge_080603_ILMN-GA001_0003_205WWAAXX_TAQ1", 
+        "type": "compute", 
+        "runtime": 4.276, 
+        "parents": [
+          "mapMerge_mapMerge_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.map", 
+            "size": 31938708
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.nocontam.map", 
+            "size": 31938708
+          }
+        ], 
+        "avgCPU": 99.5323, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.nocontam.map"
+        ], 
+        "machine": "compute-3", 
+        "priority": 80
+      }, 
+      {
+        "name": "mapMerge_mapMerge_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence", 
+        "type": "compute", 
+        "runtime": 4.277, 
+        "parents": [
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5", 
+          "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.nocontam.map", 
+            "size": 31938708
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.map", 
+            "size": 1230706
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.map", 
+            "size": 1200995
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.map", 
+            "size": 1155509
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.map", 
+            "size": 1170483
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.map", 
+            "size": 1122838
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.map", 
+            "size": 1104454
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.map", 
+            "size": 1102636
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.map", 
+            "size": 1063317
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.map", 
+            "size": 1053308
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.map", 
+            "size": 1029896
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.map", 
+            "size": 1040528
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.map", 
+            "size": 1039931
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.map", 
+            "size": 1069202
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.map", 
+            "size": 1047885
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.map", 
+            "size": 1078452
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.map", 
+            "size": 1093047
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.map", 
+            "size": 1090252
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.map", 
+            "size": 1132707
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.map", 
+            "size": 1139159
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.map", 
+            "size": 1161790
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.map", 
+            "size": 1170734
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.map", 
+            "size": 1242403
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.map", 
+            "size": 1172558
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.map", 
+            "size": 1137947
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.map", 
+            "size": 1150997
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.map", 
+            "size": 1129402
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.map", 
+            "size": 1117201
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.map", 
+            "size": 1100776
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.map", 
+            "size": 1098389
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.map", 
+            "size": 511282
+          }
+        ], 
+        "avgCPU": 99.2051, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.map", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.map"
+        ], 
+        "machine": "compute-3", 
+        "priority": 70
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1", 
+        "type": "compute", 
+        "runtime": 78.683, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.bfq", 
+            "size": 2779927
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.map", 
+            "size": 1230706
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10", 
+        "type": "compute", 
+        "runtime": 62.659, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.bfq", 
+            "size": 2483359
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.map", 
+            "size": 1029896
+          }
+        ], 
+        "avgCPU": 99.9968, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11", 
+        "type": "compute", 
+        "runtime": 54.442, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.bfq", 
+            "size": 2490766
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.map", 
+            "size": 1040528
+          }
+        ], 
+        "avgCPU": 99.9394, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12", 
+        "type": "compute", 
+        "runtime": 54.303, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.bfq", 
+            "size": 2490816
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.map", 
+            "size": 1039931
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13", 
+        "type": "compute", 
+        "runtime": 59.799, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.bfq", 
+            "size": 2541626
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.map", 
+            "size": 1069202
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14", 
+        "type": "compute", 
+        "runtime": 55.137, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.bfq", 
+            "size": 2529461
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.map", 
+            "size": 1047885
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15", 
+        "type": "compute", 
+        "runtime": 56.578, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.bfq", 
+            "size": 2567368
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.map", 
+            "size": 1078452
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16", 
+        "type": "compute", 
+        "runtime": 61.363, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.bfq", 
+            "size": 2582702
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.map", 
+            "size": 1093047
+          }
+        ], 
+        "avgCPU": 99.9544, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17", 
+        "type": "compute", 
+        "runtime": 59.084, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.bfq", 
+            "size": 2586019
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.map", 
+            "size": 1090252
+          }
+        ], 
+        "avgCPU": 99.9577, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18", 
+        "type": "compute", 
+        "runtime": 55.7, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.bfq", 
+            "size": 2670128
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.map", 
+            "size": 1132707
+          }
+        ], 
+        "avgCPU": 100.0018, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19", 
+        "type": "compute", 
+        "runtime": 61.789, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.bfq", 
+            "size": 2660634
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.map", 
+            "size": 1139159
+          }
+        ], 
+        "avgCPU": 99.9984, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2", 
+        "type": "compute", 
+        "runtime": 77.454, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.bfq", 
+            "size": 2736994
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.map", 
+            "size": 1200995
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20", 
+        "type": "compute", 
+        "runtime": 53.471, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.bfq", 
+            "size": 2700677
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.map", 
+            "size": 1161790
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21", 
+        "type": "compute", 
+        "runtime": 56.993, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.bfq", 
+            "size": 2718692
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.map", 
+            "size": 1170734
+          }
+        ], 
+        "avgCPU": 100.0018, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22", 
+        "type": "compute", 
+        "runtime": 53.748, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.bfq", 
+            "size": 2752662
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.map", 
+            "size": 1242403
+          }
+        ], 
+        "avgCPU": 100.0019, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23", 
+        "type": "compute", 
+        "runtime": 56.923, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.bfq", 
+            "size": 2669935
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.map", 
+            "size": 1172558
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24", 
+        "type": "compute", 
+        "runtime": 56.75, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.bfq", 
+            "size": 2629913
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.map", 
+            "size": 1137947
+          }
+        ], 
+        "avgCPU": 99.9172, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25", 
+        "type": "compute", 
+        "runtime": 59.558, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.bfq", 
+            "size": 2607837
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.map", 
+            "size": 1150997
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26", 
+        "type": "compute", 
+        "runtime": 59.719, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.bfq", 
+            "size": 2580859
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.map", 
+            "size": 1129402
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27", 
+        "type": "compute", 
+        "runtime": 55.502, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.bfq", 
+            "size": 2550072
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.map", 
+            "size": 1117201
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28", 
+        "type": "compute", 
+        "runtime": 55.387, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.bfq", 
+            "size": 2510140
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.map", 
+            "size": 1100776
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29", 
+        "type": "compute", 
+        "runtime": 62.873, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.bfq", 
+            "size": 2509930
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.map", 
+            "size": 1098389
+          }
+        ], 
+        "avgCPU": 100.0016, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3", 
+        "type": "compute", 
+        "runtime": 57.628, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.bfq", 
+            "size": 2691127
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.map", 
+            "size": 1155509
+          }
+        ], 
+        "avgCPU": 100.0017, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30", 
+        "type": "compute", 
+        "runtime": 45.873, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.bfq", 
+            "size": 1156634
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.map", 
+            "size": 511282
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4", 
+        "type": "compute", 
+        "runtime": 69.566, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.bfq", 
+            "size": 2680879
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.map", 
+            "size": 1170483
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5", 
+        "type": "compute", 
+        "runtime": 64.662, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.bfq", 
+            "size": 2629498
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.map", 
+            "size": 1122838
+          }
+        ], 
+        "avgCPU": 100.0015, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6", 
+        "type": "compute", 
+        "runtime": 70.467, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.bfq", 
+            "size": 2613912
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.map", 
+            "size": 1104454
+          }
+        ], 
+        "avgCPU": 100.0014, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7", 
+        "type": "compute", 
+        "runtime": 70.568, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.bfq", 
+            "size": 2574240
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.map", 
+            "size": 1102636
+          }
+        ], 
+        "avgCPU": 99.9986, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8", 
+        "type": "compute", 
+        "runtime": 59.886, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.bfq", 
+            "size": 2543774
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.map", 
+            "size": 1063317
+          }
+        ], 
+        "avgCPU": 99.9766, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "map_map_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9", 
+        "type": "compute", 
+        "runtime": 60.428, 
+        "parents": [
+          "fast2bfq_fast2bfq_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.bfq", 
+            "size": 2507358
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BS.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.map", 
+            "size": 1053308
+          }
+        ], 
+        "avgCPU": 100.0, 
+        "arguments": [
+          "-n", 
+          "2", 
+          "-M", 
+          "c", 
+          "-1", 
+          "32", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.map", 
+          "chr21.BS.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.bfq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 60
+      }, 
+      {
+        "name": "pileup_pileup", 
+        "type": "compute", 
+        "runtime": 23.112, 
+        "parents": [
+          "chr21_chr21"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.chr21.map", 
+            "size": 31938708
+          }, 
+          {
+            "link": "input", 
+            "name": "chr21.BSnull.bfa", 
+            "size": 46944392
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.pileup", 
+            "size": 4595783
+          }
+        ], 
+        "avgCPU": 188.6206, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.pileup", 
+          "-q", 
+          "30", 
+          "-P", 
+          "chr21.BSnull.bfa", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1.nocontam.chr21.map"
+        ], 
+        "machine": "compute-3", 
+        "priority": 100
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1", 
+        "type": "compute", 
+        "runtime": 7.603, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_1"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.sfq", 
+            "size": 13022382
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.fq", 
+            "size": 9631095
+          }
+        ], 
+        "avgCPU": 1.9334, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.1.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10", 
+        "type": "compute", 
+        "runtime": 11.739, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_10"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.sfq", 
+            "size": 13087814
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.fq", 
+            "size": 9631735
+          }
+        ], 
+        "avgCPU": 1.2437, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.10.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11", 
+        "type": "compute", 
+        "runtime": 10.491, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_11"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.sfq", 
+            "size": 13311212
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.fq", 
+            "size": 9771586
+          }
+        ], 
+        "avgCPU": 1.3821, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.11.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12", 
+        "type": "compute", 
+        "runtime": 10.29, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_12"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.sfq", 
+            "size": 13308902
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.fq", 
+            "size": 9769891
+          }
+        ], 
+        "avgCPU": 1.4286, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.12.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13", 
+        "type": "compute", 
+        "runtime": 8.7, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_13"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.sfq", 
+            "size": 13403258
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.fq", 
+            "size": 9839101
+          }
+        ], 
+        "avgCPU": 1.6322, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.13.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14", 
+        "type": "compute", 
+        "runtime": 7.173, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_14"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.sfq", 
+            "size": 13413338
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.fq", 
+            "size": 9846445
+          }
+        ], 
+        "avgCPU": 1.9936, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.14.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15", 
+        "type": "compute", 
+        "runtime": 10.796, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_15"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.sfq", 
+            "size": 13438578
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.fq", 
+            "size": 9864933
+          }
+        ], 
+        "avgCPU": 1.3338, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.15.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16", 
+        "type": "compute", 
+        "runtime": 9.613, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_16"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.sfq", 
+            "size": 13414114
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.fq", 
+            "size": 9846905
+          }
+        ], 
+        "avgCPU": 1.4356, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.16.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17", 
+        "type": "compute", 
+        "runtime": 10.705, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_17"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.sfq", 
+            "size": 13371596
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.fq", 
+            "size": 9815818
+          }
+        ], 
+        "avgCPU": 1.4759, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.17.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18", 
+        "type": "compute", 
+        "runtime": 8.429, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_18"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.sfq", 
+            "size": 13605894
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.fq", 
+            "size": 9987831
+          }
+        ], 
+        "avgCPU": 1.6728, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.18.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19", 
+        "type": "compute", 
+        "runtime": 10.322, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_19"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.sfq", 
+            "size": 13447586
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.fq", 
+            "size": 9871525
+          }
+        ], 
+        "avgCPU": 1.521, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.19.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2", 
+        "type": "compute", 
+        "runtime": 7.796, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_2"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.sfq", 
+            "size": 13144636
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.fq", 
+            "size": 9687326
+          }
+        ], 
+        "avgCPU": 1.8599, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.2.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20", 
+        "type": "compute", 
+        "runtime": 7.234, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_20"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.sfq", 
+            "size": 13415020
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.fq", 
+            "size": 9847610
+          }
+        ], 
+        "avgCPU": 2.0597, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.20.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21", 
+        "type": "compute", 
+        "runtime": 7.718, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_21"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.sfq", 
+            "size": 13380294
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.fq", 
+            "size": 9822615
+          }
+        ], 
+        "avgCPU": 1.7621, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.21.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22", 
+        "type": "compute", 
+        "runtime": 7.308, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_22"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.sfq", 
+            "size": 13370576
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.fq", 
+            "size": 9816352
+          }
+        ], 
+        "avgCPU": 1.9431, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.22.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23", 
+        "type": "compute", 
+        "runtime": 9.673, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_23"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.sfq", 
+            "size": 13402880
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.fq", 
+            "size": 9839884
+          }
+        ], 
+        "avgCPU": 1.4473, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.23.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24", 
+        "type": "compute", 
+        "runtime": 9.427, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_24"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.sfq", 
+            "size": 13369270
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.fq", 
+            "size": 9815123
+          }
+        ], 
+        "avgCPU": 1.623, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.24.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25", 
+        "type": "compute", 
+        "runtime": 10.87, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_25"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.sfq", 
+            "size": 13436898
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.fq", 
+            "size": 9864813
+          }
+        ], 
+        "avgCPU": 1.4351, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.25.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26", 
+        "type": "compute", 
+        "runtime": 10.93, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_26"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.sfq", 
+            "size": 13395776
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.fq", 
+            "size": 9834820
+          }
+        ], 
+        "avgCPU": 1.3449, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.26.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27", 
+        "type": "compute", 
+        "runtime": 13.199, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_27"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.sfq", 
+            "size": 13355982
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.fq", 
+            "size": 9805635
+          }
+        ], 
+        "avgCPU": 1.144, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.27.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28", 
+        "type": "compute", 
+        "runtime": 10.6, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_28"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.sfq", 
+            "size": 13323636
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.fq", 
+            "size": 9781938
+          }
+        ], 
+        "avgCPU": 1.4057, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.28.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29", 
+        "type": "compute", 
+        "runtime": 9.147, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_29"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.sfq", 
+            "size": 13286304
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.fq", 
+            "size": 9754812
+          }
+        ], 
+        "avgCPU": 1.6617, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.29.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3", 
+        "type": "compute", 
+        "runtime": 8.09, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_3"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.sfq", 
+            "size": 13135428
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.fq", 
+            "size": 9680526
+          }
+        ], 
+        "avgCPU": 1.8789, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.3.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30", 
+        "type": "compute", 
+        "runtime": 6.869, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_30"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.sfq", 
+            "size": 6159904
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.fq", 
+            "size": 4522580
+          }
+        ], 
+        "avgCPU": 1.1938, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.30.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4", 
+        "type": "compute", 
+        "runtime": 7.904, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_4"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.sfq", 
+            "size": 13166976
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.fq", 
+            "size": 9703968
+          }
+        ], 
+        "avgCPU": 1.9104, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.4.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5", 
+        "type": "compute", 
+        "runtime": 8.025, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_5"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.sfq", 
+            "size": 13178572
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.fq", 
+            "size": 9712574
+          }
+        ], 
+        "avgCPU": 1.6449, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.5.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6", 
+        "type": "compute", 
+        "runtime": 6.648, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_6"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.sfq", 
+            "size": 13185362
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.fq", 
+            "size": 9717913
+          }
+        ], 
+        "avgCPU": 2.3466, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.6.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7", 
+        "type": "compute", 
+        "runtime": 7.857, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_7"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.sfq", 
+            "size": 13104322
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.fq", 
+            "size": 9657989
+          }
+        ], 
+        "avgCPU": 2.0746, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.7.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8", 
+        "type": "compute", 
+        "runtime": 6.249, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_8"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.sfq", 
+            "size": 13122896
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.fq", 
+            "size": 9671632
+          }
+        ], 
+        "avgCPU": 2.2244, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.8.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }, 
+      {
+        "name": "sol2sanger_sol2sanger_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9", 
+        "type": "compute", 
+        "runtime": 6.49, 
+        "parents": [
+          "filterContams_filterContams_080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence_9"
+        ], 
+        "files": [
+          {
+            "link": "input", 
+            "name": "maq", 
+            "size": 171256
+          }, 
+          {
+            "link": "input", 
+            "name": "maqindex", 
+            "size": 118456
+          }, 
+          {
+            "link": "input", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.sfq", 
+            "size": 12938056
+          }, 
+          {
+            "link": "output", 
+            "name": "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.fq", 
+            "size": 9535328
+          }
+        ], 
+        "avgCPU": 2.1726, 
+        "arguments": [
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.sfq", 
+          "080603_ILMN-GA001_0003_205WWAAXX_TAQ1_s_1_sequence.9.nocontam.fq"
+        ], 
+        "machine": "compute-3", 
+        "priority": 40
+      }
+    ], 
+    "machines": [
+      {
+        "nodeName": "compute-3", 
+        "system": "linux", 
+        "architecture": "x86_64", 
+        "memory": 131795984, 
+        "release": "4.15.0-91-generic", 
+        "cpu": {
+          "count": 48, 
+          "vendor": "GenuineIntel", 
+          "speed": 1200
+        }
+      }
+    ], 
+    "executedAt": "20200408T203007+0000"
+  }
+}
