@@ -24,7 +24,7 @@ to be specified by the user. The workflow is composed of seven different tasks:
 
 The figure below shows an overview of the Cycles workflow structure:
 
-<img src="docs/images/cycles.png?raw=true" width="650">
+<img src="docs/images/cycles.png?raw=true" width="750">
 
 ### Research Publication
 
