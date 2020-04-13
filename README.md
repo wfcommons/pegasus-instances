@@ -20,11 +20,11 @@ _computing platforms_.
 #### Workflow Simulator
 
 The execution traces provided in this repository are compatible to any
-simulator framework that implements the
-[WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
+[simulator framework](https://workflowhub.org/simulator.html) that implements
+the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
 Specifically, the workflow execution traces hosted here were generated using
 the `wrench-pegasus-parser.py` tool that is distributed as part of the
-[WRENCH-Pegasus simulator](https://github.com/wrench-project/pegasus).
+[WRENCH-Pegasus](https://github.com/wrench-project/pegasus) simulator.
 
 
 ## Summary of Workflow Execution Traces
@@ -32,7 +32,7 @@ the `wrench-pegasus-parser.py` tool that is distributed as part of the
 | Application | Science Domain | Computing Platforms | Total Workflow Executions |
 | --- | --- | --- | --- |
 | 1000Genome | Bioinformatics | 1 | 22 |
-| Cycles | Agroecosystem | 1 | 9 |
+| Cycles | Agroecosystem | 1 | 12 |
 | Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
 | SoyKB | Bioinformatics | 1 | 10 |
