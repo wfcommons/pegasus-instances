@@ -14,13 +14,16 @@ applications, annual and perennial crops selection, grain and forage harvest,
 poly-cultures, relay cropping and grazing. Cycles allows unlimited crop species
 to be specified by the user. The workflow is composed of seven different tasks:
 
-  1. `baseline_cycles`
-  2. `fertilizer_increase_cycles`
-  3. `cycles`
-  4. `cycles_output_summary`
+  1. `baseline_cycles`: computes the model reference or baseline.
+  2. `fertilizer_increase_cycles`: Cycles execution with increased fertilizer
+     rate of 10% – key to forecasting the economic impact of grain yields.
+  3. `cycles`: Cycles execution.
+  4. `cycles_output_summary`: aggregates and summarizes all outputs for a
+     single crop.
   5. `cycles_fertilizer_increase_output_parser`
-  6. `cycles_fertilizer_increase_output_summary`
-  7. `cycles_plots`
+  6. `cycles_fertilizer_increase_output_summary`: aggregates and summarizes all
+     outputs for a single crop.
+  7. `cycles_plots`: ensembles all summaries and produce visualization outputs.
 
 The figure below shows an overview of the Cycles workflow structure:
 
