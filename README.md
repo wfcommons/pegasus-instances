@@ -22,6 +22,7 @@ _computing platforms_.
 | Application | Science Domain | Computing Platforms | Total Workflow Executions |
 | --- | --- | --- | --- |
 | 1000Genome | Bioinformatics | 1 | 22 |
+| Cycles | Agroecosystem | 1 | 8 |
 | Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
 | SoyKB | Bioinformatics | 1 | 10 |
