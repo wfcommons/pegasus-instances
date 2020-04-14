@@ -29,10 +29,10 @@ the `wrench-pegasus-parser.py` tool that is distributed as part of the
 
 ## Summary of Workflow Execution Traces
 
-| Application | Science Domain | Computing Platforms | Total Workflow Executions |
+| Application | Science Domain | Computing Platforms | # Execution Traces |
 | --- | --- | --- | --- |
 | 1000Genome | Bioinformatics | 1 | 22 |
-| Cycles | Agroecosystem | 1 | 12 |
+| Cycles | Agroecosystem | 1 | 24 |
 | Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
 | SoyKB | Bioinformatics | 1 | 10 |
