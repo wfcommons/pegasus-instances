@@ -10,6 +10,7 @@ services:
   - docker
 
 before_install:
+  - pip3 install jsonschema
   - cd ..; git clone https://github.com/workflowhub/workflow-schema
   - cd pegasus-traces
 
@@ -21,7 +22,7 @@ script:
       (( err += $? ));
       echo "";
     done
-  - if [ err -ne 0 ]; then
-      >&2 echo "The verification failed for ${err} trace files.";
+  - if [ $err -ne 0 ]; then
+      echo "The verification failed for ${err} trace files.";
       exit 1;
     fi
