@@ -37,6 +37,7 @@ the `wrench-pegasus-parser.py` tool that is distributed as part of the
 | Cycles | Agroecosystem | 1 | 24 |
 | Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
+| Seismic Cross Correlation | Seismology | 1 | 11 |
 | SoyKB | Bioinformatics | 1 | 10 |
 
 
