@@ -14,7 +14,8 @@ before_install:
   - cd pegasus-traces
 
 script:
-  - pwd
-  - echo "-----------------------------------------"
-  - ls -lh
-  - find . -type f -name "*.json"
+  - find . -type f -name "*.json" > traces.txt
+  - for trace_file in `cat traces.txt`; do
+      python3 ../workflow-schema/validator.py -d ${trace_file};
+      echo "";
+    done
