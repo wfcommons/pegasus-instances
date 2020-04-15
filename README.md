@@ -1,3 +1,5 @@
+[![Build Status][travis-badge]][travis-link]
+
 <a href="https://workflowhub.org" target="_blank"><img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" /></a>
 
 <img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
@@ -36,3 +38,7 @@ the `wrench-pegasus-parser.py` tool that is distributed as part of the
 | Epigenomics | Bioinformatics | 1 | 26 |
 | Montage | Astronomy | 1 | 8 |
 | SoyKB | Bioinformatics | 1 | 10 |
+
+
+[travis-badge]:             https://travis-ci.org/workflowhub/pegasus-traces.svg?branch=master
+[travis-link]:              https://travis-ci.org/workflowhub/pegasus-traces
