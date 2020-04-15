@@ -34,7 +34,11 @@ The figure below shows an overview of the Cycles workflow structure:
 Details of the Cycles workflow description, computational jobs, and
 performance metrics can be found in the following research publication:
 
-- Ferreira da Silva, R., Mayani, R., Shi, Y., Kemanian, A. R., Rynge, M., & Deelman, E. (2019). "Empowering Agroecosystem Modeling with HTC Scientific Workflows: The Cycles Model Use Case". In First International Workshop on Big Data Tools, Methods, and Use Cases for Innovative Scientific Discovery (BTSD) (pp. 4545–4552). https://doi.org/10.1109/BigData47090.2019.9006107
+- Ferreira da Silva, R., Mayani, R., Shi, Y., Kemanian, A. R., Rynge, M., &
+  Deelman, E. (2019). "Empowering Agroecosystem Modeling with HTC Scientific
+  Workflows: The Cycles Model Use Case". In First International Workshop on
+  Big Data Tools, Methods, and Use Cases for Innovative Scientific Discovery
+  (BTSD) (pp. 4545–4552). https://doi.org/10.1109/BigData47090.2019.9006107
 
 ## Execution Traces
 
