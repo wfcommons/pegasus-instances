@@ -10,13 +10,11 @@ services:
   - docker
 
 before_install:
-  - pip3 install jsonschema
   - cd ..; git clone https://github.com/workflowhub/workflow-schema
   - cd pegasus-traces
 
 script:
-  - find . -type f -name "*.json" > traces.txt
-  - err=0
+  - find . -type f -name "*.json" > traces.txt && err=0
   - for trace_file in `cat traces.txt`; do
       python3 ../workflow-schema/validator.py -d ${trace_file};
       (( err += $? ));
