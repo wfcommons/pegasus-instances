@@ -1,0 +1,20 @@
+language: python
+sudo: required
+
+addons:
+  apt:
+    packages:
+      - docker-ce
+
+services:
+  - docker
+
+before_install:
+  - git clone https://github.com/workflowhub/workflow-schema
+
+script:
+  - pwd
+  - echo "-----------------------------------------"
+  - ls -lh
+  - find . -type f -name "*.txt"
+  - find . -type f -name "*.txt"
