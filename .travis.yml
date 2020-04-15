@@ -18,7 +18,7 @@ script:
   - err=0
   - for trace_file in `cat traces.txt`; do
       python3 ../workflow-schema/validator.py -d ${trace_file};
-      (( err += $? ))
+      (( err += $? ));
       echo "";
     done
   - if [ err -ne 0 ]; then
