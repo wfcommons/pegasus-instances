@@ -10,11 +10,11 @@ services:
   - docker
 
 before_install:
-  - git clone https://github.com/workflowhub/workflow-schema
+  - cd ..; git clone https://github.com/workflowhub/workflow-schema
+  - cd pegasus-traces
 
 script:
   - pwd
   - echo "-----------------------------------------"
   - ls -lh
-  - find . -type f -name "*.txt"
-  - find . -type f -name "*.txt"
+  - find . -type f -name "*.json"
