@@ -10,6 +10,7 @@ services:
   - docker
 
 before_install:
+  - pip3 install jsonschema
   - cd ..; git clone https://github.com/workflowhub/workflow-schema
   - cd pegasus-traces
 
