@@ -15,7 +15,13 @@ before_install:
 
 script:
   - find . -type f -name "*.json" > traces.txt
+  - err=0
   - for trace_file in `cat traces.txt`; do
       python3 ../workflow-schema/validator.py -d ${trace_file};
+      (( err += $? ))
       echo "";
     done
+  - if [ err -ne 0 ]; then
+      >&2 echo "The verification failed for ${err} trace files.";
+      exit 1;
+    fi
