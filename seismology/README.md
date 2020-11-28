@@ -19,7 +19,7 @@ dimensions) from multiple seismic stations.
      and sifts the data by misfit. Only the good fits are kept and compressed
      into a single `.tar.gz` file.
 
-The figure below shows an overview of the Cycles workflow structure:
+The figure below shows an overview of the Seismic Cross Correlation workflow structure:
 
 <img src="docs/images/seismology.png?raw=true" width="350">
 
