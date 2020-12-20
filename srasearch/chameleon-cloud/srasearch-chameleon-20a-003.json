@@ -1,0 +1,2402 @@
+{
+    "name": "workflow-test",
+    "description": "Trace generated with WorkflowHub - https://workflowhub.org",
+    "createdAt": "2020-12-20T07:32:31.070140",
+    "schemaVersion": "1.0",
+    "author": {
+        "name": "rafsilva",
+        "email": "support@workflowhub.org"
+    },
+    "wms": {
+        "name": "Pegasus",
+        "version": "5.0",
+        "url": "https://pegasus.isi.edu"
+    },
+    "workflow": {
+        "executedAt": "12-20-20T04:58:50Z",
+        "makespan": 7853.0,
+        "jobs": [
+            {
+                "name": "bowtie2-build_ID0000001",
+                "type": "compute",
+                "runtime": 9.228,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000025",
+                    "bowtie2_ID0000003",
+                    "bowtie2_ID0000005",
+                    "bowtie2_ID0000027",
+                    "bowtie2_ID0000021",
+                    "bowtie2_ID0000023",
+                    "bowtie2_ID0000007",
+                    "bowtie2_ID0000029",
+                    "bowtie2_ID0000009",
+                    "bowtie2_ID0000013",
+                    "bowtie2_ID0000035",
+                    "bowtie2_ID0000037",
+                    "bowtie2_ID0000015",
+                    "bowtie2_ID0000031",
+                    "bowtie2_ID0000011",
+                    "bowtie2_ID0000033",
+                    "bowtie2_ID0000017",
+                    "bowtie2_ID0000039",
+                    "bowtie2_ID0000019",
+                    "bowtie2_ID0000041"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "output",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.fna",
+                        "size": 98721
+                    },
+                    {
+                        "link": "output",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 3.7928,
+                "memory": 94672,
+                "priority": 20,
+                "arguments": [
+                    "reference.fna",
+                    "reference"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000002",
+                "type": "compute",
+                "runtime": 538.974,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000003"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3136938_1.fastq",
+                        "size": 319486464
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3136938_2.fastq",
+                        "size": 319486464
+                    }
+                ],
+                "avgCPU": 2.6599,
+                "memory": 185756,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3136938"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000003",
+                "type": "compute",
+                "runtime": 31.368,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000002"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR3136938_1.fastq",
+                        "size": 319486464
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3136938_2.fastq",
+                        "size": 319486464
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3136938.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3136938.bam.bai",
+                        "size": 24
+                    }
+                ],
+                "avgCPU": 92.4668,
+                "memory": 27340,
+                "priority": 30,
+                "arguments": [
+                    "SRR3136938"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000004",
+                "type": "compute",
+                "runtime": 89.714,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000005"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3150505_2.fastq",
+                        "size": 725330504
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150505_1.fastq",
+                        "size": 725330504
+                    }
+                ],
+                "avgCPU": 42.0403,
+                "memory": 323728,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3150505"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000005",
+                "type": "compute",
+                "runtime": 52.121,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000004"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150505.bam",
+                        "size": 315
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150505.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150505_1.fastq",
+                        "size": 725330504
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150505_2.fastq",
+                        "size": 725330504
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 117.987,
+                "memory": 27372,
+                "priority": 30,
+                "arguments": [
+                    "SRR3150505"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000006",
+                "type": "compute",
+                "runtime": 364.548,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000007"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3152100_2.fastq",
+                        "size": 215859816
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3152100_1.fastq",
+                        "size": 215859816
+                    }
+                ],
+                "avgCPU": 2.7431,
+                "memory": 146668,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3152100"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000007",
+                "type": "compute",
+                "runtime": 17.479,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000006"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3152100.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152100_2.fastq",
+                        "size": 215859816
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3152100.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152100_1.fastq",
+                        "size": 215859816
+                    }
+                ],
+                "avgCPU": 107.9867,
+                "memory": 25476,
+                "priority": 30,
+                "arguments": [
+                    "SRR3152100"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000008",
+                "type": "compute",
+                "runtime": 579.852,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000009"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR2093830_1.fastq",
+                        "size": 378640026
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR2093830_2.fastq",
+                        "size": 378640026
+                    }
+                ],
+                "avgCPU": 1.9407,
+                "memory": 247180,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR2093830"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000009",
+                "type": "compute",
+                "runtime": 23.445,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000008"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR2093830_1.fastq",
+                        "size": 378640026
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR2093830_2.fastq",
+                        "size": 378640026
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR2093830.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR2093830.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 111.849,
+                "memory": 27288,
+                "priority": 30,
+                "arguments": [
+                    "SRR2093830"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000010",
+                "type": "compute",
+                "runtime": 3860.609,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000011"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1518646_1.fastq",
+                        "size": 1484208462
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518646_2.fastq",
+                        "size": 1484208462
+                    }
+                ],
+                "avgCPU": 1.307,
+                "memory": 396100,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1518646"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000011",
+                "type": "compute",
+                "runtime": 90.601,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000010"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518646.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518646.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518646_2.fastq",
+                        "size": 1484208462
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518646_1.fastq",
+                        "size": 1484208462
+                    }
+                ],
+                "avgCPU": 123.8717,
+                "memory": 26992,
+                "priority": 30,
+                "arguments": [
+                    "SRR1518646"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000012",
+                "type": "compute",
+                "runtime": 1361.088,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000013"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1922824_2.fastq",
+                        "size": 933337014
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1922824_1.fastq",
+                        "size": 933337014
+                    }
+                ],
+                "avgCPU": 2.014,
+                "memory": 402848,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1922824"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000013",
+                "type": "compute",
+                "runtime": 57.814,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000012"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1922824.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922824_1.fastq",
+                        "size": 933337014
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1922824.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922824_2.fastq",
+                        "size": 933337014
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 110.4473,
+                "memory": 27076,
+                "priority": 30,
+                "arguments": [
+                    "SRR1922824"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000014",
+                "type": "compute",
+                "runtime": 1751.153,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000015"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3151991_1.fastq",
+                        "size": 504543504
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151991_2.fastq",
+                        "size": 504543504
+                    }
+                ],
+                "avgCPU": 1.3999,
+                "memory": 268640,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3151991"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000015",
+                "type": "compute",
+                "runtime": 34.425,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000014"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151991_2.fastq",
+                        "size": 504543504
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151991.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151991.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151991_1.fastq",
+                        "size": 504543504
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 123.0937,
+                "memory": 25528,
+                "priority": 30,
+                "arguments": [
+                    "SRR3151991"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000016",
+                "type": "compute",
+                "runtime": 2824.941,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000017"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177976_1.fastq",
+                        "size": 866645104
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177976_2.fastq",
+                        "size": 866645104
+                    }
+                ],
+                "avgCPU": 1.53,
+                "memory": 325080,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3177976"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000017",
+                "type": "compute",
+                "runtime": 59.534,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000016"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177976.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177976_2.fastq",
+                        "size": 866645104
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177976_1.fastq",
+                        "size": 866645104
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177976.bam.bai",
+                        "size": 24
+                    }
+                ],
+                "avgCPU": 121.6498,
+                "memory": 27384,
+                "priority": 30,
+                "arguments": [
+                    "SRR3177976"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000018",
+                "type": "compute",
+                "runtime": 1775.146,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000019"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3152054_2.fastq",
+                        "size": 428951904
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3152054_1.fastq",
+                        "size": 428951904
+                    }
+                ],
+                "avgCPU": 1.1979,
+                "memory": 235592,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3152054"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000019",
+                "type": "compute",
+                "runtime": 27.818,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000018"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3152054.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152054_1.fastq",
+                        "size": 428951904
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3152054.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152054_2.fastq",
+                        "size": 428951904
+                    }
+                ],
+                "avgCPU": 128.7476,
+                "memory": 25476,
+                "priority": 30,
+                "arguments": [
+                    "SRR3152054"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000020",
+                "type": "compute",
+                "runtime": 799.927,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000021"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3151997_1.fastq",
+                        "size": 566468584
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151997_2.fastq",
+                        "size": 566468584
+                    }
+                ],
+                "avgCPU": 3.1439,
+                "memory": 293192,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3151997"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000021",
+                "type": "compute",
+                "runtime": 42.441,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000020"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151997_2.fastq",
+                        "size": 566468584
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151997.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3151997.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151997_1.fastq",
+                        "size": 566468584
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 115.7159,
+                "memory": 25480,
+                "priority": 30,
+                "arguments": [
+                    "SRR3151997"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000022",
+                "type": "compute",
+                "runtime": 1068.039,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000023"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177956_1.fastq",
+                        "size": 715725944
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177956_2.fastq",
+                        "size": 715725944
+                    }
+                ],
+                "avgCPU": 3.3237,
+                "memory": 325032,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3177956"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000023",
+                "type": "compute",
+                "runtime": 49.97,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000022"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177956_1.fastq",
+                        "size": 715725944
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177956.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177956.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177956_2.fastq",
+                        "size": 715725944
+                    }
+                ],
+                "avgCPU": 124.1185,
+                "memory": 27068,
+                "priority": 30,
+                "arguments": [
+                    "SRR3177956"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000024",
+                "type": "compute",
+                "runtime": 104.86,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000025"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1922799_1.fastq",
+                        "size": 966400618
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1922799_2.fastq",
+                        "size": 966400618
+                    }
+                ],
+                "avgCPU": 30.8869,
+                "memory": 397188,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1922799"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000025",
+                "type": "compute",
+                "runtime": 56.069,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000024"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR1922799_2.fastq",
+                        "size": 966400618
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1922799.bam",
+                        "size": 315
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1922799.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922799_1.fastq",
+                        "size": 966400618
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 122.6132,
+                "memory": 27184,
+                "priority": 30,
+                "arguments": [
+                    "SRR1922799"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000026",
+                "type": "compute",
+                "runtime": 1429.18,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000027"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1518581_1.fastq",
+                        "size": 752358984
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518581_2.fastq",
+                        "size": 752358984
+                    }
+                ],
+                "avgCPU": 2.2813,
+                "memory": 314612,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1518581"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000027",
+                "type": "compute",
+                "runtime": 54.321,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000026"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518581_2.fastq",
+                        "size": 752358984
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518581.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518581.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518581_1.fastq",
+                        "size": 752358984
+                    }
+                ],
+                "avgCPU": 114.7696,
+                "memory": 27032,
+                "priority": 30,
+                "arguments": [
+                    "SRR1518581"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000028",
+                "type": "compute",
+                "runtime": 2455.242,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000029"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1518412_2.fastq",
+                        "size": 1518899256
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518412_1.fastq",
+                        "size": 1518899256
+                    }
+                ],
+                "avgCPU": 2.0104,
+                "memory": 397504,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1518412"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000029",
+                "type": "compute",
+                "runtime": 90.27,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000028"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR1518412_1.fastq",
+                        "size": 1518899256
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518412.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518412.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518412_2.fastq",
+                        "size": 1518899256
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 127.1552,
+                "memory": 27248,
+                "priority": 30,
+                "arguments": [
+                    "SRR1518412"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000030",
+                "type": "compute",
+                "runtime": 2912.634,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000031"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3150455_2.fastq",
+                        "size": 945373264
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150455_1.fastq",
+                        "size": 945373264
+                    }
+                ],
+                "avgCPU": 1.5992,
+                "memory": 324680,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3150455"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000031",
+                "type": "compute",
+                "runtime": 62.333,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000030"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150455_1.fastq",
+                        "size": 945373264
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150455.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150455.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150455_2.fastq",
+                        "size": 945373264
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 127.9515,
+                "memory": 27384,
+                "priority": 30,
+                "arguments": [
+                    "SRR3150455"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000032",
+                "type": "compute",
+                "runtime": 2693.934,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000033"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177922_1.fastq",
+                        "size": 675986664
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177922_2.fastq",
+                        "size": 675986664
+                    }
+                ],
+                "avgCPU": 1.2932,
+                "memory": 324732,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3177922"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000033",
+                "type": "compute",
+                "runtime": 43.834,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000032"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR3177922_1.fastq",
+                        "size": 675986664
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177922.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177922_2.fastq",
+                        "size": 675986664
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177922.bam.bai",
+                        "size": 24
+                    }
+                ],
+                "avgCPU": 125.503,
+                "memory": 25572,
+                "priority": 30,
+                "arguments": [
+                    "SRR3177922"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000034",
+                "type": "compute",
+                "runtime": 50.49,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000035"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177813_2.fastq",
+                        "size": 357669504
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177813_1.fastq",
+                        "size": 357669504
+                    }
+                ],
+                "avgCPU": 35.4229,
+                "memory": 185112,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3177813"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000035",
+                "type": "compute",
+                "runtime": 27.379,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000034"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177813.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177813_2.fastq",
+                        "size": 357669504
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177813.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177813_1.fastq",
+                        "size": 357669504
+                    }
+                ],
+                "avgCPU": 111.4248,
+                "memory": 25340,
+                "priority": 30,
+                "arguments": [
+                    "SRR3177813"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "fasterq-dump_ID0000036",
+                "type": "compute",
+                "runtime": 2461.693,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000037"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR1518963_1.fastq",
+                        "size": 1543385622
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518963_2.fastq",
+                        "size": 1543385622
+                    }
+                ],
+                "avgCPU": 2.7341,
+                "memory": 326012,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR1518963"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000037",
+                "type": "compute",
+                "runtime": 103.1,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000036"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518963_2.fastq",
+                        "size": 1543385622
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518963.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR1518963.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518963_1.fastq",
+                        "size": 1543385622
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 124.6954,
+                "memory": 26936,
+                "priority": 30,
+                "arguments": [
+                    "SRR1518963"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000038",
+                "type": "compute",
+                "runtime": 2432.434,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000039"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3177796_2.fastq",
+                        "size": 624266184
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177796_1.fastq",
+                        "size": 624266184
+                    }
+                ],
+                "avgCPU": 1.3551,
+                "memory": 316224,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3177796"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "bowtie2_ID0000039",
+                "type": "compute",
+                "runtime": 43.294,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000038"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR3177796_2.fastq",
+                        "size": 624266184
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177796_1.fastq",
+                        "size": 624266184
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177796.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3177796.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 119.2475,
+                "memory": 27120,
+                "priority": 30,
+                "arguments": [
+                    "SRR3177796"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "fasterq-dump_ID0000040",
+                "type": "compute",
+                "runtime": 1285.743,
+                "parents": [],
+                "children": [
+                    "bowtie2_ID0000041"
+                ],
+                "files": [
+                    {
+                        "link": "output",
+                        "name": "SRR3150701_2.fastq",
+                        "size": 817782304
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150701_1.fastq",
+                        "size": 817782304
+                    }
+                ],
+                "avgCPU": 2.8683,
+                "memory": 324656,
+                "priority": 20,
+                "arguments": [
+                    "--split-files",
+                    "SRR3150701"
+                ],
+                "machine": "worker-3"
+            },
+            {
+                "name": "bowtie2_ID0000041",
+                "type": "compute",
+                "runtime": 51.594,
+                "parents": [
+                    "bowtie2-build_ID0000001",
+                    "fasterq-dump_ID0000040"
+                ],
+                "children": [
+                    "merge_ID0000042"
+                ],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "reference.3.bt2",
+                        "size": 17
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150701_1.fastq",
+                        "size": 817782304
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150701.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.2.bt2",
+                        "size": 24280
+                    },
+                    {
+                        "link": "output",
+                        "name": "SRR3150701.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150701_2.fastq",
+                        "size": 817782304
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.1.bt2",
+                        "size": 4226858
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.4.bt2",
+                        "size": 24273
+                    },
+                    {
+                        "link": "input",
+                        "name": "reference.rev.1.bt2",
+                        "size": 4226858
+                    }
+                ],
+                "avgCPU": 129.3716,
+                "memory": 25476,
+                "priority": 30,
+                "arguments": [
+                    "SRR3150701"
+                ],
+                "machine": "worker-2"
+            },
+            {
+                "name": "merge_ID0000042",
+                "type": "compute",
+                "runtime": 0.244,
+                "parents": [
+                    "bowtie2_ID0000003",
+                    "bowtie2_ID0000005",
+                    "bowtie2_ID0000007",
+                    "bowtie2_ID0000009",
+                    "bowtie2_ID0000011",
+                    "bowtie2_ID0000013",
+                    "bowtie2_ID0000015",
+                    "bowtie2_ID0000017",
+                    "bowtie2_ID0000019",
+                    "bowtie2_ID0000021",
+                    "bowtie2_ID0000023",
+                    "bowtie2_ID0000025",
+                    "bowtie2_ID0000027",
+                    "bowtie2_ID0000029",
+                    "bowtie2_ID0000031",
+                    "bowtie2_ID0000033",
+                    "bowtie2_ID0000035",
+                    "bowtie2_ID0000037",
+                    "bowtie2_ID0000039",
+                    "bowtie2_ID0000041"
+                ],
+                "children": [],
+                "files": [
+                    {
+                        "link": "input",
+                        "name": "SRR3177813.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150505.bam",
+                        "size": 315
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177796.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518412.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177956.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150455.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151991.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152054.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177922.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177976.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152054.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177796.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152100.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151997.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150505.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151997.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150701.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922799.bam",
+                        "size": 315
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518581.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3152100.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3136938.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177976.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518412.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR2093830.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922824.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518963.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922799.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3136938.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177813.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "output",
+                        "name": "results.tar.gz",
+                        "size": 4395
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1922824.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150701.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR2093830.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518646.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3151991.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518581.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518963.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR1518646.bam",
+                        "size": 317
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3150455.bam.bai",
+                        "size": 24
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177922.bam",
+                        "size": 316
+                    },
+                    {
+                        "link": "input",
+                        "name": "SRR3177956.bam.bai",
+                        "size": 24
+                    }
+                ],
+                "avgCPU": 115.9836,
+                "memory": 3660,
+                "priority": 40,
+                "arguments": [
+                    "results.tar.gz",
+                    "SRR3136938.bam",
+                    "SRR3136938.bam.bai",
+                    "SRR3150505.bam.bai",
+                    "SRR3150505.bam",
+                    "SRR3152100.bam.bai",
+                    "SRR3152100.bam",
+                    "SRR2093830.bam",
+                    "SRR2093830.bam.bai",
+                    "SRR1518646.bam",
+                    "SRR1518646.bam.bai",
+                    "SRR1922824.bam",
+                    "SRR1922824.bam.bai",
+                    "SRR3151991.bam.bai",
+                    "SRR3151991.bam",
+                    "SRR3177976.bam",
+                    "SRR3177976.bam.bai",
+                    "SRR3152054.bam.bai",
+                    "SRR3152054.bam",
+                    "SRR3151997.bam.bai",
+                    "SRR3151997.bam",
+                    "SRR3177956.bam.bai",
+                    "SRR3177956.bam",
+                    "SRR1922799.bam",
+                    "SRR1922799.bam.bai",
+                    "SRR1518581.bam.bai",
+                    "SRR1518581.bam",
+                    "SRR1518412.bam.bai",
+                    "SRR1518412.bam",
+                    "SRR3150455.bam.bai",
+                    "SRR3150455.bam",
+                    "SRR3177922.bam",
+                    "SRR3177922.bam.bai",
+                    "SRR3177813.bam.bai",
+                    "SRR3177813.bam",
+                    "SRR1518963.bam",
+                    "SRR1518963.bam.bai",
+                    "SRR3177796.bam",
+                    "SRR3177796.bam.bai",
+                    "SRR3150701.bam",
+                    "SRR3150701.bam.bai"
+                ],
+                "machine": "worker-2"
+            }
+        ],
+        "machines": [
+            {
+                "nodeName": "worker-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795960,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 48,
+                    "speed": 2262,
+                    "vendor": "GenuineIntel"
+                }
+            },
+            {
+                "nodeName": "worker-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795960,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 48,
+                    "speed": 2808,
+                    "vendor": "GenuineIntel"
+                }
+            }
+        ]
+    }
+}
