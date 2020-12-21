@@ -18,7 +18,7 @@ This test case is composed of four different tasks:
   2. `bowtie2-build` - Index the genome with an FM Index (based on the
      Burrows-Wheeler Transform or BWT) to keep its memory footprint small.
   3. `bowtie2` - Aling sequencing reads to long reference sequences.
-  4. `merge` - .
+  4. `merge` - Merge a set of BAM files into a final tarball.
 
 The figure below shows an overview of the SRA Search workflow structure:
 
