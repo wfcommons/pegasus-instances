@@ -39,6 +39,7 @@ the `wrench-pegasus-parser.py` tool that is distributed as part of the
 | Montage | Astronomy | 1 | 8 |
 | Seismic Cross Correlation | Seismology | 1 | 11 |
 | SoyKB | Bioinformatics | 1 | 10 |
+| SRA Search | Bioinformatics | 1 | 25 | 
 
 
 [travis-badge]:             https://travis-ci.org/workflowhub/pegasus-traces.svg?branch=master

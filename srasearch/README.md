@@ -40,3 +40,12 @@ Trace files are named using the following convention:
 - `<RUN_ID>`: The workflow execution identification.
 
 ### Workflow Structure
+
+The SRA Search workflow structure depends exclusively on the number of NCBI
+accession numbers (`<ACCESSION_LIST_SIZE>`), in which each accession number
+is processed by a `fasterq-dump` task, each of each is followed by a `bowtie2`
+task. The workflow has a single `bowtie2-build` task (regardless the number
+of accessions). It also follows an upside down triangle of `merge` taks, i.e.
+a `merge` task is added for each 25 `bowtie2` tasks, and if more than a single
+`merge` task has been added, a final `merge` task (to merge all data from
+previous merge tasks) is added.
