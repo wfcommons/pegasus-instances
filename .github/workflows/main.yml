@@ -1,0 +1,32 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: |
+          pip3 install jsonschema
+          pip3 install requests
+      - name: Check validity of traces
+        run: |
+          find . -type f -name "*.json" > traces.txt && err=0
+          git clone https://github.com/workflowhub/workflow-schema
+          err_report() {
+            echo "Error on trace file $1"
+          }
+          trap 'err_report ${trace_file}' ERR;
+          for trace_file in `cat traces.txt`; do
+            python3 ./workflow-schema/workflowhub-validator.py -d ${trace_file};
+            echo "";
+          done
