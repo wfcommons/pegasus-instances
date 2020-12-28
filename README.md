@@ -24,10 +24,6 @@ _computing platforms_.
 The execution traces provided in this repository are compatible to any
 [simulator framework](https://workflowhub.org/simulator.html) that implements
 the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
-Specifically, the workflow execution traces hosted here were generated using
-the `wrench-pegasus-parser.py` tool that is distributed as part of the
-[WRENCH-Pegasus](https://github.com/wrench-project/pegasus) simulator.
-
 
 ## Summary of Workflow Execution Traces
 
