@@ -27,15 +27,15 @@ the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
 
 ## Summary of Workflow Execution Traces
 
-| Application | Science Domain | Computing Platforms | # Execution Traces |
-| --- | --- | --- | --- |
-| 1000Genome | Bioinformatics | 1 | 22 |
-| Cycles | Agroecosystem | 1 | 24 |
-| Epigenomics | Bioinformatics | 1 | 26 |
-| Montage | Astronomy | 1 | 8 |
-| Seismic Cross Correlation | Seismology | 1 | 11 |
-| SoyKB | Bioinformatics | 1 | 10 |
-| SRA Search | Bioinformatics | 1 | 25 | 
+| Application | Science Domain | Category | Computing Platforms | # Execution Traces |
+| --- | --- | --- | --- | --- |
+| 1000Genome | Bioinformatics | Data-intensive | 1 | 22 |
+| Cycles | Agroecosystem | Compute-intensive | 1 | 24 |
+| Epigenomics | Bioinformatics | Data-intensive | 1 | 26 |
+| Montage | Astronomy | Compute-intensive | 1 | 8 |
+| Seismic Cross Correlation | Data-intensive | Seismology | 1 | 11 |
+| SoyKB | Bioinformatics | Data-intensive | 1 | 10 |
+| SRA Search | Bioinformatics | Data-intensive | 1 | 25 | 
 
 
 [travis-badge]:             https://travis-ci.org/workflowhub/pegasus-traces.svg?branch=master
