@@ -1,4 +1,4 @@
-[![Build Status][travis-badge]][travis-link]
+![Build](https://github.com/workflowhub/pegasus-traces/workflows/Build/badge.svg)
 
 <a href="https://workflowhub.org" target="_blank"><img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" /></a>
 
@@ -36,7 +36,3 @@ the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
 | Seismic Cross Correlation | Data-intensive | Seismology | 1 | 11 |
 | SoyKB | Bioinformatics | Data-intensive | 1 | 10 |
 | SRA Search | Bioinformatics | Data-intensive | 1 | 25 | 
-
-
-[travis-badge]:             https://travis-ci.org/workflowhub/pegasus-traces.svg?branch=master
-[travis-link]:              https://travis-ci.org/workflowhub/pegasus-traces
