@@ -32,7 +32,7 @@ the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
 | 1000Genome | Bioinformatics | Data-intensive | 1 | 22 |
 | Cycles | Agroecosystem | Compute-intensive | 1 | 24 |
 | Epigenomics | Bioinformatics | Data-intensive | 1 | 26 |
-| Montage | Astronomy | Compute-intensive | 1 | 10 |
+| Montage | Astronomy | Compute-intensive | 1 | 11 |
 | Seismic Cross Correlation | Data-intensive | Seismology | 1 | 11 |
 | SoyKB | Bioinformatics | Data-intensive | 1 | 10 |
 | SRA Search | Bioinformatics | Data-intensive | 1 | 25 |
