@@ -1,4 +1,4 @@
-<img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" />
+<img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
 <img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
 
 # Execution Traces for 1000Genome Workflow
@@ -45,7 +45,7 @@ performance metrics can be found in the following research publication:
 ## Execution Traces
 
 Execution traces are formatted according to the
-[WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema) for
+[WfCommons JSON format](https://github.com/wfcommons/workflow-schema) for
 describing workflow executions. Execution traces from different computing
 platforms are organized into sub-folders.
 

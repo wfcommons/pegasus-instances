@@ -1,6 +1,6 @@
-![Build](https://github.com/workflowhub/pegasus-traces/workflows/Build/badge.svg)
+![Build](https://github.com/wfcommons/pegasus-traces/workflows/Build/badge.svg)
 
-<a href="https://workflowhub.org" target="_blank"><img src="https://workflowhub.org/assets/images/logo-horizontal.png" width="300" /></a>
+<a href="https://wfcommons.org" target="_blank"><img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" /></a>
 
 <img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
 
@@ -9,7 +9,7 @@
 This repository contains workflow execution traces generated from
 [Pegasus](http://pegasus.isi.edu) workflow executions. The traces
 hosted in this repository use the
-[WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema)
+[WfCommons JSON format](https://github.com/wfcommons/workflow-schema)
 for describing workflow executions.
 
 #### Repository Structure
@@ -22,8 +22,8 @@ _computing platforms_.
 #### Workflow Simulator
 
 The execution traces provided in this repository are compatible to any
-[simulator framework](https://workflowhub.org/simulator.html) that implements
-the [WorkflowHub JSON format](https://github.com/workflowhub/workflow-schema).
+[simulator framework](https://wfcommons.org/simulators) that implements
+the [WfCommons JSON format](https://github.com/wfcommons/workflow-schema).
 
 ## Summary of Workflow Execution Traces
 
