@@ -1,4 +1,5 @@
 ![Build](https://github.com/wfcommons/pegasus-traces/workflows/Build/badge.svg)
+[![DOI](https://zenodo.org/badge/74868669.svg)](https://zenodo.org/badge/latestdoi/74868669)
 
 <a href="https://wfcommons.org" target="_blank"><img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" /></a>
 
