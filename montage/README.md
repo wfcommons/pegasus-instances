@@ -1,7 +1,7 @@
 <img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
-<img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
+<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100" />
 
-# Execution Traces for Montage Workflow
+# Execution Instances for Montage Workflow
 
 ## Workflow Description
 
@@ -42,14 +42,14 @@ performance metrics can be found in the following research publication:
   using Montage, Pegasus and Amazon Web Services," in 23rd Annual Astronomical
   Data Analysis Software and Systems (ADASS) Conference, 2013.
 
-## Execution Traces
+## Execution Instances
 
-Execution traces are formatted according to the
+Execution instannces are formatted according to the
 [WfCommons JSON format](https://github.com/wfcommons/workflow-schema) for
-describing workflow executions. Execution traces from different computing
+describing workflow executions. Execution instances from different computing
 platforms are organized into sub-folders.
 
-Trace files are named using the following convention:
+Instance files are named using the following convention:
 `montage-<COMPUTE_PLATFORM>-<SURVEY>-<DEGREE>-<RUN_ID>.json`, where:
 
 - `<COMPUTE_PLATFORM>`: The compute platform where the actual Pegasus workflow
