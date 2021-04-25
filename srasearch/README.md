@@ -1,7 +1,7 @@
 <img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
-<img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
+<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100"/>
 
-# Execution Traces for SRA Search Workflow
+# Execution Instances for SRA Search Workflow
 
 ## Workflow Description
 
@@ -24,14 +24,14 @@ The figure below shows an overview of the SRA Search workflow structure:
 
 <img src="docs/images/srasearch.png?raw=true" width="600">
 
-## Execution Traces
+## Execution Instances
 
-Execution traces are formatted according to the
+Execution instances are formatted according to the
 [WfCommons JSON format](https://github.com/wfcommons/workflow-schema) for
-describing workflow executions. Execution traces from different computing
+describing workflow executions. Execution instances from different computing
 platforms are organized into sub-folders.
 
-Trace files are named using the following convention:
+Instance files are named using the following convention:
 `srasearch-<COMPUTE_PLATFORM>-<ACCESSION_LIST_SIZE>-<RUN_ID>.json`, where:
 
 - `<COMPUTE_PLATFORM>`: The compute platform where the actual Pegasus workflow

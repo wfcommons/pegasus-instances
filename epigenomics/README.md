@@ -1,7 +1,7 @@
 <img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
-<img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
+<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100"/>
 
-# Execution Traces for Epigenomics Workflow
+# Execution Instances for Epigenomics Workflow
 
 ## Workflow Description
 
@@ -38,14 +38,14 @@ performance metrics can be found in the following research publication:
  "Characterizing and Profiling Scientific Workflows," Future Generation
  Computer Systems, vol. 29, iss. 3, pp. 682-692, 2013.
 
-## Execution Traces
+## Execution Instances
 
-Execution traces are formatted according to the
+Execution instances are formatted according to the
 [WfCommons JSON format](https://github.com/wfcommons/workflow-schema)
-for describing workflow executions. Execution traces from different
+for describing workflow executions. Execution instances from different
 computing platforms are organized into sub-folders.
 
-Trace files are named using the following convention:
+Instance files are named using the following convention:
 `epigenomics-<COMPUTE_PLATFORM>-<DATASET>-<NUM_SEQ>-<BIN_SIZE>-<RUN_ID>.json`, where:
 
 - `<COMPUTE_PLATFORM>`: The compute platform where the actual Pegasus workflow

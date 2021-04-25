@@ -1,5 +1,5 @@
 <img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
-<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100" />
+<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100"/>
 
 # Execution Instances for Montage Workflow
 

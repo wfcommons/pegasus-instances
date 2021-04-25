@@ -1,13 +1,13 @@
 <img src="https://wfcommons.org/images/wfcommons-horizontal.png" width="350" />
-<img src="https://pegasus.isi.edu/wordpress/wp-content/uploads/2015/12/logo-dark.png" width=200 style="float: right" />
+<img src="https://pegasus.isi.edu/documentation/_static/pegasus_circular_white_logo.png" width="100"/>
 
-# Execution Traces for Seismic Cross Correlation Workflow
+# Execution Instances for Seismic Cross Correlation Workflow
 
 ## Workflow Description
 
 The Seismic Cross Correlation workflow represents a common data-intensive
 analysis pattern used by many seismologists. The workflow preprocesses and
-cross-correlates traces (sequences of measurements of acceleration in three
+cross-correlates instances (sequences of measurements of acceleration in three
 dimensions) from multiple seismic stations.
  The workflow is composed of two different tasks:
 
@@ -34,14 +34,14 @@ publication:
   science. In 7th International Workshop on Data-Intensive Computing in the
   Clouds (pp. 1–8). https://doi.org/10.1109/DataCloud.2016.004
 
-## Execution Traces
+## Execution Instances
 
-Execution traces are formatted according to the
+Execution instances are formatted according to the
 [WfCommons JSON format](https://github.com/wfcommons/workflow-schema)
-for describing workflow executions. Execution traces from different
+for describing workflow executions. Execution instances from different
 computing platforms are organized into sub-folders.
 
-Trace files are named using the following convention:
+Instance files are named using the following convention:
 `seismology-<COMPUTE_PLATFORM>-<NUM_PAIRS>p-<RUN_ID>.json`, where:
 
 - `<COMPUTE_PLATFORM>`: The compute platform where the actual Pegasus workflow
