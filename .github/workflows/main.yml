@@ -21,12 +21,12 @@ jobs:
       - name: Check validity of instances
         run: |
           find . -type f -name "*.json" > instances.txt && err=0
-          git clone https://github.com/wfcommons/workflow-schema
+          git clone https://github.com/wfcommons/wfformat
           err_report() {
             echo "Error on instance file $1"
           }
           trap 'err_report ${instance_file}' ERR;
           for instance_file in `cat instances.txt`; do
-            python3 ./workflow-schema/wfcommons-validator.py -d ${instance_file};
+            python3 ./wfformat/wfcommons-validator.py -d ${instance_file};
             echo "";
           done

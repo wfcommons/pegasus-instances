@@ -2,7 +2,7 @@
     "name": "workflow-test",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2020-12-21T08:45:11.333208",
-    "schemaVersion": "1.0",
+    "schemaVersion": "1.2",
     "author": {
         "name": "rafsilva",
         "email": "support@workflowhub.org"
@@ -103,11 +103,16 @@
                 "avgCPU": 4.1162,
                 "memory": 94876,
                 "priority": 20,
-                "arguments": [
-                    "reference.fna",
-                    "reference"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000001",
+                "category": "bowtie2-build",
+                "command": {
+                    "program": "bowtie2-build",
+                    "arguments": [
+                        "reference.fna",
+                        "reference"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000002",
@@ -132,11 +137,16 @@
                 "avgCPU": 1.8416,
                 "memory": 283364,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518627"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000002",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518627"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000003",
@@ -204,10 +214,15 @@
                 "avgCPU": 117.9227,
                 "memory": 27072,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518627"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000003",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518627"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000004",
@@ -232,11 +247,16 @@
                 "avgCPU": 3.3957,
                 "memory": 324932,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150351"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000004",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150351"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000005",
@@ -304,10 +324,15 @@
                 "avgCPU": 119.716,
                 "memory": 27032,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150351"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000005",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150351"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000006",
@@ -332,11 +357,16 @@
                 "avgCPU": 7.3955,
                 "memory": 196224,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150814"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000006",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150814"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000007",
@@ -404,10 +434,15 @@
                 "avgCPU": 105.4146,
                 "memory": 25492,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150814"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000007",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150814"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000008",
@@ -432,11 +467,16 @@
                 "avgCPU": 4.284,
                 "memory": 324740,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150353"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000008",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150353"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000009",
@@ -504,10 +544,15 @@
                 "avgCPU": 124.0098,
                 "memory": 26944,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150353"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000009",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150353"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000010",
@@ -532,11 +577,16 @@
                 "avgCPU": 1.2,
                 "memory": 388812,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518562"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000010",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518562"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000011",
@@ -604,10 +654,15 @@
                 "avgCPU": 119.0602,
                 "memory": 26984,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518562"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000011",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518562"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000012",
@@ -632,11 +687,16 @@
                 "avgCPU": 2.5068,
                 "memory": 398928,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518420"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000012",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518420"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000013",
@@ -704,10 +764,15 @@
                 "avgCPU": 129.7486,
                 "memory": 25444,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518420"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000013",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518420"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000014",
@@ -732,11 +797,16 @@
                 "avgCPU": 1.4541,
                 "memory": 325332,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518949"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000014",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518949"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000015",
@@ -804,10 +874,15 @@
                 "avgCPU": 118.2683,
                 "memory": 27416,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518949"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000015",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518949"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000016",
@@ -832,11 +907,16 @@
                 "avgCPU": 1.4527,
                 "memory": 394584,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518623"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000016",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518623"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000017",
@@ -904,10 +984,15 @@
                 "avgCPU": 120.8242,
                 "memory": 26980,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518623"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000017",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518623"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000018",
@@ -932,11 +1017,16 @@
                 "avgCPU": 1.5518,
                 "memory": 324400,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177914"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000018",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177914"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000019",
@@ -1004,10 +1094,15 @@
                 "avgCPU": 111.6294,
                 "memory": 25560,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177914"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000019",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177914"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000020",
@@ -1032,11 +1127,16 @@
                 "avgCPU": 1.4469,
                 "memory": 323756,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177913"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000020",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177913"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000021",
@@ -1104,10 +1204,15 @@
                 "avgCPU": 120.1405,
                 "memory": 27040,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177913"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000021",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177913"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000022",
@@ -1132,11 +1237,16 @@
                 "avgCPU": 1.5954,
                 "memory": 325432,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177972"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000022",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177972"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000023",
@@ -1204,10 +1314,15 @@
                 "avgCPU": 103.8374,
                 "memory": 27336,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177972"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000023",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177972"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000024",
@@ -1232,11 +1347,16 @@
                 "avgCPU": 1.5799,
                 "memory": 402632,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR2009707"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000024",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR2009707"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000025",
@@ -1304,10 +1424,15 @@
                 "avgCPU": 126.6562,
                 "memory": 25584,
                 "priority": 30,
-                "arguments": [
-                    "SRR2009707"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000025",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR2009707"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000026",
@@ -1332,11 +1457,16 @@
                 "avgCPU": 1.5668,
                 "memory": 325424,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177993"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000026",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177993"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000027",
@@ -1404,10 +1534,15 @@
                 "avgCPU": 112.0595,
                 "memory": 27308,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177993"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000027",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177993"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000028",
@@ -1432,11 +1567,16 @@
                 "avgCPU": 1.07,
                 "memory": 387108,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1922800"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000028",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1922800"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000029",
@@ -1504,10 +1644,15 @@
                 "avgCPU": 114.4777,
                 "memory": 27176,
                 "priority": 30,
-                "arguments": [
-                    "SRR1922800"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000029",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1922800"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000030",
@@ -1532,11 +1677,16 @@
                 "avgCPU": 3.141,
                 "memory": 264500,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1763635"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000030",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1763635"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000031",
@@ -1604,10 +1754,15 @@
                 "avgCPU": 119.0047,
                 "memory": 27040,
                 "priority": 30,
-                "arguments": [
-                    "SRR1763635"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000031",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1763635"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000032",
@@ -1632,11 +1787,16 @@
                 "avgCPU": 1.732,
                 "memory": 324712,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3152119"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000032",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3152119"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000033",
@@ -1704,10 +1864,15 @@
                 "avgCPU": 115.1597,
                 "memory": 27036,
                 "priority": 30,
-                "arguments": [
-                    "SRR3152119"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000033",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3152119"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000034",
@@ -1732,11 +1897,16 @@
                 "avgCPU": 1.1103,
                 "memory": 279280,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR2140567"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000034",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR2140567"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000035",
@@ -1804,10 +1974,15 @@
                 "avgCPU": 105.0433,
                 "memory": 27384,
                 "priority": 30,
-                "arguments": [
-                    "SRR2140567"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000035",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR2140567"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000036",
@@ -1832,11 +2007,16 @@
                 "avgCPU": 1.2689,
                 "memory": 338176,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518985"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000036",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518985"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000037",
@@ -1904,10 +2084,15 @@
                 "avgCPU": 58.9083,
                 "memory": 26136,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518985"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000037",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518985"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000038",
@@ -1932,11 +2117,16 @@
                 "avgCPU": 1.6986,
                 "memory": 324800,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150384"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000038",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150384"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000039",
@@ -2004,10 +2194,15 @@
                 "avgCPU": 119.1023,
                 "memory": 27032,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150384"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000039",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150384"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000040",
@@ -2032,11 +2227,16 @@
                 "avgCPU": 14.9615,
                 "memory": 17872,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150843"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000040",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150843"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000041",
@@ -2104,10 +2304,15 @@
                 "avgCPU": 131.5284,
                 "memory": 25560,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150843"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000041",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150843"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000042",
@@ -2132,11 +2337,16 @@
                 "avgCPU": 3.2491,
                 "memory": 397648,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1919632"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000042",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1919632"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000043",
@@ -2204,10 +2414,15 @@
                 "avgCPU": 130.6081,
                 "memory": 26868,
                 "priority": 30,
-                "arguments": [
-                    "SRR1919632"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000043",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1919632"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000044",
@@ -2232,11 +2447,16 @@
                 "avgCPU": 1.409,
                 "memory": 404596,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1917732"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000044",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1917732"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000045",
@@ -2304,10 +2524,15 @@
                 "avgCPU": 116.3227,
                 "memory": 27036,
                 "priority": 30,
-                "arguments": [
-                    "SRR1917732"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000045",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1917732"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000046",
@@ -2332,11 +2557,16 @@
                 "avgCPU": 2.4619,
                 "memory": 210464,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177776"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000046",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177776"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000047",
@@ -2404,10 +2634,15 @@
                 "avgCPU": 131.1239,
                 "memory": 25400,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177776"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000047",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177776"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000048",
@@ -2432,11 +2667,16 @@
                 "avgCPU": 2.6102,
                 "memory": 274380,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150835"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000048",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150835"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000049",
@@ -2504,10 +2744,15 @@
                 "avgCPU": 114.9452,
                 "memory": 25476,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150835"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000049",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150835"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000050",
@@ -2532,11 +2777,16 @@
                 "avgCPU": 1.3434,
                 "memory": 201788,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177885"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000050",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177885"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000051",
@@ -2604,10 +2854,15 @@
                 "avgCPU": 107.9472,
                 "memory": 26924,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177885"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000051",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177885"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000052",
@@ -2632,11 +2887,16 @@
                 "avgCPU": 1.4648,
                 "memory": 260484,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150533"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000052",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150533"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000053",
@@ -2704,10 +2964,15 @@
                 "avgCPU": 117.5054,
                 "memory": 25484,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150533"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000053",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150533"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000054",
@@ -2732,11 +2997,16 @@
                 "avgCPU": 2.9694,
                 "memory": 320224,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3152030"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000054",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3152030"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000055",
@@ -2804,10 +3074,15 @@
                 "avgCPU": 128.7307,
                 "memory": 25576,
                 "priority": 30,
-                "arguments": [
-                    "SRR3152030"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000055",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3152030"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000056",
@@ -2832,11 +3107,16 @@
                 "avgCPU": 2.3954,
                 "memory": 324784,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150357"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000056",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150357"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000057",
@@ -2904,10 +3184,15 @@
                 "avgCPU": 115.4119,
                 "memory": 27404,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150357"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000057",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150357"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000058",
@@ -2932,11 +3217,16 @@
                 "avgCPU": 2.0342,
                 "memory": 324052,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150393"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000058",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150393"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000059",
@@ -3004,10 +3294,15 @@
                 "avgCPU": 119.467,
                 "memory": 27404,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150393"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000059",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150393"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000060",
@@ -3032,11 +3327,16 @@
                 "avgCPU": 1.491,
                 "memory": 324964,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3177954"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000060",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3177954"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000061",
@@ -3104,10 +3404,15 @@
                 "avgCPU": 114.9101,
                 "memory": 27288,
                 "priority": 30,
-                "arguments": [
-                    "SRR3177954"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000061",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3177954"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000062",
@@ -3132,11 +3437,16 @@
                 "avgCPU": 1.4752,
                 "memory": 325064,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518478"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000062",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518478"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000063",
@@ -3204,10 +3514,15 @@
                 "avgCPU": 125.4602,
                 "memory": 27248,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518478"
-                ],
-                "machine": "worker-3"
+                "machine": "worker-3",
+                "id": "ID0000063",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518478"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000064",
@@ -3232,11 +3547,16 @@
                 "avgCPU": 1.0805,
                 "memory": 288816,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR2095925"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000064",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR2095925"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000065",
@@ -3304,10 +3624,15 @@
                 "avgCPU": 109.6278,
                 "memory": 27312,
                 "priority": 30,
-                "arguments": [
-                    "SRR2095925"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000065",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR2095925"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000066",
@@ -3332,11 +3657,16 @@
                 "avgCPU": 1.1016,
                 "memory": 293752,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR2502767"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000066",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR2502767"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000067",
@@ -3404,10 +3734,15 @@
                 "avgCPU": 111.4297,
                 "memory": 27368,
                 "priority": 30,
-                "arguments": [
-                    "SRR2502767"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000067",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR2502767"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000068",
@@ -3432,11 +3767,16 @@
                 "avgCPU": 1.5448,
                 "memory": 324216,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3152109"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000068",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3152109"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000069",
@@ -3504,10 +3844,15 @@
                 "avgCPU": 124.3129,
                 "memory": 27052,
                 "priority": 30,
-                "arguments": [
-                    "SRR3152109"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000069",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3152109"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000070",
@@ -3532,11 +3877,16 @@
                 "avgCPU": 2.0968,
                 "memory": 192200,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3150813"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000070",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3150813"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000071",
@@ -3604,10 +3954,15 @@
                 "avgCPU": 113.7781,
                 "memory": 27180,
                 "priority": 30,
-                "arguments": [
-                    "SRR3150813"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000071",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3150813"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000072",
@@ -3632,11 +3987,16 @@
                 "avgCPU": 1.2492,
                 "memory": 399208,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518636"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000072",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518636"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000073",
@@ -3704,10 +4064,15 @@
                 "avgCPU": 121.3956,
                 "memory": 27376,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518636"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000073",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518636"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000074",
@@ -3732,11 +4097,16 @@
                 "avgCPU": 1.7073,
                 "memory": 326012,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518962"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000074",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518962"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000075",
@@ -3804,10 +4174,15 @@
                 "avgCPU": 121.1847,
                 "memory": 27056,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518962"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000075",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518962"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000076",
@@ -3832,11 +4207,16 @@
                 "avgCPU": 1.7854,
                 "memory": 323756,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR3152035"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000076",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR3152035"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000077",
@@ -3904,10 +4284,15 @@
                 "avgCPU": 122.3814,
                 "memory": 25480,
                 "priority": 30,
-                "arguments": [
-                    "SRR3152035"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000077",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR3152035"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000078",
@@ -3932,11 +4317,16 @@
                 "avgCPU": 2.0613,
                 "memory": 204352,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518994"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000078",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518994"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000079",
@@ -4004,10 +4394,15 @@
                 "avgCPU": 21.3265,
                 "memory": 26288,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518994"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000079",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518994"
+                    ]
+                }
             },
             {
                 "name": "fasterq-dump_ID0000080",
@@ -4032,11 +4427,16 @@
                 "avgCPU": 3.8246,
                 "memory": 326192,
                 "priority": 20,
-                "arguments": [
-                    "--split-files",
-                    "SRR1518483"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000080",
+                "category": "fasterq-dump",
+                "command": {
+                    "program": "fasterq-dump",
+                    "arguments": [
+                        "--split-files",
+                        "SRR1518483"
+                    ]
+                }
             },
             {
                 "name": "bowtie2_ID0000081",
@@ -4104,10 +4504,15 @@
                 "avgCPU": 130.5931,
                 "memory": 26980,
                 "priority": 30,
-                "arguments": [
-                    "SRR1518483"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000081",
+                "category": "bowtie2",
+                "command": {
+                    "program": "bowtie2",
+                    "arguments": [
+                        "SRR1518483"
+                    ]
+                }
             },
             {
                 "name": "merge_ID0000082",
@@ -4403,60 +4808,65 @@
                 "avgCPU": 115.5629,
                 "memory": 3564,
                 "priority": 40,
-                "arguments": [
-                    "results-l1-j1.tar.gz",
-                    "SRR1518627.bam",
-                    "SRR1518627.bam.bai",
-                    "SRR3150351.bam",
-                    "SRR3150351.bam.bai",
-                    "SRR3150814.bam",
-                    "SRR3150814.bam.bai",
-                    "SRR3150353.bam",
-                    "SRR3150353.bam.bai",
-                    "SRR1518562.bam.bai",
-                    "SRR1518562.bam",
-                    "SRR1518420.bam",
-                    "SRR1518420.bam.bai",
-                    "SRR1518949.bam.bai",
-                    "SRR1518949.bam",
-                    "SRR1518623.bam.bai",
-                    "SRR1518623.bam",
-                    "SRR3177914.bam.bai",
-                    "SRR3177914.bam",
-                    "SRR3177913.bam",
-                    "SRR3177913.bam.bai",
-                    "SRR3177972.bam.bai",
-                    "SRR3177972.bam",
-                    "SRR2009707.bam",
-                    "SRR2009707.bam.bai",
-                    "SRR3177993.bam",
-                    "SRR3177993.bam.bai",
-                    "SRR1922800.bam",
-                    "SRR1922800.bam.bai",
-                    "SRR1763635.bam.bai",
-                    "SRR1763635.bam",
-                    "SRR3152119.bam.bai",
-                    "SRR3152119.bam",
-                    "SRR2140567.bam",
-                    "SRR2140567.bam.bai",
-                    "SRR1518985.bam.bai",
-                    "SRR1518985.bam",
-                    "SRR3150384.bam.bai",
-                    "SRR3150384.bam",
-                    "SRR3150843.bam",
-                    "SRR3150843.bam.bai",
-                    "SRR1919632.bam",
-                    "SRR1919632.bam.bai",
-                    "SRR1917732.bam",
-                    "SRR1917732.bam.bai",
-                    "SRR3177776.bam",
-                    "SRR3177776.bam.bai",
-                    "SRR3150835.bam.bai",
-                    "SRR3150835.bam",
-                    "SRR3177885.bam.bai",
-                    "SRR3177885.bam"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000082",
+                "category": "merge",
+                "command": {
+                    "program": "merge",
+                    "arguments": [
+                        "results-l1-j1.tar.gz",
+                        "SRR1518627.bam",
+                        "SRR1518627.bam.bai",
+                        "SRR3150351.bam",
+                        "SRR3150351.bam.bai",
+                        "SRR3150814.bam",
+                        "SRR3150814.bam.bai",
+                        "SRR3150353.bam",
+                        "SRR3150353.bam.bai",
+                        "SRR1518562.bam.bai",
+                        "SRR1518562.bam",
+                        "SRR1518420.bam",
+                        "SRR1518420.bam.bai",
+                        "SRR1518949.bam.bai",
+                        "SRR1518949.bam",
+                        "SRR1518623.bam.bai",
+                        "SRR1518623.bam",
+                        "SRR3177914.bam.bai",
+                        "SRR3177914.bam",
+                        "SRR3177913.bam",
+                        "SRR3177913.bam.bai",
+                        "SRR3177972.bam.bai",
+                        "SRR3177972.bam",
+                        "SRR2009707.bam",
+                        "SRR2009707.bam.bai",
+                        "SRR3177993.bam",
+                        "SRR3177993.bam.bai",
+                        "SRR1922800.bam",
+                        "SRR1922800.bam.bai",
+                        "SRR1763635.bam.bai",
+                        "SRR1763635.bam",
+                        "SRR3152119.bam.bai",
+                        "SRR3152119.bam",
+                        "SRR2140567.bam",
+                        "SRR2140567.bam.bai",
+                        "SRR1518985.bam.bai",
+                        "SRR1518985.bam",
+                        "SRR3150384.bam.bai",
+                        "SRR3150384.bam",
+                        "SRR3150843.bam",
+                        "SRR3150843.bam.bai",
+                        "SRR1919632.bam",
+                        "SRR1919632.bam.bai",
+                        "SRR1917732.bam",
+                        "SRR1917732.bam.bai",
+                        "SRR3177776.bam",
+                        "SRR3177776.bam.bai",
+                        "SRR3150835.bam.bai",
+                        "SRR3150835.bam",
+                        "SRR3177885.bam.bai",
+                        "SRR3177885.bam"
+                    ]
+                }
             },
             {
                 "name": "merge_ID0000083",
@@ -4642,40 +5052,45 @@
                 "avgCPU": 115.9574,
                 "memory": 3600,
                 "priority": 40,
-                "arguments": [
-                    "results-l1-j2.tar.gz",
-                    "SRR3150533.bam.bai",
-                    "SRR3150533.bam",
-                    "SRR3152030.bam.bai",
-                    "SRR3152030.bam",
-                    "SRR3150357.bam.bai",
-                    "SRR3150357.bam",
-                    "SRR3150393.bam.bai",
-                    "SRR3150393.bam",
-                    "SRR3177954.bam.bai",
-                    "SRR3177954.bam",
-                    "SRR1518478.bam.bai",
-                    "SRR1518478.bam",
-                    "SRR2095925.bam.bai",
-                    "SRR2095925.bam",
-                    "SRR2502767.bam",
-                    "SRR2502767.bam.bai",
-                    "SRR3152109.bam",
-                    "SRR3152109.bam.bai",
-                    "SRR3150813.bam.bai",
-                    "SRR3150813.bam",
-                    "SRR1518636.bam",
-                    "SRR1518636.bam.bai",
-                    "SRR1518962.bam",
-                    "SRR1518962.bam.bai",
-                    "SRR3152035.bam",
-                    "SRR3152035.bam.bai",
-                    "SRR1518994.bam.bai",
-                    "SRR1518994.bam",
-                    "SRR1518483.bam",
-                    "SRR1518483.bam.bai"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000083",
+                "category": "merge",
+                "command": {
+                    "program": "merge",
+                    "arguments": [
+                        "results-l1-j2.tar.gz",
+                        "SRR3150533.bam.bai",
+                        "SRR3150533.bam",
+                        "SRR3152030.bam.bai",
+                        "SRR3152030.bam",
+                        "SRR3150357.bam.bai",
+                        "SRR3150357.bam",
+                        "SRR3150393.bam.bai",
+                        "SRR3150393.bam",
+                        "SRR3177954.bam.bai",
+                        "SRR3177954.bam",
+                        "SRR1518478.bam.bai",
+                        "SRR1518478.bam",
+                        "SRR2095925.bam.bai",
+                        "SRR2095925.bam",
+                        "SRR2502767.bam",
+                        "SRR2502767.bam.bai",
+                        "SRR3152109.bam",
+                        "SRR3152109.bam.bai",
+                        "SRR3150813.bam.bai",
+                        "SRR3150813.bam",
+                        "SRR1518636.bam",
+                        "SRR1518636.bam.bai",
+                        "SRR1518962.bam",
+                        "SRR1518962.bam.bai",
+                        "SRR3152035.bam",
+                        "SRR3152035.bam.bai",
+                        "SRR1518994.bam.bai",
+                        "SRR1518994.bam",
+                        "SRR1518483.bam",
+                        "SRR1518483.bam.bai"
+                    ]
+                }
             },
             {
                 "name": "merge_ID0000084",
@@ -4706,12 +5121,17 @@
                 "avgCPU": 108.6957,
                 "memory": 3728,
                 "priority": 50,
-                "arguments": [
-                    "results.tar.gz",
-                    "results-l1-j1.tar.gz",
-                    "results-l1-j2.tar.gz"
-                ],
-                "machine": "worker-2"
+                "machine": "worker-2",
+                "id": "ID0000084",
+                "category": "merge",
+                "command": {
+                    "program": "merge",
+                    "arguments": [
+                        "results.tar.gz",
+                        "results-l1-j1.tar.gz",
+                        "results-l1-j2.tar.gz"
+                    ]
+                }
             }
         ],
         "machines": [

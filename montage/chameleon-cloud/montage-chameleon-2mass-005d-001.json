@@ -2,7 +2,7 @@
     "name": "montage",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2021-03-23T06:25:32.987420",
-    "schemaVersion": "1.0",
+    "schemaVersion": "1.2",
     "author": {
         "name": "cc",
         "email": "support@wfcommons.org"
@@ -52,13 +52,18 @@
                 "avgCPU": 97.6723,
                 "memory": 14800,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-j0820044.fits",
-                    "p2mass-atlas-980914s-j0820044.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000001",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-j0820044.fits",
+                        "p2mass-atlas-980914s-j0820044.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000002",
@@ -96,13 +101,18 @@
                 "avgCPU": 96.9804,
                 "memory": 14660,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001020s-j0870233.fits",
-                    "p2mass-atlas-001020s-j0870233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000002",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001020s-j0870233.fits",
+                        "p2mass-atlas-001020s-j0870233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000003",
@@ -140,13 +150,18 @@
                 "avgCPU": 98.9961,
                 "memory": 14640,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-j0810233.fits",
-                    "p2mass-atlas-980914s-j0810233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000003",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-j0810233.fits",
+                        "p2mass-atlas-980914s-j0810233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000004",
@@ -184,13 +199,18 @@
                 "avgCPU": 97.1299,
                 "memory": 14716,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001021s-j0490233.fits",
-                    "p2mass-atlas-001021s-j0490233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000004",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001021s-j0490233.fits",
+                        "p2mass-atlas-001021s-j0490233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000005",
@@ -238,16 +258,21 @@
                 "avgCPU": 6.5217,
                 "memory": 2888,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000001.000002.txt",
-                    "p2mass-atlas-980914s-j0820044.fits",
-                    "p2mass-atlas-001020s-j0870233.fits",
-                    "1-diff.000001.000002.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000005",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000001.000002.txt",
+                        "p2mass-atlas-980914s-j0820044.fits",
+                        "p2mass-atlas-001020s-j0870233.fits",
+                        "1-diff.000001.000002.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000006",
@@ -295,16 +320,21 @@
                 "avgCPU": 3.5714,
                 "memory": 2916,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000001.000003.txt",
-                    "p2mass-atlas-980914s-j0820044.fits",
-                    "p2mass-atlas-980914s-j0810233.fits",
-                    "1-diff.000001.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000006",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000001.000003.txt",
+                        "p2mass-atlas-980914s-j0820044.fits",
+                        "p2mass-atlas-980914s-j0810233.fits",
+                        "1-diff.000001.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000007",
@@ -352,16 +382,21 @@
                 "avgCPU": 1.3055,
                 "memory": 2872,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000001.000004.txt",
-                    "p2mass-atlas-980914s-j0820044.fits",
-                    "p2mass-atlas-001021s-j0490233.fits",
-                    "1-diff.000001.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000007",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000001.000004.txt",
+                        "p2mass-atlas-980914s-j0820044.fits",
+                        "p2mass-atlas-001021s-j0490233.fits",
+                        "1-diff.000001.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000008",
@@ -409,16 +444,21 @@
                 "avgCPU": 0.6112,
                 "memory": 2868,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000002.000003.txt",
-                    "p2mass-atlas-001020s-j0870233.fits",
-                    "p2mass-atlas-980914s-j0810233.fits",
-                    "1-diff.000002.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000008",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000002.000003.txt",
+                        "p2mass-atlas-001020s-j0870233.fits",
+                        "p2mass-atlas-980914s-j0810233.fits",
+                        "1-diff.000002.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000009",
@@ -466,16 +506,21 @@
                 "avgCPU": 4.6296,
                 "memory": 2808,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000002.000004.txt",
-                    "p2mass-atlas-001020s-j0870233.fits",
-                    "p2mass-atlas-001021s-j0490233.fits",
-                    "1-diff.000002.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000009",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000002.000004.txt",
+                        "p2mass-atlas-001020s-j0870233.fits",
+                        "p2mass-atlas-001021s-j0490233.fits",
+                        "1-diff.000002.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000010",
@@ -523,16 +568,21 @@
                 "avgCPU": 3.9683,
                 "memory": 2804,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "1-fit.000003.000004.txt",
-                    "p2mass-atlas-980914s-j0810233.fits",
-                    "p2mass-atlas-001021s-j0490233.fits",
-                    "1-diff.000003.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000010",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "1-fit.000003.000004.txt",
+                        "p2mass-atlas-980914s-j0810233.fits",
+                        "p2mass-atlas-001021s-j0490233.fits",
+                        "1-diff.000003.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mConcatFit_ID0000011",
@@ -594,12 +644,17 @@
                 "avgCPU": 100.0,
                 "memory": 70760,
                 "priority": 40,
-                "arguments": [
-                    "1-stat.tbl",
-                    "1-fits.tbl",
-                    "."
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000011",
+                "category": "mConcatFit",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": [
+                        "1-stat.tbl",
+                        "1-fits.tbl",
+                        "."
+                    ]
+                }
             },
             {
                 "name": "mBgModel_ID0000012",
@@ -634,14 +689,19 @@
                 "avgCPU": 100.0,
                 "memory": 137032,
                 "priority": 50,
-                "arguments": [
-                    "-i",
-                    "100000",
-                    "1-images.tbl",
-                    "1-fits.tbl",
-                    "1-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000012",
+                "category": "mBgModel",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": [
+                        "-i",
+                        "100000",
+                        "1-images.tbl",
+                        "1-fits.tbl",
+                        "1-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000013",
@@ -690,14 +750,19 @@
                 "avgCPU": 50.3106,
                 "memory": 68952,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-j0820044.fits",
-                    "c2mass-atlas-980914s-j0820044.fits",
-                    "1-projected.tbl",
-                    "1-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000013",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-j0820044.fits",
+                        "c2mass-atlas-980914s-j0820044.fits",
+                        "1-projected.tbl",
+                        "1-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000014",
@@ -746,14 +811,19 @@
                 "avgCPU": 77.7188,
                 "memory": 68952,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001020s-j0870233.fits",
-                    "c2mass-atlas-001020s-j0870233.fits",
-                    "1-projected.tbl",
-                    "1-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000014",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001020s-j0870233.fits",
+                        "c2mass-atlas-001020s-j0870233.fits",
+                        "1-projected.tbl",
+                        "1-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000015",
@@ -802,14 +872,19 @@
                 "avgCPU": 91.3846,
                 "memory": 69008,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-j0810233.fits",
-                    "c2mass-atlas-980914s-j0810233.fits",
-                    "1-projected.tbl",
-                    "1-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000015",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-j0810233.fits",
+                        "c2mass-atlas-980914s-j0810233.fits",
+                        "1-projected.tbl",
+                        "1-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000016",
@@ -858,14 +933,19 @@
                 "avgCPU": 89.1496,
                 "memory": 68980,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001021s-j0490233.fits",
-                    "c2mass-atlas-001021s-j0490233.fits",
-                    "1-projected.tbl",
-                    "1-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000016",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001021s-j0490233.fits",
+                        "c2mass-atlas-001021s-j0490233.fits",
+                        "1-projected.tbl",
+                        "1-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mImgtbl_ID0000017",
@@ -915,13 +995,18 @@
                 "avgCPU": 99.4083,
                 "memory": 71044,
                 "priority": 70,
-                "arguments": [
-                    ".",
-                    "-t",
-                    "1-corrected.tbl",
-                    "1-updated-corrected.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000017",
+                "category": "mImgtbl",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": [
+                        ".",
+                        "-t",
+                        "1-corrected.tbl",
+                        "1-updated-corrected.tbl"
+                    ]
+                }
             },
             {
                 "name": "mAdd_ID0000018",
@@ -1003,13 +1088,18 @@
                 "avgCPU": 100.0,
                 "memory": 69952,
                 "priority": 80,
-                "arguments": [
-                    "-e",
-                    "1-updated-corrected.tbl",
-                    "region.hdr",
-                    "1-mosaic.fits"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000018",
+                "category": "mAdd",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": [
+                        "-e",
+                        "1-updated-corrected.tbl",
+                        "region.hdr",
+                        "1-mosaic.fits"
+                    ]
+                }
             },
             {
                 "name": "mViewer_ID0000019",
@@ -1034,18 +1124,23 @@
                 "avgCPU": 100.0,
                 "memory": 10752,
                 "priority": 90,
-                "arguments": [
-                    "-ct",
-                    "1",
-                    "-gray",
-                    "1-mosaic.fits",
-                    "-1s",
-                    "max",
-                    "gaussian",
-                    "-png",
-                    "1-mosaic.png"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000019",
+                "category": "mViewer",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": [
+                        "-ct",
+                        "1",
+                        "-gray",
+                        "1-mosaic.fits",
+                        "-1s",
+                        "max",
+                        "gaussian",
+                        "-png",
+                        "1-mosaic.png"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000020",
@@ -1083,13 +1178,18 @@
                 "avgCPU": 98.486,
                 "memory": 14680,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001020s-h0870233.fits",
-                    "p2mass-atlas-001020s-h0870233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000020",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001020s-h0870233.fits",
+                        "p2mass-atlas-001020s-h0870233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000021",
@@ -1127,13 +1227,18 @@
                 "avgCPU": 89.8199,
                 "memory": 14896,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-h0820044.fits",
-                    "p2mass-atlas-980914s-h0820044.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000021",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-h0820044.fits",
+                        "p2mass-atlas-980914s-h0820044.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000022",
@@ -1171,13 +1276,18 @@
                 "avgCPU": 98.9039,
                 "memory": 14712,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-h0810233.fits",
-                    "p2mass-atlas-980914s-h0810233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000022",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-h0810233.fits",
+                        "p2mass-atlas-980914s-h0810233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000023",
@@ -1215,13 +1325,18 @@
                 "avgCPU": 96.9348,
                 "memory": 14544,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001021s-h0490233.fits",
-                    "p2mass-atlas-001021s-h0490233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000023",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001021s-h0490233.fits",
+                        "p2mass-atlas-001021s-h0490233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000024",
@@ -1269,16 +1384,21 @@
                 "avgCPU": 5.2083,
                 "memory": 2812,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000001.000002.txt",
-                    "p2mass-atlas-001020s-h0870233.fits",
-                    "p2mass-atlas-980914s-h0820044.fits",
-                    "2-diff.000001.000002.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000024",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000001.000002.txt",
+                        "p2mass-atlas-001020s-h0870233.fits",
+                        "p2mass-atlas-980914s-h0820044.fits",
+                        "2-diff.000001.000002.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000025",
@@ -1326,16 +1446,21 @@
                 "avgCPU": 0.9058,
                 "memory": 2804,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000001.000003.txt",
-                    "p2mass-atlas-001020s-h0870233.fits",
-                    "p2mass-atlas-980914s-h0810233.fits",
-                    "2-diff.000001.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000025",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000001.000003.txt",
+                        "p2mass-atlas-001020s-h0870233.fits",
+                        "p2mass-atlas-980914s-h0810233.fits",
+                        "2-diff.000001.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000026",
@@ -1383,16 +1508,21 @@
                 "avgCPU": 3.3113,
                 "memory": 2808,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000001.000004.txt",
-                    "p2mass-atlas-001020s-h0870233.fits",
-                    "p2mass-atlas-001021s-h0490233.fits",
-                    "2-diff.000001.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000026",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000001.000004.txt",
+                        "p2mass-atlas-001020s-h0870233.fits",
+                        "p2mass-atlas-001021s-h0490233.fits",
+                        "2-diff.000001.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000027",
@@ -1440,16 +1570,21 @@
                 "avgCPU": 6.1224,
                 "memory": 2816,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000002.000003.txt",
-                    "p2mass-atlas-980914s-h0820044.fits",
-                    "p2mass-atlas-980914s-h0810233.fits",
-                    "2-diff.000002.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000027",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000002.000003.txt",
+                        "p2mass-atlas-980914s-h0820044.fits",
+                        "p2mass-atlas-980914s-h0810233.fits",
+                        "2-diff.000002.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000028",
@@ -1497,16 +1632,21 @@
                 "avgCPU": 0.5834,
                 "memory": 2852,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000002.000004.txt",
-                    "p2mass-atlas-980914s-h0820044.fits",
-                    "p2mass-atlas-001021s-h0490233.fits",
-                    "2-diff.000002.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000028",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000002.000004.txt",
+                        "p2mass-atlas-980914s-h0820044.fits",
+                        "p2mass-atlas-001021s-h0490233.fits",
+                        "2-diff.000002.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000029",
@@ -1554,16 +1694,21 @@
                 "avgCPU": 4.386,
                 "memory": 2812,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "2-fit.000003.000004.txt",
-                    "p2mass-atlas-980914s-h0810233.fits",
-                    "p2mass-atlas-001021s-h0490233.fits",
-                    "2-diff.000003.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000029",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "2-fit.000003.000004.txt",
+                        "p2mass-atlas-980914s-h0810233.fits",
+                        "p2mass-atlas-001021s-h0490233.fits",
+                        "2-diff.000003.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mConcatFit_ID0000030",
@@ -1625,12 +1770,17 @@
                 "avgCPU": 100.0,
                 "memory": 70748,
                 "priority": 40,
-                "arguments": [
-                    "2-stat.tbl",
-                    "2-fits.tbl",
-                    "."
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000030",
+                "category": "mConcatFit",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": [
+                        "2-stat.tbl",
+                        "2-fits.tbl",
+                        "."
+                    ]
+                }
             },
             {
                 "name": "mBgModel_ID0000031",
@@ -1665,14 +1815,19 @@
                 "avgCPU": 99.8798,
                 "memory": 137008,
                 "priority": 50,
-                "arguments": [
-                    "-i",
-                    "100000",
-                    "2-images.tbl",
-                    "2-fits.tbl",
-                    "2-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000031",
+                "category": "mBgModel",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": [
+                        "-i",
+                        "100000",
+                        "2-images.tbl",
+                        "2-fits.tbl",
+                        "2-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000032",
@@ -1721,14 +1876,19 @@
                 "avgCPU": 84.9162,
                 "memory": 68980,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001020s-h0870233.fits",
-                    "c2mass-atlas-001020s-h0870233.fits",
-                    "2-projected.tbl",
-                    "2-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000032",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001020s-h0870233.fits",
+                        "c2mass-atlas-001020s-h0870233.fits",
+                        "2-projected.tbl",
+                        "2-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000033",
@@ -1777,14 +1937,19 @@
                 "avgCPU": 100.0,
                 "memory": 69012,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-h0820044.fits",
-                    "c2mass-atlas-980914s-h0820044.fits",
-                    "2-projected.tbl",
-                    "2-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000033",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-h0820044.fits",
+                        "c2mass-atlas-980914s-h0820044.fits",
+                        "2-projected.tbl",
+                        "2-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000034",
@@ -1833,14 +1998,19 @@
                 "avgCPU": 100.0,
                 "memory": 68936,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-h0810233.fits",
-                    "c2mass-atlas-980914s-h0810233.fits",
-                    "2-projected.tbl",
-                    "2-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000034",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-h0810233.fits",
+                        "c2mass-atlas-980914s-h0810233.fits",
+                        "2-projected.tbl",
+                        "2-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000035",
@@ -1889,14 +2059,19 @@
                 "avgCPU": 100.0,
                 "memory": 68980,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001021s-h0490233.fits",
-                    "c2mass-atlas-001021s-h0490233.fits",
-                    "2-projected.tbl",
-                    "2-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000035",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001021s-h0490233.fits",
+                        "c2mass-atlas-001021s-h0490233.fits",
+                        "2-projected.tbl",
+                        "2-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mImgtbl_ID0000036",
@@ -1946,13 +2121,18 @@
                 "avgCPU": 99.4118,
                 "memory": 71020,
                 "priority": 70,
-                "arguments": [
-                    ".",
-                    "-t",
-                    "2-corrected.tbl",
-                    "2-updated-corrected.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000036",
+                "category": "mImgtbl",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": [
+                        ".",
+                        "-t",
+                        "2-corrected.tbl",
+                        "2-updated-corrected.tbl"
+                    ]
+                }
             },
             {
                 "name": "mAdd_ID0000037",
@@ -2034,13 +2214,18 @@
                 "avgCPU": 100.0,
                 "memory": 69928,
                 "priority": 80,
-                "arguments": [
-                    "-e",
-                    "2-updated-corrected.tbl",
-                    "region.hdr",
-                    "2-mosaic.fits"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000037",
+                "category": "mAdd",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": [
+                        "-e",
+                        "2-updated-corrected.tbl",
+                        "region.hdr",
+                        "2-mosaic.fits"
+                    ]
+                }
             },
             {
                 "name": "mViewer_ID0000038",
@@ -2065,18 +2250,23 @@
                 "avgCPU": 100.0,
                 "memory": 10680,
                 "priority": 90,
-                "arguments": [
-                    "-ct",
-                    "1",
-                    "-gray",
-                    "2-mosaic.fits",
-                    "-1s",
-                    "max",
-                    "gaussian",
-                    "-png",
-                    "2-mosaic.png"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000038",
+                "category": "mViewer",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": [
+                        "-ct",
+                        "1",
+                        "-gray",
+                        "2-mosaic.fits",
+                        "-1s",
+                        "max",
+                        "gaussian",
+                        "-png",
+                        "2-mosaic.png"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000039",
@@ -2114,13 +2304,18 @@
                 "avgCPU": 100.0,
                 "memory": 14696,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001021s-k0490233.fits",
-                    "p2mass-atlas-001021s-k0490233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000039",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001021s-k0490233.fits",
+                        "p2mass-atlas-001021s-k0490233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000040",
@@ -2158,13 +2353,18 @@
                 "avgCPU": 89.7034,
                 "memory": 14660,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-k0810233.fits",
-                    "p2mass-atlas-980914s-k0810233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000040",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-k0810233.fits",
+                        "p2mass-atlas-980914s-k0810233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000041",
@@ -2202,13 +2402,18 @@
                 "avgCPU": 99.9936,
                 "memory": 14684,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-001020s-k0870233.fits",
-                    "p2mass-atlas-001020s-k0870233.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000041",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-001020s-k0870233.fits",
+                        "p2mass-atlas-001020s-k0870233.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mProject_ID0000042",
@@ -2246,13 +2451,18 @@
                 "avgCPU": 88.4624,
                 "memory": 14632,
                 "priority": 20,
-                "arguments": [
-                    "-X",
-                    "2mass-atlas-980914s-k0820044.fits",
-                    "p2mass-atlas-980914s-k0820044.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000042",
+                "category": "mProject",
+                "command": {
+                    "program": "mProject",
+                    "arguments": [
+                        "-X",
+                        "2mass-atlas-980914s-k0820044.fits",
+                        "p2mass-atlas-980914s-k0820044.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000043",
@@ -2300,16 +2510,21 @@
                 "avgCPU": 3.6765,
                 "memory": 2824,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000001.000002.txt",
-                    "p2mass-atlas-001021s-k0490233.fits",
-                    "p2mass-atlas-980914s-k0810233.fits",
-                    "3-diff.000001.000002.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000043",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000001.000002.txt",
+                        "p2mass-atlas-001021s-k0490233.fits",
+                        "p2mass-atlas-980914s-k0810233.fits",
+                        "3-diff.000001.000002.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000044",
@@ -2357,16 +2572,21 @@
                 "avgCPU": 4.7619,
                 "memory": 2864,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000001.000003.txt",
-                    "p2mass-atlas-001021s-k0490233.fits",
-                    "p2mass-atlas-001020s-k0870233.fits",
-                    "3-diff.000001.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000044",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000001.000003.txt",
+                        "p2mass-atlas-001021s-k0490233.fits",
+                        "p2mass-atlas-001020s-k0870233.fits",
+                        "3-diff.000001.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000045",
@@ -2414,16 +2634,21 @@
                 "avgCPU": 1.0246,
                 "memory": 2888,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000001.000004.txt",
-                    "p2mass-atlas-001021s-k0490233.fits",
-                    "p2mass-atlas-980914s-k0820044.fits",
-                    "3-diff.000001.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000045",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000001.000004.txt",
+                        "p2mass-atlas-001021s-k0490233.fits",
+                        "p2mass-atlas-980914s-k0820044.fits",
+                        "3-diff.000001.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000046",
@@ -2471,16 +2696,21 @@
                 "avgCPU": 1.0571,
                 "memory": 2868,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000002.000003.txt",
-                    "p2mass-atlas-980914s-k0810233.fits",
-                    "p2mass-atlas-001020s-k0870233.fits",
-                    "3-diff.000002.000003.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000046",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000002.000003.txt",
+                        "p2mass-atlas-980914s-k0810233.fits",
+                        "p2mass-atlas-001020s-k0870233.fits",
+                        "3-diff.000002.000003.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000047",
@@ -2528,16 +2758,21 @@
                 "avgCPU": 4.8544,
                 "memory": 2916,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000002.000004.txt",
-                    "p2mass-atlas-980914s-k0810233.fits",
-                    "p2mass-atlas-980914s-k0820044.fits",
-                    "3-diff.000002.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000047",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000002.000004.txt",
+                        "p2mass-atlas-980914s-k0810233.fits",
+                        "p2mass-atlas-980914s-k0820044.fits",
+                        "3-diff.000002.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mDiffFit_ID0000048",
@@ -2585,16 +2820,21 @@
                 "avgCPU": 5.618,
                 "memory": 2868,
                 "priority": 30,
-                "arguments": [
-                    "-d",
-                    "-s",
-                    "3-fit.000003.000004.txt",
-                    "p2mass-atlas-001020s-k0870233.fits",
-                    "p2mass-atlas-980914s-k0820044.fits",
-                    "3-diff.000003.000004.fits",
-                    "region-oversized.hdr"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000048",
+                "category": "mDiffFit",
+                "command": {
+                    "program": "mDiffFit",
+                    "arguments": [
+                        "-d",
+                        "-s",
+                        "3-fit.000003.000004.txt",
+                        "p2mass-atlas-001020s-k0870233.fits",
+                        "p2mass-atlas-980914s-k0820044.fits",
+                        "3-diff.000003.000004.fits",
+                        "region-oversized.hdr"
+                    ]
+                }
             },
             {
                 "name": "mConcatFit_ID0000049",
@@ -2656,12 +2896,17 @@
                 "avgCPU": 99.4819,
                 "memory": 70752,
                 "priority": 40,
-                "arguments": [
-                    "3-stat.tbl",
-                    "3-fits.tbl",
-                    "."
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000049",
+                "category": "mConcatFit",
+                "command": {
+                    "program": "mConcatFit",
+                    "arguments": [
+                        "3-stat.tbl",
+                        "3-fits.tbl",
+                        "."
+                    ]
+                }
             },
             {
                 "name": "mBgModel_ID0000050",
@@ -2696,14 +2941,19 @@
                 "avgCPU": 99.875,
                 "memory": 137032,
                 "priority": 50,
-                "arguments": [
-                    "-i",
-                    "100000",
-                    "3-images.tbl",
-                    "3-fits.tbl",
-                    "3-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000050",
+                "category": "mBgModel",
+                "command": {
+                    "program": "mBgModel",
+                    "arguments": [
+                        "-i",
+                        "100000",
+                        "3-images.tbl",
+                        "3-fits.tbl",
+                        "3-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000051",
@@ -2752,14 +3002,19 @@
                 "avgCPU": 56.654,
                 "memory": 68880,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001021s-k0490233.fits",
-                    "c2mass-atlas-001021s-k0490233.fits",
-                    "3-projected.tbl",
-                    "3-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000051",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001021s-k0490233.fits",
+                        "c2mass-atlas-001021s-k0490233.fits",
+                        "3-projected.tbl",
+                        "3-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000052",
@@ -2808,14 +3063,19 @@
                 "avgCPU": 100.0,
                 "memory": 68940,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-k0810233.fits",
-                    "c2mass-atlas-980914s-k0810233.fits",
-                    "3-projected.tbl",
-                    "3-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000052",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-k0810233.fits",
+                        "c2mass-atlas-980914s-k0810233.fits",
+                        "3-projected.tbl",
+                        "3-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000053",
@@ -2864,14 +3124,19 @@
                 "avgCPU": 57.7281,
                 "memory": 69008,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-001020s-k0870233.fits",
-                    "c2mass-atlas-001020s-k0870233.fits",
-                    "3-projected.tbl",
-                    "3-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000053",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-001020s-k0870233.fits",
+                        "c2mass-atlas-001020s-k0870233.fits",
+                        "3-projected.tbl",
+                        "3-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mBackground_ID0000054",
@@ -2920,14 +3185,19 @@
                 "avgCPU": 56.5891,
                 "memory": 68880,
                 "priority": 60,
-                "arguments": [
-                    "-t",
-                    "p2mass-atlas-980914s-k0820044.fits",
-                    "c2mass-atlas-980914s-k0820044.fits",
-                    "3-projected.tbl",
-                    "3-corrections.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000054",
+                "category": "mBackground",
+                "command": {
+                    "program": "mBackground",
+                    "arguments": [
+                        "-t",
+                        "p2mass-atlas-980914s-k0820044.fits",
+                        "c2mass-atlas-980914s-k0820044.fits",
+                        "3-projected.tbl",
+                        "3-corrections.tbl"
+                    ]
+                }
             },
             {
                 "name": "mImgtbl_ID0000055",
@@ -2977,13 +3247,18 @@
                 "avgCPU": 99.3671,
                 "memory": 71084,
                 "priority": 70,
-                "arguments": [
-                    ".",
-                    "-t",
-                    "3-corrected.tbl",
-                    "3-updated-corrected.tbl"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000055",
+                "category": "mImgtbl",
+                "command": {
+                    "program": "mImgtbl",
+                    "arguments": [
+                        ".",
+                        "-t",
+                        "3-corrected.tbl",
+                        "3-updated-corrected.tbl"
+                    ]
+                }
             },
             {
                 "name": "mAdd_ID0000056",
@@ -3065,13 +3340,18 @@
                 "avgCPU": 89.6739,
                 "memory": 69948,
                 "priority": 80,
-                "arguments": [
-                    "-e",
-                    "3-updated-corrected.tbl",
-                    "region.hdr",
-                    "3-mosaic.fits"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000056",
+                "category": "mAdd",
+                "command": {
+                    "program": "mAdd",
+                    "arguments": [
+                        "-e",
+                        "3-updated-corrected.tbl",
+                        "region.hdr",
+                        "3-mosaic.fits"
+                    ]
+                }
             },
             {
                 "name": "mViewer_ID0000057",
@@ -3096,18 +3376,23 @@
                 "avgCPU": 98.9796,
                 "memory": 10692,
                 "priority": 90,
-                "arguments": [
-                    "-ct",
-                    "1",
-                    "-gray",
-                    "3-mosaic.fits",
-                    "-1s",
-                    "max",
-                    "gaussian",
-                    "-png",
-                    "3-mosaic.png"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000057",
+                "category": "mViewer",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": [
+                        "-ct",
+                        "1",
+                        "-gray",
+                        "3-mosaic.fits",
+                        "-1s",
+                        "max",
+                        "gaussian",
+                        "-png",
+                        "3-mosaic.png"
+                    ]
+                }
             },
             {
                 "name": "mViewer_ID0000058",
@@ -3144,26 +3429,31 @@
                 "avgCPU": 100.0,
                 "memory": 11428,
                 "priority": 90,
-                "arguments": [
-                    "-red",
-                    "1-mosaic.fits",
-                    "-0.5s",
-                    "max",
-                    "gaussian-log",
-                    "-green",
-                    "2-mosaic.fits",
-                    "-0.5s",
-                    "max",
-                    "gaussian-log",
-                    "-blue",
-                    "3-mosaic.fits",
-                    "-0.5s",
-                    "max",
-                    "gaussian-log",
-                    "-png",
-                    "mosaic-color.png"
-                ],
-                "machine": "mem"
+                "machine": "mem",
+                "id": "ID0000058",
+                "category": "mViewer",
+                "command": {
+                    "program": "mViewer",
+                    "arguments": [
+                        "-red",
+                        "1-mosaic.fits",
+                        "-0.5s",
+                        "max",
+                        "gaussian-log",
+                        "-green",
+                        "2-mosaic.fits",
+                        "-0.5s",
+                        "max",
+                        "gaussian-log",
+                        "-blue",
+                        "3-mosaic.fits",
+                        "-0.5s",
+                        "max",
+                        "gaussian-log",
+                        "-png",
+                        "mosaic-color.png"
+                    ]
+                }
             }
         ],
         "machines": [
