@@ -34,6 +34,6 @@ the [WfCommons JSON format](https://github.com/wfcommons/workflow-schema).
 | Cycles | Agroecosystem | Compute-intensive | 1 | 24 |
 | Epigenomics | Bioinformatics | Data-intensive | 1 | 26 |
 | Montage | Astronomy | Compute-intensive | 1 | 17 |
-| Seismic Cross Correlation | Data-intensive | Seismology | 1 | 11 |
+| Seismic Cross Correlation | Seismology | Data-intensive | 1 | 11 |
 | SoyKB | Bioinformatics | Data-intensive | 1 | 10 |
 | SRA Search | Bioinformatics | Data-intensive | 1 | 25 |
