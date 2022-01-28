@@ -2,7 +2,7 @@
     "name": "genome-dax-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-08T13:08:13.031512Z",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -14,7 +14,46 @@
     },
     "workflow": {
         "makespan": 894.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "compute-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-91-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1234
+                }
+            },
+            {
+                "nodeName": "compute-7",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-91-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1254
+                }
+            },
+            {
+                "nodeName": "compute-4",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-91-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1228
+                }
+            }
+        ],
+        "executedAt": "20200408T173533+0000",
+        "tasks": [
             {
                 "name": "chr21_chr21_ID0000001",
                 "type": "compute",
@@ -20076,45 +20115,6 @@
                     ]
                 }
             }
-        ],
-        "machines": [
-            {
-                "nodeName": "compute-3",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-91-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1234
-                }
-            },
-            {
-                "nodeName": "compute-7",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-91-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1254
-                }
-            },
-            {
-                "nodeName": "compute-4",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-91-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1228
-                }
-            }
-        ],
-        "executedAt": "20200408T173533+0000"
+        ]
     }
 }

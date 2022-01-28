@@ -2,7 +2,7 @@
     "name": "workflow-test",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2020-12-20T18:36:34.990599",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "author": {
         "name": "rafsilva",
         "email": "support@workflowhub.org"
@@ -15,7 +15,21 @@
     "workflow": {
         "executedAt": "12-20-20T07:29:03Z",
         "makespan": 7707.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "worker-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795960,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 48,
+                    "speed": 1980,
+                    "vendor": "GenuineIntel"
+                }
+            }
+        ],
+        "tasks": [
             {
                 "name": "bowtie2-build_ID0000001",
                 "type": "compute",
@@ -2579,20 +2593,6 @@
                         "SRR3177786.bam.bai",
                         "SRR3177786.bam"
                     ]
-                }
-            }
-        ],
-        "machines": [
-            {
-                "nodeName": "worker-2",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795960,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 48,
-                    "speed": 1980,
-                    "vendor": "GenuineIntel"
                 }
             }
         ]

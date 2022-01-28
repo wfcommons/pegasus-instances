@@ -2,7 +2,7 @@
     "name": "1000genome-20200401T233927Z-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-03T12:04:52.925910Z",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -14,7 +14,46 @@
     },
     "workflow": {
         "makespan": 2924.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "pegasus-5",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-88-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1445
+                }
+            },
+            {
+                "nodeName": "pegasus-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-88-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1606
+                }
+            },
+            {
+                "nodeName": "pegasus-4",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-88-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 2032
+                }
+            }
+        ],
+        "executedAt": "20200401T235016+0000",
+        "tasks": [
             {
                 "name": "individuals_ID0000001",
                 "type": "compute",
@@ -7535,45 +7574,6 @@
                     ]
                 }
             }
-        ],
-        "machines": [
-            {
-                "nodeName": "pegasus-5",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-88-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1445
-                }
-            },
-            {
-                "nodeName": "pegasus-2",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-88-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1606
-                }
-            },
-            {
-                "nodeName": "pegasus-4",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-88-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 2032
-                }
-            }
-        ],
-        "executedAt": "20200401T235016+0000"
+        ]
     }
 }

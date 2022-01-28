@@ -2,7 +2,7 @@
     "name": "workflow-test",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2020-12-22T01:13:02.576555",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "author": {
         "name": "rafsilva",
         "email": "support@workflowhub.org"
@@ -15,7 +15,33 @@
     "workflow": {
         "executedAt": "12-21-20T19:29:55Z",
         "makespan": 7349.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "worker-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795960,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 48,
+                    "speed": 1876,
+                    "vendor": "GenuineIntel"
+                }
+            },
+            {
+                "nodeName": "worker-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795960,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 48,
+                    "speed": 1647,
+                    "vendor": "GenuineIntel"
+                }
+            }
+        ],
+        "tasks": [
             {
                 "name": "bowtie2-build_ID0000001",
                 "type": "compute",
@@ -6371,32 +6397,6 @@
                         "results-l1-j1.tar.gz",
                         "results-l1-j2.tar.gz"
                     ]
-                }
-            }
-        ],
-        "machines": [
-            {
-                "nodeName": "worker-3",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795960,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 48,
-                    "speed": 1876,
-                    "vendor": "GenuineIntel"
-                }
-            },
-            {
-                "nodeName": "worker-2",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795960,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 48,
-                    "speed": 1647,
-                    "vendor": "GenuineIntel"
                 }
             }
         ]

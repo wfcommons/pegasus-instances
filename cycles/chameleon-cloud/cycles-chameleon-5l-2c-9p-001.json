@@ -2,7 +2,7 @@
     "name": "Cycles-20200413T165415Z-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-13T11:44:18.284754Z",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -14,7 +14,58 @@
     },
     "workflow": {
         "makespan": 1218.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "compute-5",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-96-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1212
+                }
+            },
+            {
+                "nodeName": "compute-7",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-96-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1200
+                }
+            },
+            {
+                "nodeName": "compute-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-96-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1776
+                }
+            },
+            {
+                "nodeName": "compute-4",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 131795984,
+                "release": "4.15.0-96-generic",
+                "cpu": {
+                    "count": 48,
+                    "vendor": "GenuineIntel",
+                    "speed": 1763
+                }
+            }
+        ],
+        "executedAt": "20200413T165420+0000",
+        "tasks": [
             {
                 "name": "baseline_cycles_ID0000001",
                 "type": "compute",
@@ -80015,57 +80066,6 @@
                     ]
                 }
             }
-        ],
-        "machines": [
-            {
-                "nodeName": "compute-5",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-96-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1212
-                }
-            },
-            {
-                "nodeName": "compute-7",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-96-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1200
-                }
-            },
-            {
-                "nodeName": "compute-3",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-96-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1776
-                }
-            },
-            {
-                "nodeName": "compute-4",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 131795984,
-                "release": "4.15.0-96-generic",
-                "cpu": {
-                    "count": 48,
-                    "vendor": "GenuineIntel",
-                    "speed": 1763
-                }
-            }
-        ],
-        "executedAt": "20200413T165420+0000"
+        ]
     }
 }

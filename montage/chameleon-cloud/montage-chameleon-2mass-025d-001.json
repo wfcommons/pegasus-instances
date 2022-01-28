@@ -2,7 +2,7 @@
     "name": "Montage",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2021-01-22T04:45:27.077036",
-    "schemaVersion": "1.2",
+    "schemaVersion": "1.3",
     "author": {
         "name": "cc",
         "email": "support@workflowhub.org"
@@ -15,7 +15,45 @@
     "workflow": {
         "executedAt": "01-22-21T04:30:55Z",
         "makespan": 812.0,
-        "jobs": [
+        "machines": [
+            {
+                "nodeName": "workflowhub-3",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 196530896,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 96,
+                    "speed": 3058,
+                    "vendor": "GenuineIntel"
+                }
+            },
+            {
+                "nodeName": "workflowhub-2",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 196530872,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 96,
+                    "speed": 3220,
+                    "vendor": "GenuineIntel"
+                }
+            },
+            {
+                "nodeName": "workflowhub-4",
+                "system": "linux",
+                "architecture": "x86_64",
+                "memory": 196530892,
+                "release": "4.15.0-121-generic",
+                "cpu": {
+                    "count": 96,
+                    "speed": 3152,
+                    "vendor": "GenuineIntel"
+                }
+            }
+        ],
+        "tasks": [
             {
                 "name": "mProject_ID0000001",
                 "type": "compute",
@@ -41553,44 +41591,6 @@
                         "-png",
                         "mosaic-color.png"
                     ]
-                }
-            }
-        ],
-        "machines": [
-            {
-                "nodeName": "workflowhub-3",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 196530896,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 96,
-                    "speed": 3058,
-                    "vendor": "GenuineIntel"
-                }
-            },
-            {
-                "nodeName": "workflowhub-2",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 196530872,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 96,
-                    "speed": 3220,
-                    "vendor": "GenuineIntel"
-                }
-            },
-            {
-                "nodeName": "workflowhub-4",
-                "system": "linux",
-                "architecture": "x86_64",
-                "memory": 196530892,
-                "release": "4.15.0-121-generic",
-                "cpu": {
-                    "count": 96,
-                    "speed": 3152,
-                    "vendor": "GenuineIntel"
                 }
             }
         ]
