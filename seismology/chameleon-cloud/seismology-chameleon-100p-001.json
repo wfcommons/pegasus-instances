@@ -2,7 +2,7 @@
     "name": "seismology-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-15T13:23:10.415984Z",
-    "schemaVersion": "1.3",
+    "schemaVersion": "1.4",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -13,43 +13,42 @@
         "email": "support@wrench-project.org"
     },
     "workflow": {
-        "makespan": 354.0,
         "machines": [
             {
                 "nodeName": "compute-5",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-96-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 1575
-                }
+                },
+                "memoryInBytes": 131795984000
             },
             {
                 "nodeName": "compute-7",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-96-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 1825
-                }
+                },
+                "memoryInBytes": 131795984000
             },
             {
                 "nodeName": "compute-3",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-96-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 1200
-                }
+                },
+                "memoryInBytes": 131795984000
             }
         ],
         "executedAt": "20200415T183333+0000",
@@ -57,23 +56,22 @@
             {
                 "name": "sG1IterDecon_ID0000001",
                 "type": "compute",
-                "runtime": 2.751,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-mkva-xv-_ldsp.lht",
-                        "size": 13212
+                        "sizeInBytes": 13212
                     },
                     {
                         "link": "input",
                         "name": "egf-mkva-xv-_ldsp.lht",
-                        "size": 13204
+                        "sizeInBytes": 13204
                     },
                     {
                         "link": "output",
                         "name": "mkva-xv-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 47.1465,
@@ -87,28 +85,28 @@
                         "mshock-mkva-xv-_ldsp.lht",
                         "egf-mkva-xv-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.751
             },
             {
                 "name": "sG1IterDecon_ID0000002",
                 "type": "compute",
-                "runtime": 0.67,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-246a-ta-_ldsp.lht",
-                        "size": 4396
+                        "sizeInBytes": 4396
                     },
                     {
                         "link": "input",
                         "name": "mshock-246a-ta-_ldsp.lht",
-                        "size": 4380
+                        "sizeInBytes": 4380
                     },
                     {
                         "link": "output",
                         "name": "246a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 39.2537,
@@ -122,28 +120,28 @@
                         "mshock-246a-ta-_ldsp.lht",
                         "egf-246a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.67
             },
             {
                 "name": "sG1IterDecon_ID0000003",
                 "type": "compute",
-                "runtime": 0.659,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sm17-xi-_ldsp.lht",
-                        "size": 3388
+                        "sizeInBytes": 3388
                     },
                     {
                         "link": "input",
                         "name": "mshock-sm17-xi-_ldsp.lht",
-                        "size": 3372
+                        "sizeInBytes": 3372
                     },
                     {
                         "link": "output",
                         "name": "sm17-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 69.044,
@@ -157,28 +155,28 @@
                         "mshock-sm17-xi-_ldsp.lht",
                         "egf-sm17-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.659
             },
             {
                 "name": "sG1IterDecon_ID0000004",
                 "type": "compute",
-                "runtime": 1.167,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-bbgh-cu-00_ldsp.lht",
-                        "size": 7192
+                        "sizeInBytes": 7192
                     },
                     {
                         "link": "input",
                         "name": "mshock-bbgh-cu-00_ldsp.lht",
-                        "size": 7176
+                        "sizeInBytes": 7176
                     },
                     {
                         "link": "output",
                         "name": "bbgh-cu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 61.868,
@@ -192,28 +190,28 @@
                         "mshock-bbgh-cu-00_ldsp.lht",
                         "egf-bbgh-cu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.167
             },
             {
                 "name": "sG1IterDecon_ID0000005",
                 "type": "compute",
-                "runtime": 0.424,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-f44a-ta-_ldsp.lht",
-                        "size": 3684
+                        "sizeInBytes": 3684
                     },
                     {
                         "link": "input",
                         "name": "mshock-f44a-ta-_ldsp.lht",
-                        "size": 3668
+                        "sizeInBytes": 3668
                     },
                     {
                         "link": "output",
                         "name": "f44a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -227,28 +225,28 @@
                         "mshock-f44a-ta-_ldsp.lht",
                         "egf-f44a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.424
             },
             {
                 "name": "sG1IterDecon_ID0000006",
                 "type": "compute",
-                "runtime": 0.645,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-d46a-ta-_ldsp.lht",
-                        "size": 3760
+                        "sizeInBytes": 3760
                     },
                     {
                         "link": "input",
                         "name": "mshock-d46a-ta-_ldsp.lht",
-                        "size": 3740
+                        "sizeInBytes": 3740
                     },
                     {
                         "link": "output",
                         "name": "d46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 68.5271,
@@ -262,28 +260,28 @@
                         "mshock-d46a-ta-_ldsp.lht",
                         "egf-d46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.645
             },
             {
                 "name": "sG1IterDecon_ID0000007",
                 "type": "compute",
-                "runtime": 0.859,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-sn46-xi-_ldsp.lht",
-                        "size": 3304
+                        "sizeInBytes": 3304
                     },
                     {
                         "link": "input",
                         "name": "egf-sn46-xi-_ldsp.lht",
-                        "size": 3324
+                        "sizeInBytes": 3324
                     },
                     {
                         "link": "output",
                         "name": "sn46-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 52.8522,
@@ -297,28 +295,28 @@
                         "mshock-sn46-xi-_ldsp.lht",
                         "egf-sn46-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.859
             },
             {
                 "name": "sG1IterDecon_ID0000008",
                 "type": "compute",
-                "runtime": 0.427,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-x41a-ta-_ldsp.lht",
-                        "size": 4048
+                        "sizeInBytes": 4048
                     },
                     {
                         "link": "input",
                         "name": "egf-x41a-ta-_ldsp.lht",
-                        "size": 4068
+                        "sizeInBytes": 4068
                     },
                     {
                         "link": "output",
                         "name": "x41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 52.6932,
@@ -332,28 +330,28 @@
                         "mshock-x41a-ta-_ldsp.lht",
                         "egf-x41a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.427
             },
             {
                 "name": "sG1IterDecon_ID0000009",
                 "type": "compute",
-                "runtime": 0.265,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-x46a-ta-_ldsp.lht",
-                        "size": 4236
+                        "sizeInBytes": 4236
                     },
                     {
                         "link": "input",
                         "name": "egf-x46a-ta-_ldsp.lht",
-                        "size": 4256
+                        "sizeInBytes": 4256
                     },
                     {
                         "link": "output",
                         "name": "x46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.6226,
@@ -367,28 +365,28 @@
                         "mshock-x46a-ta-_ldsp.lht",
                         "egf-x46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.265
             },
             {
                 "name": "sG1IterDecon_ID0000010",
                 "type": "compute",
-                "runtime": 1.481,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-meck-yt-_ldsp.lht",
-                        "size": 13024
+                        "sizeInBytes": 13024
                     },
                     {
                         "link": "input",
                         "name": "egf-meck-yt-_ldsp.lht",
-                        "size": 13036
+                        "sizeInBytes": 13036
                     },
                     {
                         "link": "output",
                         "name": "meck-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 86.4956,
@@ -402,28 +400,28 @@
                         "mshock-meck-yt-_ldsp.lht",
                         "egf-meck-yt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.481
             },
             {
                 "name": "sG1IterDecon_ID0000011",
                 "type": "compute",
-                "runtime": 0.396,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sspa-iu-10_ldsp.lht",
-                        "size": 4412
+                        "sizeInBytes": 4412
                     },
                     {
                         "link": "input",
                         "name": "mshock-sspa-iu-10_ldsp.lht",
-                        "size": 4396
+                        "sizeInBytes": 4396
                     },
                     {
                         "link": "output",
                         "name": "sspa-iu-10_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 48.7374,
@@ -437,28 +435,28 @@
                         "mshock-sspa-iu-10_ldsp.lht",
                         "egf-sspa-iu-10_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.396
             },
             {
                 "name": "sG1IterDecon_ID0000012",
                 "type": "compute",
-                "runtime": 1.333,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-lao-us-00_ldsp.lht",
-                        "size": 2656
+                        "sizeInBytes": 2656
                     },
                     {
                         "link": "input",
                         "name": "mshock-lao-us-00_ldsp.lht",
-                        "size": 2632
+                        "sizeInBytes": 2632
                     },
                     {
                         "link": "output",
                         "name": "lao-us-00_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 11.1028,
@@ -472,28 +470,28 @@
                         "mshock-lao-us-00_ldsp.lht",
                         "egf-lao-us-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.333
             },
             {
                 "name": "sG1IterDecon_ID0000013",
                 "type": "compute",
-                "runtime": 0.91,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-d15-xt-_ldsp.lht",
-                        "size": 2352
+                        "sizeInBytes": 2352
                     },
                     {
                         "link": "input",
                         "name": "mshock-d15-xt-_ldsp.lht",
-                        "size": 2336
+                        "sizeInBytes": 2336
                     },
                     {
                         "link": "output",
                         "name": "d15-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 33.4066,
@@ -507,28 +505,28 @@
                         "mshock-d15-xt-_ldsp.lht",
                         "egf-d15-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.91
             },
             {
                 "name": "sG1IterDecon_ID0000014",
                 "type": "compute",
-                "runtime": 0.528,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-k02d-ta-_ldsp.lht",
-                        "size": 2184
+                        "sizeInBytes": 2184
                     },
                     {
                         "link": "input",
                         "name": "mshock-k02d-ta-_ldsp.lht",
-                        "size": 2176
+                        "sizeInBytes": 2176
                     },
                     {
                         "link": "output",
                         "name": "k02d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 61.553,
@@ -542,28 +540,28 @@
                         "mshock-k02d-ta-_ldsp.lht",
                         "egf-k02d-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.528
             },
             {
                 "name": "sG1IterDecon_ID0000015",
                 "type": "compute",
-                "runtime": 0.434,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-a21-xd-_ldsp.lht",
-                        "size": 3204
+                        "sizeInBytes": 3204
                     },
                     {
                         "link": "input",
                         "name": "egf-a21-xd-_ldsp.lht",
-                        "size": 3216
+                        "sizeInBytes": 3216
                     },
                     {
                         "link": "output",
                         "name": "a21-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 53.4562,
@@ -577,28 +575,28 @@
                         "mshock-a21-xd-_ldsp.lht",
                         "egf-a21-xd-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.434
             },
             {
                 "name": "sG1IterDecon_ID0000016",
                 "type": "compute",
-                "runtime": 0.658,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-cngn-nu-_ldsp.lht",
-                        "size": 5912
+                        "sizeInBytes": 5912
                     },
                     {
                         "link": "input",
                         "name": "egf-cngn-nu-_ldsp.lht",
-                        "size": 5932
+                        "sizeInBytes": 5932
                     },
                     {
                         "link": "output",
                         "name": "cngn-nu-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 38.1459,
@@ -612,28 +610,28 @@
                         "mshock-cngn-nu-_ldsp.lht",
                         "egf-cngn-nu-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.658
             },
             {
                 "name": "sG1IterDecon_ID0000017",
                 "type": "compute",
-                "runtime": 0.711,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-d41-xt-_ldsp.lht",
-                        "size": 2320
+                        "sizeInBytes": 2320
                     },
                     {
                         "link": "input",
                         "name": "mshock-d41-xt-_ldsp.lht",
-                        "size": 2300
+                        "sizeInBytes": 2300
                     },
                     {
                         "link": "output",
                         "name": "d41-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 42.616,
@@ -647,28 +645,28 @@
                         "mshock-d41-xt-_ldsp.lht",
                         "egf-d41-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.711
             },
             {
                 "name": "sG1IterDecon_ID0000018",
                 "type": "compute",
-                "runtime": 0.528,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-t49a-ta-_ldsp.lht",
-                        "size": 4240
+                        "sizeInBytes": 4240
                     },
                     {
                         "link": "input",
                         "name": "mshock-t49a-ta-_ldsp.lht",
-                        "size": 4224
+                        "sizeInBytes": 4224
                     },
                     {
                         "link": "output",
                         "name": "t49a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 61.7424,
@@ -682,28 +680,28 @@
                         "mshock-t49a-ta-_ldsp.lht",
                         "egf-t49a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.528
             },
             {
                 "name": "sG1IterDecon_ID0000019",
                 "type": "compute",
-                "runtime": 0.709,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-g05d-ta-_ldsp.lht",
-                        "size": 2056
+                        "sizeInBytes": 2056
                     },
                     {
                         "link": "input",
                         "name": "egf-g05d-ta-_ldsp.lht",
-                        "size": 2072
+                        "sizeInBytes": 2072
                     },
                     {
                         "link": "output",
                         "name": "g05d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 43.3004,
@@ -717,28 +715,28 @@
                         "mshock-g05d-ta-_ldsp.lht",
                         "egf-g05d-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.709
             },
             {
                 "name": "sG1IterDecon_ID0000020",
                 "type": "compute",
-                "runtime": 0.973,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-ksp-pl-_ldsp.lht",
-                        "size": 7228
+                        "sizeInBytes": 7228
                     },
                     {
                         "link": "input",
                         "name": "egf-ksp-pl-_ldsp.lht",
-                        "size": 7228
+                        "sizeInBytes": 7228
                     },
                     {
                         "link": "output",
                         "name": "ksp-pl-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 75.5396,
@@ -752,28 +750,28 @@
                         "mshock-ksp-pl-_ldsp.lht",
                         "egf-ksp-pl-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.973
             },
             {
                 "name": "sG1IterDecon_ID0000021",
                 "type": "compute",
-                "runtime": 0.15,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-b082-pb-_ldsp.lht",
-                        "size": 3112
+                        "sizeInBytes": 3112
                     },
                     {
                         "link": "input",
                         "name": "egf-b082-pb-_ldsp.lht",
-                        "size": 3128
+                        "sizeInBytes": 3128
                     },
                     {
                         "link": "output",
                         "name": "b082-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 75.3333,
@@ -787,28 +785,28 @@
                         "mshock-b082-pb-_ldsp.lht",
                         "egf-b082-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.15
             },
             {
                 "name": "sG1IterDecon_ID0000022",
                 "type": "compute",
-                "runtime": 0.191,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-d48-xt-_ldsp.lht",
-                        "size": 2200
+                        "sizeInBytes": 2200
                     },
                     {
                         "link": "input",
                         "name": "mshock-d48-xt-_ldsp.lht",
-                        "size": 2184
+                        "sizeInBytes": 2184
                     },
                     {
                         "link": "output",
                         "name": "d48-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -822,28 +820,28 @@
                         "mshock-d48-xt-_ldsp.lht",
                         "egf-d48-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.191
             },
             {
                 "name": "sG1IterDecon_ID0000023",
                 "type": "compute",
-                "runtime": 2.019,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-k46a-ta-_ldsp.lht",
-                        "size": 3896
+                        "sizeInBytes": 3896
                     },
                     {
                         "link": "input",
                         "name": "mshock-k46a-ta-_ldsp.lht",
-                        "size": 3880
+                        "sizeInBytes": 3880
                     },
                     {
                         "link": "output",
                         "name": "k46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 14.4131,
@@ -857,28 +855,28 @@
                         "mshock-k46a-ta-_ldsp.lht",
                         "egf-k46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.019
             },
             {
                 "name": "sG1IterDecon_ID0000024",
                 "type": "compute",
-                "runtime": 1.035,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-m46a-ta-_ldsp.lht",
-                        "size": 3940
+                        "sizeInBytes": 3940
                     },
                     {
                         "link": "input",
                         "name": "mshock-m46a-ta-_ldsp.lht",
-                        "size": 3920
+                        "sizeInBytes": 3920
                     },
                     {
                         "link": "output",
                         "name": "m46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 21.1594,
@@ -892,28 +890,28 @@
                         "mshock-m46a-ta-_ldsp.lht",
                         "egf-m46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.035
             },
             {
                 "name": "sG1IterDecon_ID0000025",
                 "type": "compute",
-                "runtime": 1.242,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-makz-iu-00_ldsp.lht",
-                        "size": 7420
+                        "sizeInBytes": 7420
                     },
                     {
                         "link": "input",
                         "name": "egf-makz-iu-00_ldsp.lht",
-                        "size": 7412
+                        "sizeInBytes": 7412
                     },
                     {
                         "link": "output",
                         "name": "makz-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 61.1111,
@@ -927,28 +925,28 @@
                         "mshock-makz-iu-00_ldsp.lht",
                         "egf-makz-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.242
             },
             {
                 "name": "sG1IterDecon_ID0000026",
                 "type": "compute",
-                "runtime": 0.423,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sci2-ci-_ldsp.lht",
-                        "size": 3120
+                        "sizeInBytes": 3120
                     },
                     {
                         "link": "input",
                         "name": "mshock-sci2-ci-_ldsp.lht",
-                        "size": 3108
+                        "sizeInBytes": 3108
                     },
                     {
                         "link": "output",
                         "name": "sci2-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 52.2459,
@@ -962,28 +960,28 @@
                         "mshock-sci2-ci-_ldsp.lht",
                         "egf-sci2-ci-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.423
             },
             {
                 "name": "sG1IterDecon_ID0000027",
                 "type": "compute",
-                "runtime": 0.202,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-ss65-xi-_ldsp.lht",
-                        "size": 3348
+                        "sizeInBytes": 3348
                     },
                     {
                         "link": "input",
                         "name": "egf-ss65-xi-_ldsp.lht",
-                        "size": 3364
+                        "sizeInBytes": 3364
                     },
                     {
                         "link": "output",
                         "name": "ss65-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 81.1881,
@@ -997,28 +995,28 @@
                         "mshock-ss65-xi-_ldsp.lht",
                         "egf-ss65-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.202
             },
             {
                 "name": "sG1IterDecon_ID0000028",
                 "type": "compute",
-                "runtime": 0.212,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-w47a-ta-_ldsp.lht",
-                        "size": 4240
+                        "sizeInBytes": 4240
                     },
                     {
                         "link": "input",
                         "name": "egf-w47a-ta-_ldsp.lht",
-                        "size": 4256
+                        "sizeInBytes": 4256
                     },
                     {
                         "link": "output",
                         "name": "w47a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.5283,
@@ -1032,28 +1030,28 @@
                         "mshock-w47a-ta-_ldsp.lht",
                         "egf-w47a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.212
             },
             {
                 "name": "sG1IterDecon_ID0000029",
                 "type": "compute",
-                "runtime": 0.489,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-k41a-ta-_ldsp.lht",
-                        "size": 3672
+                        "sizeInBytes": 3672
                     },
                     {
                         "link": "input",
                         "name": "mshock-k41a-ta-_ldsp.lht",
-                        "size": 3656
+                        "sizeInBytes": 3656
                     },
                     {
                         "link": "output",
                         "name": "k41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 58.2822,
@@ -1067,28 +1065,28 @@
                         "mshock-k41a-ta-_ldsp.lht",
                         "egf-k41a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.489
             },
             {
                 "name": "sG1IterDecon_ID0000030",
                 "type": "compute",
-                "runtime": 2.168,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-255a-ta-_ldsp.lht",
-                        "size": 4732
+                        "sizeInBytes": 4732
                     },
                     {
                         "link": "input",
                         "name": "mshock-255a-ta-_ldsp.lht",
-                        "size": 4716
+                        "sizeInBytes": 4716
                     },
                     {
                         "link": "output",
                         "name": "255a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 14.3911,
@@ -1102,28 +1100,28 @@
                         "mshock-255a-ta-_ldsp.lht",
                         "egf-255a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.168
             },
             {
                 "name": "sG1IterDecon_ID0000031",
                 "type": "compute",
-                "runtime": 0.536,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-k52a-ta-_ldsp.lht",
-                        "size": 4132
+                        "sizeInBytes": 4132
                     },
                     {
                         "link": "input",
                         "name": "egf-k52a-ta-_ldsp.lht",
-                        "size": 4148
+                        "sizeInBytes": 4148
                     },
                     {
                         "link": "output",
                         "name": "k52a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 61.9403,
@@ -1137,28 +1135,28 @@
                         "mshock-k52a-ta-_ldsp.lht",
                         "egf-k52a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.536
             },
             {
                 "name": "sG1IterDecon_ID0000032",
                 "type": "compute",
-                "runtime": 0.645,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-mwc-ci-_ldsp.lht",
-                        "size": 3020
+                        "sizeInBytes": 3020
                     },
                     {
                         "link": "input",
                         "name": "egf-mwc-ci-_ldsp.lht",
-                        "size": 3036
+                        "sizeInBytes": 3036
                     },
                     {
                         "link": "output",
                         "name": "mwc-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 37.3643,
@@ -1172,28 +1170,28 @@
                         "mshock-mwc-ci-_ldsp.lht",
                         "egf-mwc-ci-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.645
             },
             {
                 "name": "sG1IterDecon_ID0000033",
                 "type": "compute",
-                "runtime": 0.225,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-x53a-ta-_ldsp.lht",
-                        "size": 4524
+                        "sizeInBytes": 4524
                     },
                     {
                         "link": "input",
                         "name": "mshock-x53a-ta-_ldsp.lht",
-                        "size": 4500
+                        "sizeInBytes": 4500
                     },
                     {
                         "link": "output",
                         "name": "x53a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1207,28 +1205,28 @@
                         "mshock-x53a-ta-_ldsp.lht",
                         "egf-x53a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.225
             },
             {
                 "name": "sG1IterDecon_ID0000034",
                 "type": "compute",
-                "runtime": 0.852,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-kiri-xv-_ldsp.lht",
-                        "size": 13752
+                        "sizeInBytes": 13752
                     },
                     {
                         "link": "input",
                         "name": "egf-kiri-xv-_ldsp.lht",
-                        "size": 13744
+                        "sizeInBytes": 13744
                     },
                     {
                         "link": "output",
                         "name": "kiri-xv-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 76.1737,
@@ -1242,28 +1240,28 @@
                         "mshock-kiri-xv-_ldsp.lht",
                         "egf-kiri-xv-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.852
             },
             {
                 "name": "sG1IterDecon_ID0000035",
                 "type": "compute",
-                "runtime": 1.731,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-p51a-ta-_ldsp.lht",
-                        "size": 4200
+                        "sizeInBytes": 4200
                     },
                     {
                         "link": "input",
                         "name": "egf-p51a-ta-_ldsp.lht",
-                        "size": 4224
+                        "sizeInBytes": 4224
                     },
                     {
                         "link": "output",
                         "name": "p51a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 25.7077,
@@ -1277,28 +1275,28 @@
                         "mshock-p51a-ta-_ldsp.lht",
                         "egf-p51a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.731
             },
             {
                 "name": "sG1IterDecon_ID0000036",
                 "type": "compute",
-                "runtime": 0.114,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-b088-pb-_ldsp.lht",
-                        "size": 3144
+                        "sizeInBytes": 3144
                     },
                     {
                         "link": "input",
                         "name": "mshock-b088-pb-_ldsp.lht",
-                        "size": 3132
+                        "sizeInBytes": 3132
                     },
                     {
                         "link": "output",
                         "name": "b088-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.1228,
@@ -1312,28 +1310,28 @@
                         "mshock-b088-pb-_ldsp.lht",
                         "egf-b088-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.114
             },
             {
                 "name": "sG1IterDecon_ID0000037",
                 "type": "compute",
-                "runtime": 0.781,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-sm25-xi-_ldsp.lht",
-                        "size": 3360
+                        "sizeInBytes": 3360
                     },
                     {
                         "link": "input",
                         "name": "egf-sm25-xi-_ldsp.lht",
-                        "size": 3376
+                        "sizeInBytes": 3376
                     },
                     {
                         "link": "output",
                         "name": "sm25-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 56.338,
@@ -1347,28 +1345,28 @@
                         "mshock-sm25-xi-_ldsp.lht",
                         "egf-sm25-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.781
             },
             {
                 "name": "sG1IterDecon_ID0000038",
                 "type": "compute",
-                "runtime": 0.738,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-whit-yt-_ldsp.lht",
-                        "size": 13212
+                        "sizeInBytes": 13212
                     },
                     {
                         "link": "input",
                         "name": "egf-whit-yt-_ldsp.lht",
-                        "size": 13220
+                        "sizeInBytes": 13220
                     },
                     {
                         "link": "output",
                         "name": "whit-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1382,28 +1380,28 @@
                         "mshock-whit-yt-_ldsp.lht",
                         "egf-whit-yt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.738
             },
             {
                 "name": "sG1IterDecon_ID0000039",
                 "type": "compute",
-                "runtime": 0.124,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-dec-ci-_ldsp.lht",
-                        "size": 3012
+                        "sizeInBytes": 3012
                     },
                     {
                         "link": "input",
                         "name": "egf-dec-ci-_ldsp.lht",
-                        "size": 3020
+                        "sizeInBytes": 3020
                     },
                     {
                         "link": "output",
                         "name": "dec-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1417,28 +1415,28 @@
                         "mshock-dec-ci-_ldsp.lht",
                         "egf-dec-ci-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.124
             },
             {
                 "name": "sG1IterDecon_ID0000040",
                 "type": "compute",
-                "runtime": 0.121,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-b921-pb-_ldsp.lht",
-                        "size": 2928
+                        "sizeInBytes": 2928
                     },
                     {
                         "link": "input",
                         "name": "egf-b921-pb-_ldsp.lht",
-                        "size": 2940
+                        "sizeInBytes": 2940
                     },
                     {
                         "link": "output",
                         "name": "b921-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1452,28 +1450,28 @@
                         "mshock-b921-pb-_ldsp.lht",
                         "egf-b921-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.121
             },
             {
                 "name": "sG1IterDecon_ID0000041",
                 "type": "compute",
-                "runtime": 0.86,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-ulm-cn-_ldsp.lht",
-                        "size": 2992
+                        "sizeInBytes": 2992
                     },
                     {
                         "link": "input",
                         "name": "egf-ulm-cn-_ldsp.lht",
-                        "size": 3008
+                        "sizeInBytes": 3008
                     },
                     {
                         "link": "output",
                         "name": "ulm-cn-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 53.0233,
@@ -1487,28 +1485,28 @@
                         "mshock-ulm-cn-_ldsp.lht",
                         "egf-ulm-cn-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.86
             },
             {
                 "name": "sG1IterDecon_ID0000042",
                 "type": "compute",
-                "runtime": 0.516,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-j54a-ta-_ldsp.lht",
-                        "size": 4228
+                        "sizeInBytes": 4228
                     },
                     {
                         "link": "input",
                         "name": "mshock-j54a-ta-_ldsp.lht",
-                        "size": 4208
+                        "sizeInBytes": 4208
                     },
                     {
                         "link": "output",
                         "name": "j54a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 85.0775,
@@ -1522,28 +1520,28 @@
                         "mshock-j54a-ta-_ldsp.lht",
                         "egf-j54a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.516
             },
             {
                 "name": "sG1IterDecon_ID0000043",
                 "type": "compute",
-                "runtime": 0.447,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-a20-xd-_ldsp.lht",
-                        "size": 3204
+                        "sizeInBytes": 3204
                     },
                     {
                         "link": "input",
                         "name": "egf-a20-xd-_ldsp.lht",
-                        "size": 3216
+                        "sizeInBytes": 3216
                     },
                     {
                         "link": "output",
                         "name": "a20-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1557,28 +1555,28 @@
                         "mshock-a20-xd-_ldsp.lht",
                         "egf-a20-xd-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.447
             },
             {
                 "name": "sG1IterDecon_ID0000044",
                 "type": "compute",
-                "runtime": 0.456,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-i46a-ta-_ldsp.lht",
-                        "size": 3828
+                        "sizeInBytes": 3828
                     },
                     {
                         "link": "input",
                         "name": "egf-i46a-ta-_ldsp.lht",
-                        "size": 3844
+                        "sizeInBytes": 3844
                     },
                     {
                         "link": "output",
                         "name": "i46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1592,28 +1590,28 @@
                         "mshock-i46a-ta-_ldsp.lht",
                         "egf-i46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.456
             },
             {
                 "name": "sG1IterDecon_ID0000045",
                 "type": "compute",
-                "runtime": 0.516,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-tin-ci-_ldsp.lht",
-                        "size": 2800
+                        "sizeInBytes": 2800
                     },
                     {
                         "link": "input",
                         "name": "mshock-tin-ci-_ldsp.lht",
-                        "size": 2784
+                        "sizeInBytes": 2784
                     },
                     {
                         "link": "output",
                         "name": "tin-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 83.3333,
@@ -1627,28 +1625,28 @@
                         "mshock-tin-ci-_ldsp.lht",
                         "egf-tin-ci-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.516
             },
             {
                 "name": "sG1IterDecon_ID0000046",
                 "type": "compute",
-                "runtime": 0.461,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-senin-ch-_ldsp.lht",
-                        "size": 7436
+                        "sizeInBytes": 7436
                     },
                     {
                         "link": "input",
                         "name": "mshock-senin-ch-_ldsp.lht",
-                        "size": 7428
+                        "sizeInBytes": 7428
                     },
                     {
                         "link": "output",
                         "name": "senin-ch-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 60.5206,
@@ -1662,28 +1660,28 @@
                         "mshock-senin-ch-_ldsp.lht",
                         "egf-senin-ch-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.461
             },
             {
                 "name": "sG1IterDecon_ID0000047",
                 "type": "compute",
-                "runtime": 2.411,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-go05-c-_ldsp.lht",
-                        "size": 10212
+                        "sizeInBytes": 10212
                     },
                     {
                         "link": "input",
                         "name": "mshock-go05-c-_ldsp.lht",
-                        "size": 10192
+                        "sizeInBytes": 10192
                     },
                     {
                         "link": "output",
                         "name": "go05-c-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 55.4127,
@@ -1697,28 +1695,28 @@
                         "mshock-go05-c-_ldsp.lht",
                         "egf-go05-c-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.411
             },
             {
                 "name": "sG1IterDecon_ID0000048",
                 "type": "compute",
-                "runtime": 0.143,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-tro-az-_ldsp.lht",
-                        "size": 3140
+                        "sizeInBytes": 3140
                     },
                     {
                         "link": "input",
                         "name": "mshock-tro-az-_ldsp.lht",
-                        "size": 3128
+                        "sizeInBytes": 3128
                     },
                     {
                         "link": "output",
                         "name": "tro-az-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1732,28 +1730,28 @@
                         "mshock-tro-az-_ldsp.lht",
                         "egf-tro-az-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.143
             },
             {
                 "name": "sG1IterDecon_ID0000049",
                 "type": "compute",
-                "runtime": 0.158,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-d01-xt-_ldsp.lht",
-                        "size": 2484
+                        "sizeInBytes": 2484
                     },
                     {
                         "link": "input",
                         "name": "mshock-d01-xt-_ldsp.lht",
-                        "size": 2464
+                        "sizeInBytes": 2464
                     },
                     {
                         "link": "output",
                         "name": "d01-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1767,28 +1765,28 @@
                         "mshock-d01-xt-_ldsp.lht",
                         "egf-d01-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.158
             },
             {
                 "name": "sG1IterDecon_ID0000050",
                 "type": "compute",
-                "runtime": 0.714,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-058a-ta-_ldsp.lht",
-                        "size": 5076
+                        "sizeInBytes": 5076
                     },
                     {
                         "link": "input",
                         "name": "egf-058a-ta-_ldsp.lht",
-                        "size": 5100
+                        "sizeInBytes": 5100
                     },
                     {
                         "link": "output",
                         "name": "058a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 99.8599,
@@ -1802,28 +1800,28 @@
                         "mshock-058a-ta-_ldsp.lht",
                         "egf-058a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.714
             },
             {
                 "name": "sG1IterDecon_ID0000051",
                 "type": "compute",
-                "runtime": 1.754,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-mtdj-cu-00_ldsp.lht",
-                        "size": 5916
+                        "sizeInBytes": 5916
                     },
                     {
                         "link": "input",
                         "name": "egf-mtdj-cu-00_ldsp.lht",
-                        "size": 5932
+                        "sizeInBytes": 5932
                     },
                     {
                         "link": "output",
                         "name": "mtdj-cu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 27.7651,
@@ -1837,28 +1835,28 @@
                         "mshock-mtdj-cu-00_ldsp.lht",
                         "egf-mtdj-cu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.754
             },
             {
                 "name": "sG1IterDecon_ID0000052",
                 "type": "compute",
-                "runtime": 0.871,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-r48a-ta-_ldsp.lht",
-                        "size": 4148
+                        "sizeInBytes": 4148
                     },
                     {
                         "link": "input",
                         "name": "mshock-r48a-ta-_ldsp.lht",
-                        "size": 4124
+                        "sizeInBytes": 4124
                     },
                     {
                         "link": "output",
                         "name": "r48a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 53.6165,
@@ -1872,28 +1870,28 @@
                         "mshock-r48a-ta-_ldsp.lht",
                         "egf-r48a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.871
             },
             {
                 "name": "sG1IterDecon_ID0000053",
                 "type": "compute",
-                "runtime": 0.231,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-s22a-ta-_ldsp.lht",
-                        "size": 3188
+                        "sizeInBytes": 3188
                     },
                     {
                         "link": "input",
                         "name": "mshock-s22a-ta-_ldsp.lht",
-                        "size": 3168
+                        "sizeInBytes": 3168
                     },
                     {
                         "link": "output",
                         "name": "s22a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1907,28 +1905,28 @@
                         "mshock-s22a-ta-_ldsp.lht",
                         "egf-s22a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.231
             },
             {
                 "name": "sG1IterDecon_ID0000054",
                 "type": "compute",
-                "runtime": 2.314,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-pig2-xc-_ldsp.lht",
-                        "size": 12628
+                        "sizeInBytes": 12628
                     },
                     {
                         "link": "input",
                         "name": "mshock-pig2-xc-_ldsp.lht",
-                        "size": 12624
+                        "sizeInBytes": 12624
                     },
                     {
                         "link": "output",
                         "name": "pig2-xc-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 57.9516,
@@ -1942,28 +1940,28 @@
                         "mshock-pig2-xc-_ldsp.lht",
                         "egf-pig2-xc-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.314
             },
             {
                 "name": "sG1IterDecon_ID0000055",
                 "type": "compute",
-                "runtime": 0.1,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-t42a-ta-_ldsp.lht",
-                        "size": 3952
+                        "sizeInBytes": 3952
                     },
                     {
                         "link": "input",
                         "name": "egf-t42a-ta-_ldsp.lht",
-                        "size": 3968
+                        "sizeInBytes": 3968
                     },
                     {
                         "link": "output",
                         "name": "t42a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1977,28 +1975,28 @@
                         "mshock-t42a-ta-_ldsp.lht",
                         "egf-t42a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.1
             },
             {
                 "name": "sG1IterDecon_ID0000056",
                 "type": "compute",
-                "runtime": 0.767,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-kono-iu-00_ldsp.lht",
-                        "size": 6372
+                        "sizeInBytes": 6372
                     },
                     {
                         "link": "input",
                         "name": "egf-kono-iu-00_ldsp.lht",
-                        "size": 6380
+                        "sizeInBytes": 6380
                     },
                     {
                         "link": "output",
                         "name": "kono-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 91.9166,
@@ -2012,28 +2010,28 @@
                         "mshock-kono-iu-00_ldsp.lht",
                         "egf-kono-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.767
             },
             {
                 "name": "sG1IterDecon_ID0000057",
                 "type": "compute",
-                "runtime": 0.535,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-d03-xt-_ldsp.lht",
-                        "size": 2428
+                        "sizeInBytes": 2428
                     },
                     {
                         "link": "input",
                         "name": "egf-d03-xt-_ldsp.lht",
-                        "size": 2448
+                        "sizeInBytes": 2448
                     },
                     {
                         "link": "output",
                         "name": "d03-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 62.0561,
@@ -2047,28 +2045,28 @@
                         "mshock-d03-xt-_ldsp.lht",
                         "egf-d03-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.535
             },
             {
                 "name": "sG1IterDecon_ID0000058",
                 "type": "compute",
-                "runtime": 0.66,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-h41a-ta-_ldsp.lht",
-                        "size": 3576
+                        "sizeInBytes": 3576
                     },
                     {
                         "link": "input",
                         "name": "egf-h41a-ta-_ldsp.lht",
-                        "size": 3592
+                        "sizeInBytes": 3592
                     },
                     {
                         "link": "output",
                         "name": "h41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 69.3939,
@@ -2082,28 +2080,28 @@
                         "mshock-h41a-ta-_ldsp.lht",
                         "egf-h41a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.66
             },
             {
                 "name": "sG1IterDecon_ID0000059",
                 "type": "compute",
-                "runtime": 0.448,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sm18-xi-_ldsp.lht",
-                        "size": 3388
+                        "sizeInBytes": 3388
                     },
                     {
                         "link": "input",
                         "name": "mshock-sm18-xi-_ldsp.lht",
-                        "size": 3372
+                        "sizeInBytes": 3372
                     },
                     {
                         "link": "output",
                         "name": "sm18-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.7768,
@@ -2117,28 +2115,28 @@
                         "mshock-sm18-xi-_ldsp.lht",
                         "egf-sm18-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.448
             },
             {
                 "name": "sG1IterDecon_ID0000060",
                 "type": "compute",
-                "runtime": 0.4,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-i41a-ta-_ldsp.lht",
-                        "size": 3592
+                        "sizeInBytes": 3592
                     },
                     {
                         "link": "input",
                         "name": "egf-i41a-ta-_ldsp.lht",
-                        "size": 3616
+                        "sizeInBytes": 3616
                     },
                     {
                         "link": "output",
                         "name": "i41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2152,28 +2150,28 @@
                         "mshock-i41a-ta-_ldsp.lht",
                         "egf-i41a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.4
             },
             {
                 "name": "sG1IterDecon_ID0000061",
                 "type": "compute",
-                "runtime": 0.651,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-m54a-ta-_ldsp.lht",
-                        "size": 4276
+                        "sizeInBytes": 4276
                     },
                     {
                         "link": "input",
                         "name": "mshock-m54a-ta-_ldsp.lht",
-                        "size": 4256
+                        "sizeInBytes": 4256
                     },
                     {
                         "link": "output",
                         "name": "m54a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 68.6636,
@@ -2187,28 +2185,28 @@
                         "mshock-m54a-ta-_ldsp.lht",
                         "egf-m54a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.651
             },
             {
                 "name": "sG1IterDecon_ID0000062",
                 "type": "compute",
-                "runtime": 1.819,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-tpub-tw-_ldsp.lht",
-                        "size": 7888
+                        "sizeInBytes": 7888
                     },
                     {
                         "link": "input",
                         "name": "mshock-tpub-tw-_ldsp.lht",
-                        "size": 7908
+                        "sizeInBytes": 7908
                     },
                     {
                         "link": "output",
                         "name": "tpub-tw-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 39.1974,
@@ -2222,28 +2220,28 @@
                         "mshock-tpub-tw-_ldsp.lht",
                         "egf-tpub-tw-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.819
             },
             {
                 "name": "sG1IterDecon_ID0000063",
                 "type": "compute",
-                "runtime": 1.265,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-121a-ta-_ldsp.lht",
-                        "size": 3528
+                        "sizeInBytes": 3528
                     },
                     {
                         "link": "input",
                         "name": "mshock-121a-ta-_ldsp.lht",
-                        "size": 3512
+                        "sizeInBytes": 3512
                     },
                     {
                         "link": "output",
                         "name": "121a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 35.7312,
@@ -2257,28 +2255,28 @@
                         "mshock-121a-ta-_ldsp.lht",
                         "egf-121a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.265
             },
             {
                 "name": "sG1IterDecon_ID0000064",
                 "type": "compute",
-                "runtime": 0.581,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-cel-mn-_ldsp.lht",
-                        "size": 8292
+                        "sizeInBytes": 8292
                     },
                     {
                         "link": "input",
                         "name": "egf-cel-mn-_ldsp.lht",
-                        "size": 8296
+                        "sizeInBytes": 8296
                     },
                     {
                         "link": "output",
                         "name": "cel-mn-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2292,28 +2290,28 @@
                         "mshock-cel-mn-_ldsp.lht",
                         "egf-cel-mn-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.581
             },
             {
                 "name": "sG1IterDecon_ID0000065",
                 "type": "compute",
-                "runtime": 0.747,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-uoss-ii-00_ldsp.lht",
-                        "size": 9716
+                        "sizeInBytes": 9716
                     },
                     {
                         "link": "input",
                         "name": "mshock-uoss-ii-00_ldsp.lht",
-                        "size": 9720
+                        "sizeInBytes": 9720
                     },
                     {
                         "link": "output",
                         "name": "uoss-ii-00_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 56.6265,
@@ -2327,28 +2325,28 @@
                         "mshock-uoss-ii-00_ldsp.lht",
                         "egf-uoss-ii-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.747
             },
             {
                 "name": "sG1IterDecon_ID0000066",
                 "type": "compute",
-                "runtime": 0.566,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-bill-iu-00_ldsp.lht",
-                        "size": 3484
+                        "sizeInBytes": 3484
                     },
                     {
                         "link": "input",
                         "name": "egf-bill-iu-00_ldsp.lht",
-                        "size": 3472
+                        "sizeInBytes": 3472
                     },
                     {
                         "link": "output",
                         "name": "bill-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 64.1343,
@@ -2362,28 +2360,28 @@
                         "mshock-bill-iu-00_ldsp.lht",
                         "egf-bill-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.566
             },
             {
                 "name": "sG1IterDecon_ID0000067",
                 "type": "compute",
-                "runtime": 0.411,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-y41a-ta-_ldsp.lht",
-                        "size": 4088
+                        "sizeInBytes": 4088
                     },
                     {
                         "link": "input",
                         "name": "egf-y41a-ta-_ldsp.lht",
-                        "size": 4104
+                        "sizeInBytes": 4104
                     },
                     {
                         "link": "output",
                         "name": "y41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 51.0949,
@@ -2397,28 +2395,28 @@
                         "mshock-y41a-ta-_ldsp.lht",
                         "egf-y41a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.411
             },
             {
                 "name": "sG1IterDecon_ID0000068",
                 "type": "compute",
-                "runtime": 1.838,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-hda-ta-_ldsp.lht",
-                        "size": 1836
+                        "sizeInBytes": 1836
                     },
                     {
                         "link": "input",
                         "name": "mshock-hda-ta-_ldsp.lht",
-                        "size": 1848
+                        "sizeInBytes": 1848
                     },
                     {
                         "link": "output",
                         "name": "hda-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 18.7704,
@@ -2432,28 +2430,28 @@
                         "mshock-hda-ta-_ldsp.lht",
                         "egf-hda-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.838
             },
             {
                 "name": "sG1IterDecon_ID0000069",
                 "type": "compute",
-                "runtime": 0.623,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-h47a-ta-_ldsp.lht",
-                        "size": 3852
+                        "sizeInBytes": 3852
                     },
                     {
                         "link": "input",
                         "name": "egf-h47a-ta-_ldsp.lht",
-                        "size": 3868
+                        "sizeInBytes": 3868
                     },
                     {
                         "link": "output",
                         "name": "h47a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 34.6709,
@@ -2467,28 +2465,28 @@
                         "mshock-h47a-ta-_ldsp.lht",
                         "egf-h47a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.623
             },
             {
                 "name": "sG1IterDecon_ID0000070",
                 "type": "compute",
-                "runtime": 0.448,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-g42a-ta-_ldsp.lht",
-                        "size": 3620
+                        "sizeInBytes": 3620
                     },
                     {
                         "link": "input",
                         "name": "mshock-g42a-ta-_ldsp.lht",
-                        "size": 3604
+                        "sizeInBytes": 3604
                     },
                     {
                         "link": "output",
                         "name": "g42a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.7768,
@@ -2502,28 +2500,28 @@
                         "mshock-g42a-ta-_ldsp.lht",
                         "egf-g42a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.448
             },
             {
                 "name": "sG1IterDecon_ID0000071",
                 "type": "compute",
-                "runtime": 0.367,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-d04e-ta-_ldsp.lht",
-                        "size": 1864
+                        "sizeInBytes": 1864
                     },
                     {
                         "link": "input",
                         "name": "egf-d04e-ta-_ldsp.lht",
-                        "size": 1880
+                        "sizeInBytes": 1880
                     },
                     {
                         "link": "output",
                         "name": "d04e-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 48.2289,
@@ -2537,28 +2535,28 @@
                         "mshock-d04e-ta-_ldsp.lht",
                         "egf-d04e-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.367
             },
             {
                 "name": "sG1IterDecon_ID0000072",
                 "type": "compute",
-                "runtime": 1.979,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-qrz-nz-10_ldsp.lht",
-                        "size": 10284
+                        "sizeInBytes": 10284
                     },
                     {
                         "link": "input",
                         "name": "mshock-qrz-nz-10_ldsp.lht",
-                        "size": 10292
+                        "sizeInBytes": 10292
                     },
                     {
                         "link": "output",
                         "name": "qrz-nz-10_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 66.9025,
@@ -2572,28 +2570,28 @@
                         "mshock-qrz-nz-10_ldsp.lht",
                         "egf-qrz-nz-10_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.979
             },
             {
                 "name": "sG1IterDecon_ID0000073",
                 "type": "compute",
-                "runtime": 1.299,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-mpat-yt-_ldsp.lht",
-                        "size": 12776
+                        "sizeInBytes": 12776
                     },
                     {
                         "link": "input",
                         "name": "mshock-mpat-yt-_ldsp.lht",
-                        "size": 12776
+                        "sizeInBytes": 12776
                     },
                     {
                         "link": "output",
                         "name": "mpat-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     }
                 ],
                 "avgCPU": 100.077,
@@ -2607,28 +2605,28 @@
                         "mshock-mpat-yt-_ldsp.lht",
                         "egf-mpat-yt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.299
             },
             {
                 "name": "sG1IterDecon_ID0000074",
                 "type": "compute",
-                "runtime": 0.317,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-l29-xt-_ldsp.lht",
-                        "size": 2200
+                        "sizeInBytes": 2200
                     },
                     {
                         "link": "input",
                         "name": "egf-l29-xt-_ldsp.lht",
-                        "size": 2216
+                        "sizeInBytes": 2216
                     },
                     {
                         "link": "output",
                         "name": "l29-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 99.6845,
@@ -2642,28 +2640,28 @@
                         "mshock-l29-xt-_ldsp.lht",
                         "egf-l29-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.317
             },
             {
                 "name": "sG1IterDecon_ID0000075",
                 "type": "compute",
-                "runtime": 0.104,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-d08-xt-_ldsp.lht",
-                        "size": 2424
+                        "sizeInBytes": 2424
                     },
                     {
                         "link": "input",
                         "name": "egf-d08-xt-_ldsp.lht",
-                        "size": 2444
+                        "sizeInBytes": 2444
                     },
                     {
                         "link": "output",
                         "name": "d08-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 99.0385,
@@ -2677,28 +2675,28 @@
                         "mshock-d08-xt-_ldsp.lht",
                         "egf-d08-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.104
             },
             {
                 "name": "sG1IterDecon_ID0000076",
                 "type": "compute",
-                "runtime": 0.987,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-fs10-zd-_ldsp.lht",
-                        "size": 8564
+                        "sizeInBytes": 8564
                     },
                     {
                         "link": "input",
                         "name": "mshock-fs10-zd-_ldsp.lht",
-                        "size": 8544
+                        "sizeInBytes": 8544
                     },
                     {
                         "link": "output",
                         "name": "fs10-zd-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 38.7031,
@@ -2712,28 +2710,28 @@
                         "mshock-fs10-zd-_ldsp.lht",
                         "egf-fs10-zd-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.987
             },
             {
                 "name": "sG1IterDecon_ID0000077",
                 "type": "compute",
-                "runtime": 0.108,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-b946-pb-_ldsp.lht",
-                        "size": 3136
+                        "sizeInBytes": 3136
                     },
                     {
                         "link": "input",
                         "name": "mshock-b946-pb-_ldsp.lht",
-                        "size": 3120
+                        "sizeInBytes": 3120
                     },
                     {
                         "link": "output",
                         "name": "b946-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2747,28 +2745,28 @@
                         "mshock-b946-pb-_ldsp.lht",
                         "egf-b946-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.108
             },
             {
                 "name": "sG1IterDecon_ID0000078",
                 "type": "compute",
-                "runtime": 0.199,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-h46a-ta-_ldsp.lht",
-                        "size": 3808
+                        "sizeInBytes": 3808
                     },
                     {
                         "link": "input",
                         "name": "egf-h46a-ta-_ldsp.lht",
-                        "size": 3824
+                        "sizeInBytes": 3824
                     },
                     {
                         "link": "output",
                         "name": "h46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 99.4975,
@@ -2782,28 +2780,28 @@
                         "mshock-h46a-ta-_ldsp.lht",
                         "egf-h46a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.199
             },
             {
                 "name": "sG1IterDecon_ID0000079",
                 "type": "compute",
-                "runtime": 0.356,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-i45a-ta-_ldsp.lht",
-                        "size": 3796
+                        "sizeInBytes": 3796
                     },
                     {
                         "link": "input",
                         "name": "mshock-i45a-ta-_ldsp.lht",
-                        "size": 3780
+                        "sizeInBytes": 3780
                     },
                     {
                         "link": "output",
                         "name": "i45a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 42.4157,
@@ -2817,28 +2815,28 @@
                         "mshock-i45a-ta-_ldsp.lht",
                         "egf-i45a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.356
             },
             {
                 "name": "sG1IterDecon_ID0000080",
                 "type": "compute",
-                "runtime": 0.429,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-sm19-xi-_ldsp.lht",
-                        "size": 3360
+                        "sizeInBytes": 3360
                     },
                     {
                         "link": "input",
                         "name": "egf-sm19-xi-_ldsp.lht",
-                        "size": 3380
+                        "sizeInBytes": 3380
                     },
                     {
                         "link": "output",
                         "name": "sm19-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2852,28 +2850,28 @@
                         "mshock-sm19-xi-_ldsp.lht",
                         "egf-sm19-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.429
             },
             {
                 "name": "sG1IterDecon_ID0000081",
                 "type": "compute",
-                "runtime": 0.105,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-b027-pb-_ldsp.lht",
-                        "size": 2052
+                        "sizeInBytes": 2052
                     },
                     {
                         "link": "input",
                         "name": "egf-b027-pb-_ldsp.lht",
-                        "size": 2068
+                        "sizeInBytes": 2068
                     },
                     {
                         "link": "output",
                         "name": "b027-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2887,28 +2885,28 @@
                         "mshock-b027-pb-_ldsp.lht",
                         "egf-b027-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.105
             },
             {
                 "name": "sG1IterDecon_ID0000082",
                 "type": "compute",
-                "runtime": 2.642,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-958a-ta-_ldsp.lht",
-                        "size": 5064
+                        "sizeInBytes": 5064
                     },
                     {
                         "link": "input",
                         "name": "mshock-958a-ta-_ldsp.lht",
-                        "size": 5044
+                        "sizeInBytes": 5044
                     },
                     {
                         "link": "output",
                         "name": "958a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 31.4156,
@@ -2922,28 +2920,28 @@
                         "mshock-958a-ta-_ldsp.lht",
                         "egf-958a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.642
             },
             {
                 "name": "sG1IterDecon_ID0000083",
                 "type": "compute",
-                "runtime": 0.101,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-b019-pb-_ldsp.lht",
-                        "size": 1868
+                        "sizeInBytes": 1868
                     },
                     {
                         "link": "input",
                         "name": "egf-b019-pb-_ldsp.lht",
-                        "size": 1884
+                        "sizeInBytes": 1884
                     },
                     {
                         "link": "output",
                         "name": "b019-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2957,28 +2955,28 @@
                         "mshock-b019-pb-_ldsp.lht",
                         "egf-b019-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.101
             },
             {
                 "name": "sG1IterDecon_ID0000084",
                 "type": "compute",
-                "runtime": 0.708,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-x43a-ta-_ldsp.lht",
-                        "size": 4148
+                        "sizeInBytes": 4148
                     },
                     {
                         "link": "input",
                         "name": "mshock-x43a-ta-_ldsp.lht",
-                        "size": 4124
+                        "sizeInBytes": 4124
                     },
                     {
                         "link": "output",
                         "name": "x43a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 42.0904,
@@ -2992,28 +2990,28 @@
                         "mshock-x43a-ta-_ldsp.lht",
                         "egf-x43a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.708
             },
             {
                 "name": "sG1IterDecon_ID0000085",
                 "type": "compute",
-                "runtime": 0.39,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-a27-xd-_ldsp.lht",
-                        "size": 3208
+                        "sizeInBytes": 3208
                     },
                     {
                         "link": "input",
                         "name": "egf-a27-xd-_ldsp.lht",
-                        "size": 3220
+                        "sizeInBytes": 3220
                     },
                     {
                         "link": "output",
                         "name": "a27-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 48.2051,
@@ -3027,28 +3025,28 @@
                         "mshock-a27-xd-_ldsp.lht",
                         "egf-a27-xd-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.39
             },
             {
                 "name": "sG1IterDecon_ID0000086",
                 "type": "compute",
-                "runtime": 0.651,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-a18-xd-_ldsp.lht",
-                        "size": 3216
+                        "sizeInBytes": 3216
                     },
                     {
                         "link": "input",
                         "name": "mshock-a18-xd-_ldsp.lht",
-                        "size": 3200
+                        "sizeInBytes": 3200
                     },
                     {
                         "link": "output",
                         "name": "a18-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 37.6344,
@@ -3062,28 +3060,28 @@
                         "mshock-a18-xd-_ldsp.lht",
                         "egf-a18-xd-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.651
             },
             {
                 "name": "sG1IterDecon_ID0000087",
                 "type": "compute",
-                "runtime": 0.103,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-b001-pb-_ldsp.lht",
-                        "size": 1788
+                        "sizeInBytes": 1788
                     },
                     {
                         "link": "input",
                         "name": "egf-b001-pb-_ldsp.lht",
-                        "size": 1804
+                        "sizeInBytes": 1804
                     },
                     {
                         "link": "output",
                         "name": "b001-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3097,28 +3095,28 @@
                         "mshock-b001-pb-_ldsp.lht",
                         "egf-b001-pb-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.103
             },
             {
                 "name": "sG1IterDecon_ID0000088",
                 "type": "compute",
-                "runtime": 0.654,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-j39a-ta-_ldsp.lht",
-                        "size": 3560
+                        "sizeInBytes": 3560
                     },
                     {
                         "link": "input",
                         "name": "mshock-j39a-ta-_ldsp.lht",
-                        "size": 3544
+                        "sizeInBytes": 3544
                     },
                     {
                         "link": "output",
                         "name": "j39a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 69.1131,
@@ -3132,28 +3130,28 @@
                         "mshock-j39a-ta-_ldsp.lht",
                         "egf-j39a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.654
             },
             {
                 "name": "sG1IterDecon_ID0000089",
                 "type": "compute",
-                "runtime": 0.125,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-knw-az-_ldsp.lht",
-                        "size": 3116
+                        "sizeInBytes": 3116
                     },
                     {
                         "link": "input",
                         "name": "mshock-knw-az-_ldsp.lht",
-                        "size": 3104
+                        "sizeInBytes": 3104
                     },
                     {
                         "link": "output",
                         "name": "knw-az-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3167,28 +3165,28 @@
                         "mshock-knw-az-_ldsp.lht",
                         "egf-knw-az-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.125
             },
             {
                 "name": "sG1IterDecon_ID0000090",
                 "type": "compute",
-                "runtime": 0.667,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sc12-xi-_ldsp.lht",
-                        "size": 3616
+                        "sizeInBytes": 3616
                     },
                     {
                         "link": "input",
                         "name": "mshock-sc12-xi-_ldsp.lht",
-                        "size": 3596
+                        "sizeInBytes": 3596
                     },
                     {
                         "link": "output",
                         "name": "sc12-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 69.5652,
@@ -3202,28 +3200,28 @@
                         "mshock-sc12-xi-_ldsp.lht",
                         "egf-sc12-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.667
             },
             {
                 "name": "sG1IterDecon_ID0000091",
                 "type": "compute",
-                "runtime": 0.647,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-isa-ci-_ldsp.lht",
-                        "size": 2904
+                        "sizeInBytes": 2904
                     },
                     {
                         "link": "input",
                         "name": "mshock-isa-ci-_ldsp.lht",
-                        "size": 2888
+                        "sizeInBytes": 2888
                     },
                     {
                         "link": "output",
                         "name": "isa-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 68.6244,
@@ -3237,28 +3235,28 @@
                         "mshock-isa-ci-_ldsp.lht",
                         "egf-isa-ci-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.647
             },
             {
                 "name": "sG1IterDecon_ID0000092",
                 "type": "compute",
-                "runtime": 1.106,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-sm34-xi-_ldsp.lht",
-                        "size": 3376
+                        "sizeInBytes": 3376
                     },
                     {
                         "link": "input",
                         "name": "egf-sm34-xi-_ldsp.lht",
-                        "size": 3400
+                        "sizeInBytes": 3400
                     },
                     {
                         "link": "output",
                         "name": "sm34-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 20.9765,
@@ -3272,28 +3270,28 @@
                         "mshock-sm34-xi-_ldsp.lht",
                         "egf-sm34-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.106
             },
             {
                 "name": "sG1IterDecon_ID0000093",
                 "type": "compute",
-                "runtime": 0.455,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-sm21-xi-_ldsp.lht",
-                        "size": 3380
+                        "sizeInBytes": 3380
                     },
                     {
                         "link": "input",
                         "name": "mshock-sm21-xi-_ldsp.lht",
-                        "size": 3364
+                        "sizeInBytes": 3364
                     },
                     {
                         "link": "output",
                         "name": "sm21-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 55.8242,
@@ -3307,28 +3305,28 @@
                         "mshock-sm21-xi-_ldsp.lht",
                         "egf-sm21-xi-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.455
             },
             {
                 "name": "sG1IterDecon_ID0000094",
                 "type": "compute",
-                "runtime": 0.122,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-d27-xt-_ldsp.lht",
-                        "size": 2272
+                        "sizeInBytes": 2272
                     },
                     {
                         "link": "input",
                         "name": "egf-d27-xt-_ldsp.lht",
-                        "size": 2284
+                        "sizeInBytes": 2284
                     },
                     {
                         "link": "output",
                         "name": "d27-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3342,28 +3340,28 @@
                         "mshock-d27-xt-_ldsp.lht",
                         "egf-d27-xt-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.122
             },
             {
                 "name": "sG1IterDecon_ID0000095",
                 "type": "compute",
-                "runtime": 0.898,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-kbs-iu-00_ldsp.lht",
-                        "size": 4832
+                        "sizeInBytes": 4832
                     },
                     {
                         "link": "input",
                         "name": "egf-kbs-iu-00_ldsp.lht",
-                        "size": 4828
+                        "sizeInBytes": 4828
                     },
                     {
                         "link": "output",
                         "name": "kbs-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 77.5056,
@@ -3377,28 +3375,28 @@
                         "mshock-kbs-iu-00_ldsp.lht",
                         "egf-kbs-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.898
             },
             {
                 "name": "sG1IterDecon_ID0000096",
                 "type": "compute",
-                "runtime": 0.483,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-p50a-ta-_ldsp.lht",
-                        "size": 4160
+                        "sizeInBytes": 4160
                     },
                     {
                         "link": "input",
                         "name": "egf-p50a-ta-_ldsp.lht",
-                        "size": 4176
+                        "sizeInBytes": 4176
                     },
                     {
                         "link": "output",
                         "name": "p50a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 58.1781,
@@ -3412,28 +3410,28 @@
                         "mshock-p50a-ta-_ldsp.lht",
                         "egf-p50a-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.483
             },
             {
                 "name": "sG1IterDecon_ID0000097",
                 "type": "compute",
-                "runtime": 0.118,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-o02d-ta-_ldsp.lht",
-                        "size": 2404
+                        "sizeInBytes": 2404
                     },
                     {
                         "link": "input",
                         "name": "egf-o02d-ta-_ldsp.lht",
-                        "size": 2412
+                        "sizeInBytes": 2412
                     },
                     {
                         "link": "output",
                         "name": "o02d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3447,28 +3445,28 @@
                         "mshock-o02d-ta-_ldsp.lht",
                         "egf-o02d-ta-_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.118
             },
             {
                 "name": "sG1IterDecon_ID0000098",
                 "type": "compute",
-                "runtime": 0.326,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-ccm-iu-00_ldsp.lht",
-                        "size": 3880
+                        "sizeInBytes": 3880
                     },
                     {
                         "link": "input",
                         "name": "egf-ccm-iu-00_ldsp.lht",
-                        "size": 3896
+                        "sizeInBytes": 3896
                     },
                     {
                         "link": "output",
                         "name": "ccm-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 37.7301,
@@ -3482,28 +3480,28 @@
                         "mshock-ccm-iu-00_ldsp.lht",
                         "egf-ccm-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.326
             },
             {
                 "name": "sG1IterDecon_ID0000099",
                 "type": "compute",
-                "runtime": 0.937,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "egf-ptga-iu-00_ldsp.lht",
-                        "size": 8184
+                        "sizeInBytes": 8184
                     },
                     {
                         "link": "input",
                         "name": "mshock-ptga-iu-00_ldsp.lht",
-                        "size": 8164
+                        "sizeInBytes": 8164
                     },
                     {
                         "link": "output",
                         "name": "ptga-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     }
                 ],
                 "avgCPU": 78.4418,
@@ -3517,28 +3515,28 @@
                         "mshock-ptga-iu-00_ldsp.lht",
                         "egf-ptga-iu-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.937
             },
             {
                 "name": "sG1IterDecon_ID0000100",
                 "type": "compute",
-                "runtime": 0.184,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "mshock-biny-us-00_ldsp.lht",
-                        "size": 4404
+                        "sizeInBytes": 4404
                     },
                     {
                         "link": "input",
                         "name": "egf-biny-us-00_ldsp.lht",
-                        "size": 4420
+                        "sizeInBytes": 4420
                     },
                     {
                         "link": "output",
                         "name": "biny-us-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3552,12 +3550,12 @@
                         "mshock-biny-us-00_ldsp.lht",
                         "egf-biny-us-00_ldsp.lht"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.184
             },
             {
                 "name": "wrapper_siftSTFByMisfit_ID0000101",
                 "type": "compute",
-                "runtime": 0.089,
                 "parents": [
                     "sG1IterDecon_ID0000079",
                     "sG1IterDecon_ID0000076",
@@ -3664,522 +3662,522 @@
                     {
                         "link": "input",
                         "name": "b027-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "h46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "tro-az-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "mkva-xv-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "p50a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "tpub-tw-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "958a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "qrz-nz-10_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "t42a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "makz-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "058a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "k52a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "pig2-xc-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "mpat-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "d08-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "f44a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "i41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "k41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "a20-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "b001-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "r48a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d01-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "mtdj-cu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "sm19-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sci2-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "b088-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "tin-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "a27-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "255a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "x41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "lao-us-00_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "sm25-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "x46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "mwc-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sm17-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "go05-c-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "b082-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d15-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "d03-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "senin-ch-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "m46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "g42a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "isa-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sc12-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "x53a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "b921-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "ccm-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "ulm-cn-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sspa-iu-10_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "k46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "knw-az-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d04e-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "sm21-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "kono-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "sn46-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "b019-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "t49a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "kiri-xv-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "siftSTFByMisfit",
-                        "size": 1386
+                        "sizeInBytes": 1386
                     },
                     {
                         "link": "input",
                         "name": "cel-mn-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "g05d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "pysacio.py",
-                        "size": 0
+                        "sizeInBytes": 0
                     },
                     {
                         "link": "input",
                         "name": "k02d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "bill-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sm34-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "whit-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "kbs-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "p51a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "246a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "w47a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "a21-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "pytutil.py",
-                        "size": 0
+                        "sizeInBytes": 0
                     },
                     {
                         "link": "input",
                         "name": "uoss-ii-00_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "bbgh-cu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "biny-us-00_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d27-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "j54a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "b946-pb-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "cngn-nu-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "i46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "y41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "ss65-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "l29-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "i45a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "s22a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d41-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "x43a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "o02d-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "m54a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "j39a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "a18-xd-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "121a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "hda-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "dec-ci-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "meck-yt-_ldsp.lht_iter_g1.stf",
-                        "size": 17016
+                        "sizeInBytes": 17016
                     },
                     {
                         "link": "input",
                         "name": "h47a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "fs10-zd-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "h41a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "d48-xt-_ldsp.lht_iter_g1.stf",
-                        "size": 2680
+                        "sizeInBytes": 2680
                     },
                     {
                         "link": "input",
                         "name": "ptga-iu-00_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "ksp-pl-_ldsp.lht_iter_g1.stf",
-                        "size": 8824
+                        "sizeInBytes": 8824
                     },
                     {
                         "link": "input",
                         "name": "d46a-ta-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "input",
                         "name": "sm18-xi-_ldsp.lht_iter_g1.stf",
-                        "size": 4728
+                        "sizeInBytes": 4728
                     },
                     {
                         "link": "output",
                         "name": "good-fits.tar.gz",
-                        "size": 63471
+                        "sizeInBytes": 63471
                     }
                 ],
                 "avgCPU": 77.5281,
@@ -4291,8 +4289,10 @@
                         "ptga-iu-00_ldsp.lht_iter_g1.stf",
                         "biny-us-00_ldsp.lht_iter_g1.stf"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.089
             }
-        ]
+        ],
+        "makespanInSeconds": 354.0
     }
 }

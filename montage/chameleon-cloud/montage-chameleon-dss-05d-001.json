@@ -2,7 +2,7 @@
     "name": "montage-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-03T19:59:42.124208Z",
-    "schemaVersion": "1.3",
+    "schemaVersion": "1.4",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -13,19 +13,18 @@
         "email": "support@wrench-project.org"
     },
     "workflow": {
-        "makespan": 870.0,
         "machines": [
             {
                 "nodeName": "pegasus-5",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-88-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 1299
-                }
+                },
+                "memoryInBytes": 131795984000
             }
         ],
         "executedAt": "20200403T232446+0000",
@@ -33,28 +32,27 @@
             {
                 "name": "mProject_ID0000001",
                 "type": "compute",
-                "runtime": 534.058,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_blue_001_001.fits",
-                        "size": 9655399
+                        "sizeInBytes": 9655399
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     }
                 ],
                 "avgCPU": 97.1885,
@@ -70,33 +68,33 @@
                         "pposs2ukstu_blue_001_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 534.058
             },
             {
                 "name": "mProject_ID0000002",
                 "type": "compute",
-                "runtime": 543.888,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_blue_001_002.fits",
-                        "size": 8587351
+                        "sizeInBytes": 8587351
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     }
                 ],
                 "avgCPU": 97.4668,
@@ -112,33 +110,33 @@
                         "pposs2ukstu_blue_001_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 543.888
             },
             {
                 "name": "mProject_ID0000003",
                 "type": "compute",
-                "runtime": 543.136,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_blue_002_001.fits",
-                        "size": 8814261
+                        "sizeInBytes": 8814261
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     }
                 ],
                 "avgCPU": 97.0551,
@@ -154,33 +152,33 @@
                         "pposs2ukstu_blue_002_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 543.136
             },
             {
                 "name": "mProject_ID0000004",
                 "type": "compute",
-                "runtime": 546.161,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_blue_002_002.fits",
-                        "size": 8238778
+                        "sizeInBytes": 8238778
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     }
                 ],
                 "avgCPU": 97.1054,
@@ -196,12 +194,12 @@
                         "pposs2ukstu_blue_002_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 546.161
             },
             {
                 "name": "mDiffFit_ID0000005",
                 "type": "compute",
-                "runtime": 3.46,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000002"
@@ -210,32 +208,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000001.000002.txt",
-                        "size": 286
+                        "sizeInBytes": 286
                     }
                 ],
                 "avgCPU": 0.1156,
@@ -254,12 +252,12 @@
                         "1-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.46
             },
             {
                 "name": "mDiffFit_ID0000006",
                 "type": "compute",
-                "runtime": 4.275,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000003"
@@ -268,32 +266,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000001.000003.txt",
-                        "size": 291
+                        "sizeInBytes": 291
                     }
                 ],
                 "avgCPU": 0.117,
@@ -312,12 +310,12 @@
                         "1-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.275
             },
             {
                 "name": "mDiffFit_ID0000007",
                 "type": "compute",
-                "runtime": 1.424,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000004"
@@ -326,32 +324,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000001.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     }
                 ],
                 "avgCPU": 0.3511,
@@ -370,12 +368,12 @@
                         "1-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.424
             },
             {
                 "name": "mDiffFit_ID0000008",
                 "type": "compute",
-                "runtime": 1.299,
                 "parents": [
                     "mProject_ID0000002",
                     "mProject_ID0000003"
@@ -384,32 +382,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000002.000003.txt",
-                        "size": 283
+                        "sizeInBytes": 283
                     }
                 ],
                 "avgCPU": 0.3849,
@@ -428,12 +426,12 @@
                         "1-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.299
             },
             {
                 "name": "mDiffFit_ID0000009",
                 "type": "compute",
-                "runtime": 2.197,
                 "parents": [
                     "mProject_ID0000002",
                     "mProject_ID0000004"
@@ -442,32 +440,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000002.000004.txt",
-                        "size": 284
+                        "sizeInBytes": 284
                     }
                 ],
                 "avgCPU": 0.1821,
@@ -486,12 +484,12 @@
                         "1-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.197
             },
             {
                 "name": "mDiffFit_ID0000010",
                 "type": "compute",
-                "runtime": 2.239,
                 "parents": [
                     "mProject_ID0000003",
                     "mProject_ID0000004"
@@ -500,32 +498,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000003.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     }
                 ],
                 "avgCPU": 0.1787,
@@ -544,12 +542,12 @@
                         "1-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.239
             },
             {
                 "name": "mConcatFit_ID0000011",
                 "type": "compute",
-                "runtime": 0.181,
                 "parents": [
                     "mDiffFit_ID0000009",
                     "mDiffFit_ID0000008",
@@ -562,42 +560,42 @@
                     {
                         "link": "input",
                         "name": "1-stat.tbl",
-                        "size": 1200
+                        "sizeInBytes": 1200
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000002.000003.txt",
-                        "size": 283
+                        "sizeInBytes": 283
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000001.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000001.000003.txt",
-                        "size": 291
+                        "sizeInBytes": 291
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000002.000004.txt",
-                        "size": 284
+                        "sizeInBytes": 284
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000003.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000001.000002.txt",
-                        "size": 286
+                        "sizeInBytes": 286
                     },
                     {
                         "link": "output",
                         "name": "1-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     }
                 ],
                 "avgCPU": 100.0,
@@ -612,12 +610,12 @@
                         "1-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.181
             },
             {
                 "name": "mBgModel_ID0000012",
                 "type": "compute",
-                "runtime": 0.563,
                 "parents": [
                     "mConcatFit_ID0000011"
                 ],
@@ -625,17 +623,17 @@
                     {
                         "link": "input",
                         "name": "1-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "input",
                         "name": "1-images.tbl",
-                        "size": 2246
+                        "sizeInBytes": 2246
                     },
                     {
                         "link": "output",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -652,12 +650,12 @@
                         "1-fits.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.563
             },
             {
                 "name": "mBackground_ID0000013",
                 "type": "compute",
-                "runtime": 5.807,
                 "parents": [
                     "mProject_ID0000001",
                     "mBgModel_ID0000012"
@@ -666,32 +664,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 952
+                        "sizeInBytes": 952
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     }
                 ],
                 "avgCPU": 11.5722,
@@ -708,12 +706,12 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.807
             },
             {
                 "name": "mBackground_ID0000014",
                 "type": "compute",
-                "runtime": 5.03,
                 "parents": [
                     "mBgModel_ID0000012",
                     "mProject_ID0000002"
@@ -722,32 +720,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 952
+                        "sizeInBytes": 952
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     }
                 ],
                 "avgCPU": 12.4254,
@@ -764,12 +762,12 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.03
             },
             {
                 "name": "mBackground_ID0000015",
                 "type": "compute",
-                "runtime": 5.073,
                 "parents": [
                     "mBgModel_ID0000012",
                     "mProject_ID0000003"
@@ -778,32 +776,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 952
+                        "sizeInBytes": 952
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     }
                 ],
                 "avgCPU": 13.1678,
@@ -820,12 +818,12 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.073
             },
             {
                 "name": "mBackground_ID0000016",
                 "type": "compute",
-                "runtime": 5.068,
                 "parents": [
                     "mBgModel_ID0000012",
                     "mProject_ID0000004"
@@ -834,32 +832,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 952
+                        "sizeInBytes": 952
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     }
                 ],
                 "avgCPU": 12.9242,
@@ -876,12 +874,12 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.068
             },
             {
                 "name": "mImgtbl_ID0000017",
                 "type": "compute",
-                "runtime": 0.169,
                 "parents": [
                     "mBackground_ID0000013",
                     "mBackground_ID0000016",
@@ -892,32 +890,32 @@
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "1-corrected.tbl",
-                        "size": 952
+                        "sizeInBytes": 952
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "1-updated-corrected.tbl",
-                        "size": 2606
+                        "sizeInBytes": 2606
                     }
                 ],
                 "avgCPU": 99.4083,
@@ -933,12 +931,12 @@
                         "1-corrected.tbl",
                         "1-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.169
             },
             {
                 "name": "mAdd_ID0000018",
                 "type": "compute",
-                "runtime": 0.546,
                 "parents": [
                     "mBackground_ID0000013",
                     "mBackground_ID0000016",
@@ -950,62 +948,62 @@
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 275
+                        "sizeInBytes": 275
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_001.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_001_area.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_002_area.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_001.fits",
-                        "size": 53193600
+                        "sizeInBytes": 53193600
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_001_area.fits",
-                        "size": 53153280
+                        "sizeInBytes": 53153280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_001_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "input",
                         "name": "1-updated-corrected.tbl",
-                        "size": 2606
+                        "sizeInBytes": 2606
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_blue_002_002.fits",
-                        "size": 53173440
+                        "sizeInBytes": 53173440
                     },
                     {
                         "link": "output",
                         "name": "1-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "1-mosaic_area.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     }
                 ],
                 "avgCPU": 96.5201,
@@ -1021,12 +1019,12 @@
                         "region.hdr",
                         "1-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.546
             },
             {
                 "name": "mViewer_ID0000019",
                 "type": "compute",
-                "runtime": 1.423,
                 "parents": [
                     "mAdd_ID0000018"
                 ],
@@ -1034,12 +1032,12 @@
                     {
                         "link": "input",
                         "name": "1-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "1-mosaic.jpg",
-                        "size": 983389
+                        "sizeInBytes": 983389
                     }
                 ],
                 "avgCPU": 99.9297,
@@ -1060,33 +1058,33 @@
                         "-out",
                         "1-mosaic.jpg"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.423
             },
             {
                 "name": "mProject_ID0000020",
                 "type": "compute",
-                "runtime": 337.772,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_red_001_001.fits",
-                        "size": 6900714
+                        "sizeInBytes": 6900714
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     }
                 ],
                 "avgCPU": 99.8064,
@@ -1102,33 +1100,33 @@
                         "pposs2ukstu_red_001_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 337.772
             },
             {
                 "name": "mProject_ID0000021",
                 "type": "compute",
-                "runtime": 350.744,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_red_001_002.fits",
-                        "size": 6494409
+                        "sizeInBytes": 6494409
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     }
                 ],
                 "avgCPU": 99.9116,
@@ -1144,33 +1142,33 @@
                         "pposs2ukstu_red_001_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 350.744
             },
             {
                 "name": "mProject_ID0000022",
                 "type": "compute",
-                "runtime": 336.649,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_red_002_001.fits",
-                        "size": 6570387
+                        "sizeInBytes": 6570387
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     }
                 ],
                 "avgCPU": 99.8589,
@@ -1186,33 +1184,33 @@
                         "pposs2ukstu_red_002_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 336.649
             },
             {
                 "name": "mProject_ID0000023",
                 "type": "compute",
-                "runtime": 348.14,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_red_002_002.fits",
-                        "size": 6376872
+                        "sizeInBytes": 6376872
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     }
                 ],
                 "avgCPU": 99.861,
@@ -1228,12 +1226,12 @@
                         "pposs2ukstu_red_002_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 348.14
             },
             {
                 "name": "mDiffFit_ID0000024",
                 "type": "compute",
-                "runtime": 1.919,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000021"
@@ -1242,32 +1240,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000002.txt",
-                        "size": 289
+                        "sizeInBytes": 289
                     }
                 ],
                 "avgCPU": 0.2084,
@@ -1286,12 +1284,12 @@
                         "2-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.919
             },
             {
                 "name": "mDiffFit_ID0000025",
                 "type": "compute",
-                "runtime": 1.828,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000022"
@@ -1300,32 +1298,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000003.txt",
-                        "size": 287
+                        "sizeInBytes": 287
                     }
                 ],
                 "avgCPU": 0.2735,
@@ -1344,12 +1342,12 @@
                         "2-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.828
             },
             {
                 "name": "mDiffFit_ID0000026",
                 "type": "compute",
-                "runtime": 1.294,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000023"
@@ -1358,32 +1356,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000004.txt",
-                        "size": 281
+                        "sizeInBytes": 281
                     }
                 ],
                 "avgCPU": 0.3091,
@@ -1402,12 +1400,12 @@
                         "2-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.294
             },
             {
                 "name": "mDiffFit_ID0000027",
                 "type": "compute",
-                "runtime": 1.281,
                 "parents": [
                     "mProject_ID0000021",
                     "mProject_ID0000022"
@@ -1416,32 +1414,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000002.000003.txt",
-                        "size": 282
+                        "sizeInBytes": 282
                     }
                 ],
                 "avgCPU": 0.3123,
@@ -1460,12 +1458,12 @@
                         "2-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.281
             },
             {
                 "name": "mDiffFit_ID0000028",
                 "type": "compute",
-                "runtime": 1.327,
                 "parents": [
                     "mProject_ID0000021",
                     "mProject_ID0000023"
@@ -1474,32 +1472,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000002.000004.txt",
-                        "size": 284
+                        "sizeInBytes": 284
                     }
                 ],
                 "avgCPU": 0.3014,
@@ -1518,12 +1516,12 @@
                         "2-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.327
             },
             {
                 "name": "mDiffFit_ID0000029",
                 "type": "compute",
-                "runtime": 2.267,
                 "parents": [
                     "mProject_ID0000022",
                     "mProject_ID0000023"
@@ -1532,32 +1530,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000003.000004.txt",
-                        "size": 283
+                        "sizeInBytes": 283
                     }
                 ],
                 "avgCPU": 0.1764,
@@ -1576,12 +1574,12 @@
                         "2-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.267
             },
             {
                 "name": "mConcatFit_ID0000030",
                 "type": "compute",
-                "runtime": 0.191,
                 "parents": [
                     "mDiffFit_ID0000029",
                     "mDiffFit_ID0000028",
@@ -1594,42 +1592,42 @@
                     {
                         "link": "input",
                         "name": "2-fit.000001.000002.txt",
-                        "size": 289
+                        "sizeInBytes": 289
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000003.000004.txt",
-                        "size": 283
+                        "sizeInBytes": 283
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000001.000003.txt",
-                        "size": 287
+                        "sizeInBytes": 287
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000002.000003.txt",
-                        "size": 282
+                        "sizeInBytes": 282
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000002.000004.txt",
-                        "size": 284
+                        "sizeInBytes": 284
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000001.000004.txt",
-                        "size": 281
+                        "sizeInBytes": 281
                     },
                     {
                         "link": "input",
                         "name": "2-stat.tbl",
-                        "size": 1180
+                        "sizeInBytes": 1180
                     },
                     {
                         "link": "output",
                         "name": "2-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1644,12 +1642,12 @@
                         "2-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.191
             },
             {
                 "name": "mBgModel_ID0000031",
                 "type": "compute",
-                "runtime": 0.607,
                 "parents": [
                     "mConcatFit_ID0000030"
                 ],
@@ -1657,17 +1655,17 @@
                     {
                         "link": "input",
                         "name": "2-images.tbl",
-                        "size": 2246
+                        "sizeInBytes": 2246
                     },
                     {
                         "link": "input",
                         "name": "2-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "output",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1684,12 +1682,12 @@
                         "2-fits.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.607
             },
             {
                 "name": "mBackground_ID0000032",
                 "type": "compute",
-                "runtime": 4.768,
                 "parents": [
                     "mBgModel_ID0000031",
                     "mProject_ID0000020"
@@ -1698,32 +1696,32 @@
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 946
+                        "sizeInBytes": 946
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     }
                 ],
                 "avgCPU": 14.2198,
@@ -1740,12 +1738,12 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.768
             },
             {
                 "name": "mBackground_ID0000033",
                 "type": "compute",
-                "runtime": 4.847,
                 "parents": [
                     "mBgModel_ID0000031",
                     "mProject_ID0000021"
@@ -1754,32 +1752,32 @@
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 946
+                        "sizeInBytes": 946
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     }
                 ],
                 "avgCPU": 14.2975,
@@ -1796,12 +1794,12 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.847
             },
             {
                 "name": "mBackground_ID0000034",
                 "type": "compute",
-                "runtime": 6.715,
                 "parents": [
                     "mBgModel_ID0000031",
                     "mProject_ID0000022"
@@ -1810,32 +1808,32 @@
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 946
+                        "sizeInBytes": 946
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     }
                 ],
                 "avgCPU": 10.4393,
@@ -1852,12 +1850,12 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 6.715
             },
             {
                 "name": "mBackground_ID0000035",
                 "type": "compute",
-                "runtime": 2.047,
                 "parents": [
                     "mBgModel_ID0000031",
                     "mProject_ID0000023"
@@ -1866,32 +1864,32 @@
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 946
+                        "sizeInBytes": 946
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     }
                 ],
                 "avgCPU": 32.6331,
@@ -1908,12 +1906,12 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.047
             },
             {
                 "name": "mImgtbl_ID0000036",
                 "type": "compute",
-                "runtime": 0.152,
                 "parents": [
                     "mBackground_ID0000035",
                     "mBackground_ID0000034",
@@ -1924,32 +1922,32 @@
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "2-corrected.tbl",
-                        "size": 946
+                        "sizeInBytes": 946
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "2-updated-corrected.tbl",
-                        "size": 2600
+                        "sizeInBytes": 2600
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1965,12 +1963,12 @@
                         "2-corrected.tbl",
                         "2-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.152
             },
             {
                 "name": "mAdd_ID0000037",
                 "type": "compute",
-                "runtime": 0.617,
                 "parents": [
                     "mBackground_ID0000035",
                     "mBackground_ID0000034",
@@ -1982,62 +1980,62 @@
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 275
+                        "sizeInBytes": 275
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_001_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_002_area.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_001.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_001_area.fits",
-                        "size": 52513920
+                        "sizeInBytes": 52513920
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_002.fits",
-                        "size": 52557120
+                        "sizeInBytes": 52557120
                     },
                     {
                         "link": "input",
                         "name": "2-updated-corrected.tbl",
-                        "size": 2600
+                        "sizeInBytes": 2600
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_002.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_001_001.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_red_002_002_area.fits",
-                        "size": 52536960
+                        "sizeInBytes": 52536960
                     },
                     {
                         "link": "output",
                         "name": "2-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "2-mosaic_area.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     }
                 ],
                 "avgCPU": 89.141,
@@ -2053,12 +2051,12 @@
                         "region.hdr",
                         "2-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.617
             },
             {
                 "name": "mViewer_ID0000038",
                 "type": "compute",
-                "runtime": 1.541,
                 "parents": [
                     "mAdd_ID0000037"
                 ],
@@ -2066,12 +2064,12 @@
                     {
                         "link": "input",
                         "name": "2-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "2-mosaic.jpg",
-                        "size": 1141747
+                        "sizeInBytes": 1141747
                     }
                 ],
                 "avgCPU": 97.0798,
@@ -2092,33 +2090,33 @@
                         "-out",
                         "2-mosaic.jpg"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.541
             },
             {
                 "name": "mProject_ID0000039",
                 "type": "compute",
-                "runtime": 483.899,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_ir_001_001.fits",
-                        "size": 7327978
+                        "sizeInBytes": 7327978
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 99.3986,
@@ -2134,33 +2132,33 @@
                         "pposs2ukstu_ir_001_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 483.899
             },
             {
                 "name": "mProject_ID0000040",
                 "type": "compute",
-                "runtime": 478.164,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_ir_001_002.fits",
-                        "size": 7167257
+                        "sizeInBytes": 7167257
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     }
                 ],
                 "avgCPU": 99.6553,
@@ -2176,33 +2174,33 @@
                         "pposs2ukstu_ir_001_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 478.164
             },
             {
                 "name": "mProject_ID0000041",
                 "type": "compute",
-                "runtime": 482.175,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_ir_002_001.fits",
-                        "size": 7217492
+                        "sizeInBytes": 7217492
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 99.6356,
@@ -2218,33 +2216,33 @@
                         "pposs2ukstu_ir_002_001.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 482.175
             },
             {
                 "name": "mProject_ID0000042",
                 "type": "compute",
-                "runtime": 483.975,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "poss2ukstu_ir_002_002.fits",
-                        "size": 7120723
+                        "sizeInBytes": 7120723
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "pposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 99.3409,
@@ -2260,12 +2258,12 @@
                         "pposs2ukstu_ir_002_002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 483.975
             },
             {
                 "name": "mDiffFit_ID0000043",
                 "type": "compute",
-                "runtime": 1.938,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000040"
@@ -2274,32 +2272,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000002.txt",
-                        "size": 287
+                        "sizeInBytes": 287
                     }
                 ],
                 "avgCPU": 0.2064,
@@ -2318,12 +2316,12 @@
                         "3-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.938
             },
             {
                 "name": "mDiffFit_ID0000044",
                 "type": "compute",
-                "runtime": 5.821,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000041"
@@ -2332,32 +2330,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000003.txt",
-                        "size": 290
+                        "sizeInBytes": 290
                     }
                 ],
                 "avgCPU": 0.0687,
@@ -2376,12 +2374,12 @@
                         "3-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.821
             },
             {
                 "name": "mDiffFit_ID0000045",
                 "type": "compute",
-                "runtime": 0.659,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000042"
@@ -2390,32 +2388,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000004.txt",
-                        "size": 282
+                        "sizeInBytes": 282
                     }
                 ],
                 "avgCPU": 0.7587,
@@ -2434,12 +2432,12 @@
                         "3-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.659
             },
             {
                 "name": "mDiffFit_ID0000046",
                 "type": "compute",
-                "runtime": 2.014,
                 "parents": [
                     "mProject_ID0000040",
                     "mProject_ID0000041"
@@ -2448,32 +2446,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000002.000003.txt",
-                        "size": 280
+                        "sizeInBytes": 280
                     }
                 ],
                 "avgCPU": 0.1986,
@@ -2492,12 +2490,12 @@
                         "3-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.014
             },
             {
                 "name": "mDiffFit_ID0000047",
                 "type": "compute",
-                "runtime": 4.581,
                 "parents": [
                     "mProject_ID0000040",
                     "mProject_ID0000042"
@@ -2506,32 +2504,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000002.000004.txt",
-                        "size": 286
+                        "sizeInBytes": 286
                     }
                 ],
                 "avgCPU": 0.0873,
@@ -2550,12 +2548,12 @@
                         "3-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.581
             },
             {
                 "name": "mDiffFit_ID0000048",
                 "type": "compute",
-                "runtime": 4.533,
                 "parents": [
                     "mProject_ID0000041",
                     "mProject_ID0000042"
@@ -2564,32 +2562,32 @@
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000003.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     }
                 ],
                 "avgCPU": 0.0662,
@@ -2608,12 +2606,12 @@
                         "3-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.533
             },
             {
                 "name": "mConcatFit_ID0000049",
                 "type": "compute",
-                "runtime": 0.19,
                 "parents": [
                     "mDiffFit_ID0000048",
                     "mDiffFit_ID0000047",
@@ -2626,42 +2624,42 @@
                     {
                         "link": "input",
                         "name": "3-fit.000003.000004.txt",
-                        "size": 285
+                        "sizeInBytes": 285
                     },
                     {
                         "link": "input",
                         "name": "3-stat.tbl",
-                        "size": 1160
+                        "sizeInBytes": 1160
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000002.000003.txt",
-                        "size": 280
+                        "sizeInBytes": 280
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000001.000003.txt",
-                        "size": 290
+                        "sizeInBytes": 290
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000001.000004.txt",
-                        "size": 282
+                        "sizeInBytes": 282
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000002.000004.txt",
-                        "size": 286
+                        "sizeInBytes": 286
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000001.000002.txt",
-                        "size": 287
+                        "sizeInBytes": 287
                     },
                     {
                         "link": "output",
                         "name": "3-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     }
                 ],
                 "avgCPU": 99.4737,
@@ -2676,12 +2674,12 @@
                         "3-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.19
             },
             {
                 "name": "mBgModel_ID0000050",
                 "type": "compute",
-                "runtime": 0.566,
                 "parents": [
                     "mConcatFit_ID0000049"
                 ],
@@ -2689,17 +2687,17 @@
                     {
                         "link": "input",
                         "name": "3-images.tbl",
-                        "size": 2246
+                        "sizeInBytes": 2246
                     },
                     {
                         "link": "input",
                         "name": "3-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "output",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2716,12 +2714,12 @@
                         "3-fits.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.566
             },
             {
                 "name": "mBackground_ID0000051",
                 "type": "compute",
-                "runtime": 4.88,
                 "parents": [
                     "mProject_ID0000039",
                     "mBgModel_ID0000050"
@@ -2730,32 +2728,32 @@
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 940
+                        "sizeInBytes": 940
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 13.5041,
@@ -2772,12 +2770,12 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.88
             },
             {
                 "name": "mBackground_ID0000052",
                 "type": "compute",
-                "runtime": 4.912,
                 "parents": [
                     "mProject_ID0000040",
                     "mBgModel_ID0000050"
@@ -2786,32 +2784,32 @@
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 940
+                        "sizeInBytes": 940
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     }
                 ],
                 "avgCPU": 13.3958,
@@ -2828,12 +2826,12 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.912
             },
             {
                 "name": "mBackground_ID0000053",
                 "type": "compute",
-                "runtime": 4.928,
                 "parents": [
                     "mProject_ID0000041",
                     "mBgModel_ID0000050"
@@ -2842,32 +2840,32 @@
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 940
+                        "sizeInBytes": 940
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 13.3523,
@@ -2884,12 +2882,12 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.928
             },
             {
                 "name": "mBackground_ID0000054",
                 "type": "compute",
-                "runtime": 5.425,
                 "parents": [
                     "mProject_ID0000042",
                     "mBgModel_ID0000050"
@@ -2898,32 +2896,32 @@
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 940
+                        "sizeInBytes": 940
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "pposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "cposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     }
                 ],
                 "avgCPU": 12.0184,
@@ -2940,12 +2938,12 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 5.425
             },
             {
                 "name": "mImgtbl_ID0000055",
                 "type": "compute",
-                "runtime": 0.165,
                 "parents": [
                     "mBackground_ID0000054",
                     "mBackground_ID0000053",
@@ -2956,32 +2954,32 @@
                     {
                         "link": "input",
                         "name": "3-corrected.tbl",
-                        "size": 940
+                        "sizeInBytes": 940
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "3-updated-corrected.tbl",
-                        "size": 2594
+                        "sizeInBytes": 2594
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2997,12 +2995,12 @@
                         "3-corrected.tbl",
                         "3-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.165
             },
             {
                 "name": "mAdd_ID0000056",
                 "type": "compute",
-                "runtime": 0.523,
                 "parents": [
                     "mImgtbl_ID0000055",
                     "mBackground_ID0000054",
@@ -3014,62 +3012,62 @@
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 275
+                        "sizeInBytes": 275
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_002_area.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_002.fits",
-                        "size": 53029440
+                        "sizeInBytes": 53029440
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "3-updated-corrected.tbl",
-                        "size": 2594
+                        "sizeInBytes": 2594
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_002_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_002_002.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_001_area.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "input",
                         "name": "cposs2ukstu_ir_001_001.fits",
-                        "size": 53009280
+                        "sizeInBytes": 53009280
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic_area.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3085,12 +3083,12 @@
                         "region.hdr",
                         "3-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.523
             },
             {
                 "name": "mViewer_ID0000057",
                 "type": "compute",
-                "runtime": 1.632,
                 "parents": [
                     "mAdd_ID0000056"
                 ],
@@ -3098,12 +3096,12 @@
                     {
                         "link": "input",
                         "name": "3-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic.jpg",
-                        "size": 1691841
+                        "sizeInBytes": 1691841
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3124,12 +3122,12 @@
                         "-out",
                         "3-mosaic.jpg"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.632
             },
             {
                 "name": "mViewer_ID0000058",
                 "type": "compute",
-                "runtime": 4.128,
                 "parents": [
                     "mAdd_ID0000056",
                     "mAdd_ID0000037",
@@ -3139,22 +3137,22 @@
                     {
                         "link": "input",
                         "name": "3-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "input",
                         "name": "2-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "input",
                         "name": "1-mosaic.fits",
-                        "size": 25922880
+                        "sizeInBytes": 25922880
                     },
                     {
                         "link": "output",
                         "name": "mosaic-color.jpg",
-                        "size": 5698193
+                        "sizeInBytes": 5698193
                     }
                 ],
                 "avgCPU": 99.9758,
@@ -3183,8 +3181,10 @@
                         "-out",
                         "mosaic-color.jpg"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.128
             }
-        ]
+        ],
+        "makespanInSeconds": 870.0
     }
 }

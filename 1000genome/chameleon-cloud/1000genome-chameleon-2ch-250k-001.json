@@ -2,7 +2,7 @@
     "name": "1000genome-20200402T001655Z-0",
     "description": "Trace generated with wrench-pegasus-parser.py from http://wrench-project.org",
     "createdAt": "2020-04-03T12:04:50.645730Z",
-    "schemaVersion": "1.3",
+    "schemaVersion": "1.4",
     "wms": {
         "url": "http://pegasus.isi.edu",
         "version": "4.9.3",
@@ -13,43 +13,42 @@
         "email": "support@wrench-project.org"
     },
     "workflow": {
-        "makespan": 2391.0,
         "machines": [
             {
                 "nodeName": "pegasus-5",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-88-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 2197
-                }
+                },
+                "memoryInBytes": 131795984000
             },
             {
                 "nodeName": "pegasus-4",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-88-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 1244
-                }
+                },
+                "memoryInBytes": 131795984000
             },
             {
                 "nodeName": "pegasus-2",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795984,
                 "release": "4.15.0-88-generic",
                 "cpu": {
                     "count": 48,
                     "vendor": "GenuineIntel",
                     "speed": 2190
-                }
+                },
+                "memoryInBytes": 131795984000
             }
         ],
         "executedAt": "20200402T001711+0000",
@@ -57,23 +56,22 @@
             {
                 "name": "individuals_ID0000001",
                 "type": "compute",
-                "runtime": 53.326,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-1-1001.tar.gz",
-                        "size": 28221
+                        "sizeInBytes": 28221
                     }
                 ],
                 "avgCPU": 169.7596,
@@ -90,28 +88,28 @@
                         "1001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.326
             },
             {
                 "name": "individuals_ID0000002",
                 "type": "compute",
-                "runtime": 53.407,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-1001-2001.tar.gz",
-                        "size": 28287
+                        "sizeInBytes": 28287
                     }
                 ],
                 "avgCPU": 170.6611,
@@ -128,28 +126,28 @@
                         "2001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.407
             },
             {
                 "name": "individuals_ID0000003",
                 "type": "compute",
-                "runtime": 51.718,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-2001-3001.tar.gz",
-                        "size": 27721
+                        "sizeInBytes": 27721
                     }
                 ],
                 "avgCPU": 178.3441,
@@ -166,28 +164,28 @@
                         "3001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 51.718
             },
             {
                 "name": "individuals_ID0000004",
                 "type": "compute",
-                "runtime": 51.784,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-3001-4001.tar.gz",
-                        "size": 27738
+                        "sizeInBytes": 27738
                     }
                 ],
                 "avgCPU": 175.2317,
@@ -204,28 +202,28 @@
                         "4001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 51.784
             },
             {
                 "name": "individuals_ID0000005",
                 "type": "compute",
-                "runtime": 53.477,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-4001-5001.tar.gz",
-                        "size": 28287
+                        "sizeInBytes": 28287
                     }
                 ],
                 "avgCPU": 168.9287,
@@ -242,28 +240,28 @@
                         "5001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.477
             },
             {
                 "name": "individuals_ID0000006",
                 "type": "compute",
-                "runtime": 53.098,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-5001-6001.tar.gz",
-                        "size": 28245
+                        "sizeInBytes": 28245
                     }
                 ],
                 "avgCPU": 170.5902,
@@ -280,28 +278,28 @@
                         "6001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.098
             },
             {
                 "name": "individuals_ID0000007",
                 "type": "compute",
-                "runtime": 53.383,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-6001-7001.tar.gz",
-                        "size": 28194
+                        "sizeInBytes": 28194
                     }
                 ],
                 "avgCPU": 169.8537,
@@ -318,28 +316,28 @@
                         "7001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.383
             },
             {
                 "name": "individuals_ID0000008",
                 "type": "compute",
-                "runtime": 51.345,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-7001-8001.tar.gz",
-                        "size": 28107
+                        "sizeInBytes": 28107
                     }
                 ],
                 "avgCPU": 178.3523,
@@ -356,28 +354,28 @@
                         "8001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 51.345
             },
             {
                 "name": "individuals_ID0000009",
                 "type": "compute",
-                "runtime": 52.063,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-8001-9001.tar.gz",
-                        "size": 28103
+                        "sizeInBytes": 28103
                     }
                 ],
                 "avgCPU": 176.9126,
@@ -394,28 +392,28 @@
                         "9001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 52.063
             },
             {
                 "name": "individuals_ID0000010",
                 "type": "compute",
-                "runtime": 51.745,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-9001-10001.tar.gz",
-                        "size": 27937
+                        "sizeInBytes": 27937
                     }
                 ],
                 "avgCPU": 175.6189,
@@ -432,28 +430,28 @@
                         "10001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 51.745
             },
             {
                 "name": "individuals_ID0000011",
                 "type": "compute",
-                "runtime": 56.299,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-10001-11001.tar.gz",
-                        "size": 28347
+                        "sizeInBytes": 28347
                     }
                 ],
                 "avgCPU": 176.195,
@@ -470,28 +468,28 @@
                         "11001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.299
             },
             {
                 "name": "individuals_ID0000012",
                 "type": "compute",
-                "runtime": 56.019,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-11001-12001.tar.gz",
-                        "size": 28389
+                        "sizeInBytes": 28389
                     }
                 ],
                 "avgCPU": 175.9939,
@@ -508,28 +506,28 @@
                         "12001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.019
             },
             {
                 "name": "individuals_ID0000013",
                 "type": "compute",
-                "runtime": 56.451,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-12001-13001.tar.gz",
-                        "size": 28280
+                        "sizeInBytes": 28280
                     }
                 ],
                 "avgCPU": 176.3937,
@@ -546,28 +544,28 @@
                         "13001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.451
             },
             {
                 "name": "individuals_ID0000014",
                 "type": "compute",
-                "runtime": 56.148,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-13001-14001.tar.gz",
-                        "size": 28308
+                        "sizeInBytes": 28308
                     }
                 ],
                 "avgCPU": 176.2592,
@@ -584,28 +582,28 @@
                         "14001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.148
             },
             {
                 "name": "individuals_ID0000015",
                 "type": "compute",
-                "runtime": 69.515,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-14001-15001.tar.gz",
-                        "size": 28401
+                        "sizeInBytes": 28401
                     }
                 ],
                 "avgCPU": 135.4211,
@@ -622,28 +620,28 @@
                         "15001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 69.515
             },
             {
                 "name": "individuals_ID0000016",
                 "type": "compute",
-                "runtime": 56.249,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-15001-16001.tar.gz",
-                        "size": 28240
+                        "sizeInBytes": 28240
                     }
                 ],
                 "avgCPU": 176.1151,
@@ -660,28 +658,28 @@
                         "16001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.249
             },
             {
                 "name": "individuals_ID0000017",
                 "type": "compute",
-                "runtime": 56.039,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-16001-17001.tar.gz",
-                        "size": 28403
+                        "sizeInBytes": 28403
                     }
                 ],
                 "avgCPU": 175.758,
@@ -698,28 +696,28 @@
                         "17001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.039
             },
             {
                 "name": "individuals_ID0000018",
                 "type": "compute",
-                "runtime": 56.061,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-17001-18001.tar.gz",
-                        "size": 28310
+                        "sizeInBytes": 28310
                     }
                 ],
                 "avgCPU": 175.9672,
@@ -736,28 +734,28 @@
                         "18001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.061
             },
             {
                 "name": "individuals_ID0000019",
                 "type": "compute",
-                "runtime": 56.153,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-18001-19001.tar.gz",
-                        "size": 28186
+                        "sizeInBytes": 28186
                     }
                 ],
                 "avgCPU": 176.7314,
@@ -774,28 +772,28 @@
                         "19001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.153
             },
             {
                 "name": "individuals_ID0000020",
                 "type": "compute",
-                "runtime": 55.862,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-19001-20001.tar.gz",
-                        "size": 28110
+                        "sizeInBytes": 28110
                     }
                 ],
                 "avgCPU": 169.1239,
@@ -812,28 +810,28 @@
                         "20001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 55.862
             },
             {
                 "name": "individuals_ID0000021",
                 "type": "compute",
-                "runtime": 56.485,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-20001-21001.tar.gz",
-                        "size": 27931
+                        "sizeInBytes": 27931
                     }
                 ],
                 "avgCPU": 166.1556,
@@ -850,28 +848,28 @@
                         "21001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.485
             },
             {
                 "name": "individuals_ID0000022",
                 "type": "compute",
-                "runtime": 53.151,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-21001-22001.tar.gz",
-                        "size": 28303
+                        "sizeInBytes": 28303
                     }
                 ],
                 "avgCPU": 170.407,
@@ -888,28 +886,28 @@
                         "22001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.151
             },
             {
                 "name": "individuals_ID0000023",
                 "type": "compute",
-                "runtime": 53.431,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-22001-23001.tar.gz",
-                        "size": 28313
+                        "sizeInBytes": 28313
                     }
                 ],
                 "avgCPU": 169.0891,
@@ -926,28 +924,28 @@
                         "23001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.431
             },
             {
                 "name": "individuals_ID0000024",
                 "type": "compute",
-                "runtime": 51.102,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-23001-24001.tar.gz",
-                        "size": 27960
+                        "sizeInBytes": 27960
                     }
                 ],
                 "avgCPU": 179.4626,
@@ -964,28 +962,28 @@
                         "24001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 51.102
             },
             {
                 "name": "individuals_ID0000025",
                 "type": "compute",
-                "runtime": 52.633,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.250000.vcf",
-                        "size": 2539923774
+                        "sizeInBytes": 2539923774
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr21n-24001-25001.tar.gz",
-                        "size": 28340
+                        "sizeInBytes": 28340
                     }
                 ],
                 "avgCPU": 175.8441,
@@ -1002,12 +1000,12 @@
                         "25001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 52.633
             },
             {
                 "name": "individuals_merge_ID0000026",
                 "type": "compute",
-                "runtime": 94.278,
                 "parents": [
                     "individuals_ID0000004",
                     "individuals_ID0000005",
@@ -1039,132 +1037,132 @@
                     {
                         "link": "input",
                         "name": "chr21n-17001-18001.tar.gz",
-                        "size": 28310
+                        "sizeInBytes": 28310
                     },
                     {
                         "link": "input",
                         "name": "chr21n-2001-3001.tar.gz",
-                        "size": 27721
+                        "sizeInBytes": 27721
                     },
                     {
                         "link": "input",
                         "name": "chr21n-10001-11001.tar.gz",
-                        "size": 28347
+                        "sizeInBytes": 28347
                     },
                     {
                         "link": "input",
                         "name": "chr21n-15001-16001.tar.gz",
-                        "size": 28240
+                        "sizeInBytes": 28240
                     },
                     {
                         "link": "input",
                         "name": "chr21n-7001-8001.tar.gz",
-                        "size": 28107
+                        "sizeInBytes": 28107
                     },
                     {
                         "link": "input",
                         "name": "chr21n-9001-10001.tar.gz",
-                        "size": 27937
+                        "sizeInBytes": 27937
                     },
                     {
                         "link": "input",
                         "name": "chr21n-5001-6001.tar.gz",
-                        "size": 28245
+                        "sizeInBytes": 28245
                     },
                     {
                         "link": "input",
                         "name": "chr21n-18001-19001.tar.gz",
-                        "size": 28186
+                        "sizeInBytes": 28186
                     },
                     {
                         "link": "input",
                         "name": "chr21n-13001-14001.tar.gz",
-                        "size": 28308
+                        "sizeInBytes": 28308
                     },
                     {
                         "link": "input",
                         "name": "chr21n-6001-7001.tar.gz",
-                        "size": 28194
+                        "sizeInBytes": 28194
                     },
                     {
                         "link": "input",
                         "name": "chr21n-19001-20001.tar.gz",
-                        "size": 28110
+                        "sizeInBytes": 28110
                     },
                     {
                         "link": "input",
                         "name": "chr21n-3001-4001.tar.gz",
-                        "size": 27738
+                        "sizeInBytes": 27738
                     },
                     {
                         "link": "input",
                         "name": "chr21n-12001-13001.tar.gz",
-                        "size": 28280
+                        "sizeInBytes": 28280
                     },
                     {
                         "link": "input",
                         "name": "chr21n-11001-12001.tar.gz",
-                        "size": 28389
+                        "sizeInBytes": 28389
                     },
                     {
                         "link": "input",
                         "name": "chr21n-22001-23001.tar.gz",
-                        "size": 28313
+                        "sizeInBytes": 28313
                     },
                     {
                         "link": "input",
                         "name": "chr21n-21001-22001.tar.gz",
-                        "size": 28303
+                        "sizeInBytes": 28303
                     },
                     {
                         "link": "input",
                         "name": "chr21n-23001-24001.tar.gz",
-                        "size": 27960
+                        "sizeInBytes": 27960
                     },
                     {
                         "link": "input",
                         "name": "chr21n-20001-21001.tar.gz",
-                        "size": 27931
+                        "sizeInBytes": 27931
                     },
                     {
                         "link": "input",
                         "name": "chr21n-4001-5001.tar.gz",
-                        "size": 28287
+                        "sizeInBytes": 28287
                     },
                     {
                         "link": "input",
                         "name": "chr21n-1001-2001.tar.gz",
-                        "size": 28287
+                        "sizeInBytes": 28287
                     },
                     {
                         "link": "input",
                         "name": "chr21n-16001-17001.tar.gz",
-                        "size": 28403
+                        "sizeInBytes": 28403
                     },
                     {
                         "link": "input",
                         "name": "chr21n-1-1001.tar.gz",
-                        "size": 28221
+                        "sizeInBytes": 28221
                     },
                     {
                         "link": "input",
                         "name": "chr21n-8001-9001.tar.gz",
-                        "size": 28103
+                        "sizeInBytes": 28103
                     },
                     {
                         "link": "input",
                         "name": "chr21n-24001-25001.tar.gz",
-                        "size": 28340
+                        "sizeInBytes": 28340
                     },
                     {
                         "link": "input",
                         "name": "chr21n-14001-15001.tar.gz",
-                        "size": 28401
+                        "sizeInBytes": 28401
                     },
                     {
                         "link": "output",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     }
                 ],
                 "avgCPU": 108.1048,
@@ -1202,23 +1200,23 @@
                         "chr21n-23001-24001.tar.gz",
                         "chr21n-24001-25001.tar.gz"
                     ]
-                }
+                },
+                "runtimeInSeconds": 94.278
             },
             {
                 "name": "sifting_ID0000027",
                 "type": "compute",
-                "runtime": 2.378,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
-                        "size": 267806263
+                        "sizeInBytes": 267806263
                     },
                     {
                         "link": "output",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     }
                 ],
                 "avgCPU": 13.7931,
@@ -1232,28 +1230,28 @@
                         "ALL.chr21.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
                         "21"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.378
             },
             {
                 "name": "individuals_ID0000028",
                 "type": "compute",
-                "runtime": 56.759,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-1-1001.tar.gz",
-                        "size": 27632
+                        "sizeInBytes": 27632
                     }
                 ],
                 "avgCPU": 148.2443,
@@ -1270,28 +1268,28 @@
                         "1001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.759
             },
             {
                 "name": "individuals_ID0000029",
                 "type": "compute",
-                "runtime": 58.04,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-1001-2001.tar.gz",
-                        "size": 27599
+                        "sizeInBytes": 27599
                     }
                 ],
                 "avgCPU": 145.6961,
@@ -1308,28 +1306,28 @@
                         "2001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 58.04
             },
             {
                 "name": "individuals_ID0000030",
                 "type": "compute",
-                "runtime": 54.36,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-2001-3001.tar.gz",
-                        "size": 28150
+                        "sizeInBytes": 28150
                     }
                 ],
                 "avgCPU": 153.4124,
@@ -1346,28 +1344,28 @@
                         "3001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.36
             },
             {
                 "name": "individuals_ID0000031",
                 "type": "compute",
-                "runtime": 53.899,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-3001-4001.tar.gz",
-                        "size": 28027
+                        "sizeInBytes": 28027
                     }
                 ],
                 "avgCPU": 154.194,
@@ -1384,28 +1382,28 @@
                         "4001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.899
             },
             {
                 "name": "individuals_ID0000032",
                 "type": "compute",
-                "runtime": 53.676,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-4001-5001.tar.gz",
-                        "size": 28045
+                        "sizeInBytes": 28045
                     }
                 ],
                 "avgCPU": 155.1923,
@@ -1422,28 +1420,28 @@
                         "5001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.676
             },
             {
                 "name": "individuals_ID0000033",
                 "type": "compute",
-                "runtime": 54.72,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-5001-6001.tar.gz",
-                        "size": 28187
+                        "sizeInBytes": 28187
                     }
                 ],
                 "avgCPU": 153.4539,
@@ -1460,28 +1458,28 @@
                         "6001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.72
             },
             {
                 "name": "individuals_ID0000034",
                 "type": "compute",
-                "runtime": 55.022,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-6001-7001.tar.gz",
-                        "size": 28234
+                        "sizeInBytes": 28234
                     }
                 ],
                 "avgCPU": 152.559,
@@ -1498,28 +1496,28 @@
                         "7001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 55.022
             },
             {
                 "name": "individuals_ID0000035",
                 "type": "compute",
-                "runtime": 54.446,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-7001-8001.tar.gz",
-                        "size": 28185
+                        "sizeInBytes": 28185
                     }
                 ],
                 "avgCPU": 153.3281,
@@ -1536,28 +1534,28 @@
                         "8001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.446
             },
             {
                 "name": "individuals_ID0000036",
                 "type": "compute",
-                "runtime": 53.546,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-8001-9001.tar.gz",
-                        "size": 28231
+                        "sizeInBytes": 28231
                     }
                 ],
                 "avgCPU": 154.8687,
@@ -1574,28 +1572,28 @@
                         "9001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.546
             },
             {
                 "name": "individuals_ID0000037",
                 "type": "compute",
-                "runtime": 54.726,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-9001-10001.tar.gz",
-                        "size": 28060
+                        "sizeInBytes": 28060
                     }
                 ],
                 "avgCPU": 164.1779,
@@ -1612,28 +1610,28 @@
                         "10001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.726
             },
             {
                 "name": "individuals_ID0000038",
                 "type": "compute",
-                "runtime": 54.38,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-10001-11001.tar.gz",
-                        "size": 28127
+                        "sizeInBytes": 28127
                     }
                 ],
                 "avgCPU": 163.722,
@@ -1650,28 +1648,28 @@
                         "11001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.38
             },
             {
                 "name": "individuals_ID0000039",
                 "type": "compute",
-                "runtime": 53.573,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-11001-12001.tar.gz",
-                        "size": 28178
+                        "sizeInBytes": 28178
                     }
                 ],
                 "avgCPU": 164.4933,
@@ -1688,28 +1686,28 @@
                         "12001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.573
             },
             {
                 "name": "individuals_ID0000040",
                 "type": "compute",
-                "runtime": 58.271,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-12001-13001.tar.gz",
-                        "size": 27596
+                        "sizeInBytes": 27596
                     }
                 ],
                 "avgCPU": 145.2661,
@@ -1726,28 +1724,28 @@
                         "13001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 58.271
             },
             {
                 "name": "individuals_ID0000041",
                 "type": "compute",
-                "runtime": 56.774,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-13001-14001.tar.gz",
-                        "size": 27598
+                        "sizeInBytes": 27598
                     }
                 ],
                 "avgCPU": 148.5486,
@@ -1764,28 +1762,28 @@
                         "14001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.774
             },
             {
                 "name": "individuals_ID0000042",
                 "type": "compute",
-                "runtime": 55.53,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-14001-15001.tar.gz",
-                        "size": 27628
+                        "sizeInBytes": 27628
                     }
                 ],
                 "avgCPU": 151.3992,
@@ -1802,28 +1800,28 @@
                         "15001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 55.53
             },
             {
                 "name": "individuals_ID0000043",
                 "type": "compute",
-                "runtime": 58.32,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-15001-16001.tar.gz",
-                        "size": 27593
+                        "sizeInBytes": 27593
                     }
                 ],
                 "avgCPU": 145.763,
@@ -1840,28 +1838,28 @@
                         "16001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 58.32
             },
             {
                 "name": "individuals_ID0000044",
                 "type": "compute",
-                "runtime": 54.064,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-16001-17001.tar.gz",
-                        "size": 27851
+                        "sizeInBytes": 27851
                     }
                 ],
                 "avgCPU": 154.1192,
@@ -1878,28 +1876,28 @@
                         "17001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.064
             },
             {
                 "name": "individuals_ID0000045",
                 "type": "compute",
-                "runtime": 54.582,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-17001-18001.tar.gz",
-                        "size": 27655
+                        "sizeInBytes": 27655
                     }
                 ],
                 "avgCPU": 153.3473,
@@ -1916,28 +1914,28 @@
                         "18001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.582
             },
             {
                 "name": "individuals_ID0000046",
                 "type": "compute",
-                "runtime": 58.303,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-18001-19001.tar.gz",
-                        "size": 27614
+                        "sizeInBytes": 27614
                     }
                 ],
                 "avgCPU": 146.3647,
@@ -1954,28 +1952,28 @@
                         "19001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 58.303
             },
             {
                 "name": "individuals_ID0000047",
                 "type": "compute",
-                "runtime": 56.103,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-19001-20001.tar.gz",
-                        "size": 27622
+                        "sizeInBytes": 27622
                     }
                 ],
                 "avgCPU": 151.0882,
@@ -1992,28 +1990,28 @@
                         "20001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.103
             },
             {
                 "name": "individuals_ID0000048",
                 "type": "compute",
-                "runtime": 53.641,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-20001-21001.tar.gz",
-                        "size": 27934
+                        "sizeInBytes": 27934
                     }
                 ],
                 "avgCPU": 155.6104,
@@ -2030,28 +2028,28 @@
                         "21001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 53.641
             },
             {
                 "name": "individuals_ID0000049",
                 "type": "compute",
-                "runtime": 54.348,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-21001-22001.tar.gz",
-                        "size": 27893
+                        "sizeInBytes": 27893
                     }
                 ],
                 "avgCPU": 153.7168,
@@ -2068,28 +2066,28 @@
                         "22001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.348
             },
             {
                 "name": "individuals_ID0000050",
                 "type": "compute",
-                "runtime": 56.369,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-22001-23001.tar.gz",
-                        "size": 27600
+                        "sizeInBytes": 27600
                     }
                 ],
                 "avgCPU": 150.1943,
@@ -2106,28 +2104,28 @@
                         "23001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.369
             },
             {
                 "name": "individuals_ID0000051",
                 "type": "compute",
-                "runtime": 56.879,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-23001-24001.tar.gz",
-                        "size": 27630
+                        "sizeInBytes": 27630
                     }
                 ],
                 "avgCPU": 147.9333,
@@ -2144,28 +2142,28 @@
                         "24001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 56.879
             },
             {
                 "name": "individuals_ID0000052",
                 "type": "compute",
-                "runtime": 57.743,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "ALL.chr22.250000.vcf",
-                        "size": 2540066220
+                        "sizeInBytes": 2540066220
                     },
                     {
                         "link": "output",
                         "name": "chr22n-24001-25001.tar.gz",
-                        "size": 27605
+                        "sizeInBytes": 27605
                     }
                 ],
                 "avgCPU": 146.1926,
@@ -2182,12 +2180,12 @@
                         "25001",
                         "25000"
                     ]
-                }
+                },
+                "runtimeInSeconds": 57.743
             },
             {
                 "name": "individuals_merge_ID0000053",
                 "type": "compute",
-                "runtime": 94.204,
                 "parents": [
                     "individuals_ID0000028",
                     "individuals_ID0000029",
@@ -2219,132 +2217,132 @@
                     {
                         "link": "input",
                         "name": "chr22n-23001-24001.tar.gz",
-                        "size": 27630
+                        "sizeInBytes": 27630
                     },
                     {
                         "link": "input",
                         "name": "chr22n-11001-12001.tar.gz",
-                        "size": 28178
+                        "sizeInBytes": 28178
                     },
                     {
                         "link": "input",
                         "name": "chr22n-6001-7001.tar.gz",
-                        "size": 28234
+                        "sizeInBytes": 28234
                     },
                     {
                         "link": "input",
                         "name": "chr22n-24001-25001.tar.gz",
-                        "size": 27605
+                        "sizeInBytes": 27605
                     },
                     {
                         "link": "input",
                         "name": "chr22n-18001-19001.tar.gz",
-                        "size": 27614
+                        "sizeInBytes": 27614
                     },
                     {
                         "link": "input",
                         "name": "chr22n-9001-10001.tar.gz",
-                        "size": 28060
+                        "sizeInBytes": 28060
                     },
                     {
                         "link": "input",
                         "name": "chr22n-8001-9001.tar.gz",
-                        "size": 28231
+                        "sizeInBytes": 28231
                     },
                     {
                         "link": "input",
                         "name": "chr22n-1-1001.tar.gz",
-                        "size": 27632
+                        "sizeInBytes": 27632
                     },
                     {
                         "link": "input",
                         "name": "chr22n-10001-11001.tar.gz",
-                        "size": 28127
+                        "sizeInBytes": 28127
                     },
                     {
                         "link": "input",
                         "name": "chr22n-7001-8001.tar.gz",
-                        "size": 28185
+                        "sizeInBytes": 28185
                     },
                     {
                         "link": "input",
                         "name": "chr22n-19001-20001.tar.gz",
-                        "size": 27622
+                        "sizeInBytes": 27622
                     },
                     {
                         "link": "input",
                         "name": "chr22n-20001-21001.tar.gz",
-                        "size": 27934
+                        "sizeInBytes": 27934
                     },
                     {
                         "link": "input",
                         "name": "chr22n-1001-2001.tar.gz",
-                        "size": 27599
+                        "sizeInBytes": 27599
                     },
                     {
                         "link": "input",
                         "name": "chr22n-12001-13001.tar.gz",
-                        "size": 27596
+                        "sizeInBytes": 27596
                     },
                     {
                         "link": "input",
                         "name": "chr22n-2001-3001.tar.gz",
-                        "size": 28150
+                        "sizeInBytes": 28150
                     },
                     {
                         "link": "input",
                         "name": "chr22n-3001-4001.tar.gz",
-                        "size": 28027
+                        "sizeInBytes": 28027
                     },
                     {
                         "link": "input",
                         "name": "chr22n-22001-23001.tar.gz",
-                        "size": 27600
+                        "sizeInBytes": 27600
                     },
                     {
                         "link": "input",
                         "name": "chr22n-13001-14001.tar.gz",
-                        "size": 27598
+                        "sizeInBytes": 27598
                     },
                     {
                         "link": "input",
                         "name": "chr22n-5001-6001.tar.gz",
-                        "size": 28187
+                        "sizeInBytes": 28187
                     },
                     {
                         "link": "input",
                         "name": "chr22n-17001-18001.tar.gz",
-                        "size": 27655
+                        "sizeInBytes": 27655
                     },
                     {
                         "link": "input",
                         "name": "chr22n-15001-16001.tar.gz",
-                        "size": 27593
+                        "sizeInBytes": 27593
                     },
                     {
                         "link": "input",
                         "name": "chr22n-16001-17001.tar.gz",
-                        "size": 27851
+                        "sizeInBytes": 27851
                     },
                     {
                         "link": "input",
                         "name": "chr22n-4001-5001.tar.gz",
-                        "size": 28045
+                        "sizeInBytes": 28045
                     },
                     {
                         "link": "input",
                         "name": "chr22n-14001-15001.tar.gz",
-                        "size": 27628
+                        "sizeInBytes": 27628
                     },
                     {
                         "link": "input",
                         "name": "chr22n-21001-22001.tar.gz",
-                        "size": 27893
+                        "sizeInBytes": 27893
                     },
                     {
                         "link": "output",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     }
                 ],
                 "avgCPU": 106.2779,
@@ -2382,23 +2380,23 @@
                         "chr22n-23001-24001.tar.gz",
                         "chr22n-24001-25001.tar.gz"
                     ]
-                }
+                },
+                "runtimeInSeconds": 94.204
             },
             {
                 "name": "sifting_ID0000054",
                 "type": "compute",
-                "runtime": 6.026,
                 "parents": [],
                 "files": [
                     {
                         "link": "input",
                         "name": "ALL.chr22.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
-                        "size": 280949919
+                        "sizeInBytes": 280949919
                     },
                     {
                         "link": "output",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     }
                 ],
                 "avgCPU": 7.3515,
@@ -2412,12 +2410,12 @@
                         "ALL.chr22.phase3_shapeit2_mvncall_integrated_v5.20130502.sites.annotation.vcf",
                         "22"
                     ]
-                }
+                },
+                "runtimeInSeconds": 6.026
             },
             {
                 "name": "mutation_overlap_ID0000055",
                 "type": "compute",
-                "runtime": 3.936,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2426,27 +2424,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "AFR",
-                        "size": 8088
+                        "sizeInBytes": 8088
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-AFR.tar.gz",
-                        "size": 144563
+                        "sizeInBytes": 144563
                     }
                 ],
                 "avgCPU": 98.628,
@@ -2462,12 +2460,12 @@
                         "-pop",
                         "AFR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.936
             },
             {
                 "name": "frequency_ID0000056",
                 "type": "compute",
-                "runtime": 100.321,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2476,27 +2474,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "AFR",
-                        "size": 8088
+                        "sizeInBytes": 8088
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-AFR-freq.tar.gz",
-                        "size": 270505
+                        "sizeInBytes": 270505
                     }
                 ],
                 "avgCPU": 88.3992,
@@ -2512,12 +2510,12 @@
                         "-pop",
                         "AFR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 100.321
             },
             {
                 "name": "mutation_overlap_ID0000057",
                 "type": "compute",
-                "runtime": 1.934,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2526,27 +2524,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "GBR",
-                        "size": 856
+                        "sizeInBytes": 856
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-GBR.tar.gz",
-                        "size": 136906
+                        "sizeInBytes": 136906
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2562,12 +2560,12 @@
                         "-pop",
                         "GBR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 1.934
             },
             {
                 "name": "frequency_ID0000058",
                 "type": "compute",
-                "runtime": 100.863,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2576,27 +2574,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "GBR",
-                        "size": 856
+                        "sizeInBytes": 856
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-GBR-freq.tar.gz",
-                        "size": 218397
+                        "sizeInBytes": 218397
                     }
                 ],
                 "avgCPU": 88.07,
@@ -2612,12 +2610,12 @@
                         "-pop",
                         "GBR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 100.863
             },
             {
                 "name": "mutation_overlap_ID0000059",
                 "type": "compute",
-                "runtime": 18.937,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2626,27 +2624,27 @@
                     {
                         "link": "input",
                         "name": "ALL",
-                        "size": 28000
+                        "sizeInBytes": 28000
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-ALL.tar.gz",
-                        "size": 166612
+                        "sizeInBytes": 166612
                     }
                 ],
                 "avgCPU": 98.2204,
@@ -2662,12 +2660,12 @@
                         "-pop",
                         "ALL"
                     ]
-                }
+                },
+                "runtimeInSeconds": 18.937
             },
             {
                 "name": "frequency_ID0000060",
                 "type": "compute",
-                "runtime": 95.587,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2676,27 +2674,27 @@
                     {
                         "link": "input",
                         "name": "ALL",
-                        "size": 28000
+                        "sizeInBytes": 28000
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-ALL-freq.tar.gz",
-                        "size": 285731
+                        "sizeInBytes": 285731
                     }
                 ],
                 "avgCPU": 90.5782,
@@ -2712,12 +2710,12 @@
                         "-pop",
                         "ALL"
                     ]
-                }
+                },
+                "runtimeInSeconds": 95.587
             },
             {
                 "name": "mutation_overlap_ID0000061",
                 "type": "compute",
-                "runtime": 3.145,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2726,27 +2724,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "SAS",
-                        "size": 5248
+                        "sizeInBytes": 5248
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-SAS.tar.gz",
-                        "size": 143386
+                        "sizeInBytes": 143386
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2762,12 +2760,12 @@
                         "-pop",
                         "SAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.145
             },
             {
                 "name": "frequency_ID0000062",
                 "type": "compute",
-                "runtime": 102.197,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2776,27 +2774,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "SAS",
-                        "size": 5248
+                        "sizeInBytes": 5248
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-SAS-freq.tar.gz",
-                        "size": 262956
+                        "sizeInBytes": 262956
                     }
                 ],
                 "avgCPU": 87.4214,
@@ -2812,12 +2810,12 @@
                         "-pop",
                         "SAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 102.197
             },
             {
                 "name": "mutation_overlap_ID0000063",
                 "type": "compute",
-                "runtime": 3.421,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2826,27 +2824,27 @@
                     {
                         "link": "input",
                         "name": "EAS",
-                        "size": 4896
+                        "sizeInBytes": 4896
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-EAS.tar.gz",
-                        "size": 142592
+                        "sizeInBytes": 142592
                     }
                 ],
                 "avgCPU": 94.3584,
@@ -2862,12 +2860,12 @@
                         "-pop",
                         "EAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.421
             },
             {
                 "name": "frequency_ID0000064",
                 "type": "compute",
-                "runtime": 101.497,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2876,27 +2874,27 @@
                     {
                         "link": "input",
                         "name": "EAS",
-                        "size": 4896
+                        "sizeInBytes": 4896
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-EAS-freq.tar.gz",
-                        "size": 263672
+                        "sizeInBytes": 263672
                     }
                 ],
                 "avgCPU": 88.6667,
@@ -2912,12 +2910,12 @@
                         "-pop",
                         "EAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 101.497
             },
             {
                 "name": "mutation_overlap_ID0000065",
                 "type": "compute",
-                "runtime": 2.679,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2926,27 +2924,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "AMR",
-                        "size": 4248
+                        "sizeInBytes": 4248
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-AMR.tar.gz",
-                        "size": 142092
+                        "sizeInBytes": 142092
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2962,12 +2960,12 @@
                         "-pop",
                         "AMR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.679
             },
             {
                 "name": "frequency_ID0000066",
                 "type": "compute",
-                "runtime": 100.106,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -2976,27 +2974,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "AMR",
-                        "size": 4248
+                        "sizeInBytes": 4248
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-AMR-freq.tar.gz",
-                        "size": 257825
+                        "sizeInBytes": 257825
                     }
                 ],
                 "avgCPU": 88.5771,
@@ -3012,12 +3010,12 @@
                         "-pop",
                         "AMR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 100.106
             },
             {
                 "name": "mutation_overlap_ID0000067",
                 "type": "compute",
-                "runtime": 3.41,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -3026,27 +3024,27 @@
                     {
                         "link": "input",
                         "name": "EUR",
-                        "size": 5312
+                        "sizeInBytes": 5312
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-EUR.tar.gz",
-                        "size": 141852
+                        "sizeInBytes": 141852
                     }
                 ],
                 "avgCPU": 94.2815,
@@ -3062,12 +3060,12 @@
                         "-pop",
                         "EUR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.41
             },
             {
                 "name": "frequency_ID0000068",
                 "type": "compute",
-                "runtime": 101.012,
                 "parents": [
                     "individuals_merge_ID0000026",
                     "sifting_ID0000027"
@@ -3076,27 +3074,27 @@
                     {
                         "link": "input",
                         "name": "EUR",
-                        "size": 5312
+                        "sizeInBytes": 5312
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "chr21n.tar.gz",
-                        "size": 24870
+                        "sizeInBytes": 24870
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr21.txt",
-                        "size": 231958
+                        "sizeInBytes": 231958
                     },
                     {
                         "link": "output",
                         "name": "chr21-EUR-freq.tar.gz",
-                        "size": 265207
+                        "sizeInBytes": 265207
                     }
                 ],
                 "avgCPU": 88.0519,
@@ -3112,12 +3110,12 @@
                         "-pop",
                         "EUR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 101.012
             },
             {
                 "name": "mutation_overlap_ID0000069",
                 "type": "compute",
-                "runtime": 4.116,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3126,27 +3124,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "AFR",
-                        "size": 8088
+                        "sizeInBytes": 8088
                     },
                     {
                         "link": "output",
                         "name": "chr22-AFR.tar.gz",
-                        "size": 146429
+                        "sizeInBytes": 146429
                     }
                 ],
                 "avgCPU": 97.2303,
@@ -3162,12 +3160,12 @@
                         "-pop",
                         "AFR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.116
             },
             {
                 "name": "frequency_ID0000070",
                 "type": "compute",
-                "runtime": 102.4,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3176,27 +3174,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "AFR",
-                        "size": 8088
+                        "sizeInBytes": 8088
                     },
                     {
                         "link": "output",
                         "name": "chr22-AFR-freq.tar.gz",
-                        "size": 273096
+                        "sizeInBytes": 273096
                     }
                 ],
                 "avgCPU": 86.2627,
@@ -3212,12 +3210,12 @@
                         "-pop",
                         "AFR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 102.4
             },
             {
                 "name": "mutation_overlap_ID0000071",
                 "type": "compute",
-                "runtime": 7.651,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3226,27 +3224,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "GBR",
-                        "size": 856
+                        "sizeInBytes": 856
                     },
                     {
                         "link": "output",
                         "name": "chr22-GBR.tar.gz",
-                        "size": 138729
+                        "sizeInBytes": 138729
                     }
                 ],
                 "avgCPU": 26.6893,
@@ -3262,12 +3260,12 @@
                         "-pop",
                         "GBR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 7.651
             },
             {
                 "name": "frequency_ID0000072",
                 "type": "compute",
-                "runtime": 101.918,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3276,27 +3274,27 @@
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "GBR",
-                        "size": 856
+                        "sizeInBytes": 856
                     },
                     {
                         "link": "output",
                         "name": "chr22-GBR-freq.tar.gz",
-                        "size": 220439
+                        "sizeInBytes": 220439
                     }
                 ],
                 "avgCPU": 87.1397,
@@ -3312,12 +3310,12 @@
                         "-pop",
                         "GBR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 101.918
             },
             {
                 "name": "mutation_overlap_ID0000073",
                 "type": "compute",
-                "runtime": 19.105,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3326,27 +3324,27 @@
                     {
                         "link": "input",
                         "name": "ALL",
-                        "size": 28000
+                        "sizeInBytes": 28000
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-ALL.tar.gz",
-                        "size": 169320
+                        "sizeInBytes": 169320
                     }
                 ],
                 "avgCPU": 98.8171,
@@ -3362,12 +3360,12 @@
                         "-pop",
                         "ALL"
                     ]
-                }
+                },
+                "runtimeInSeconds": 19.105
             },
             {
                 "name": "frequency_ID0000074",
                 "type": "compute",
-                "runtime": 103.569,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3376,27 +3374,27 @@
                     {
                         "link": "input",
                         "name": "ALL",
-                        "size": 28000
+                        "sizeInBytes": 28000
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-ALL-freq.tar.gz",
-                        "size": 289977
+                        "sizeInBytes": 289977
                     }
                 ],
                 "avgCPU": 85.7177,
@@ -3412,12 +3410,12 @@
                         "-pop",
                         "ALL"
                     ]
-                }
+                },
+                "runtimeInSeconds": 103.569
             },
             {
                 "name": "mutation_overlap_ID0000075",
                 "type": "compute",
-                "runtime": 9.132,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3426,27 +3424,27 @@
                     {
                         "link": "input",
                         "name": "SAS",
-                        "size": 5248
+                        "sizeInBytes": 5248
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-SAS.tar.gz",
-                        "size": 145900
+                        "sizeInBytes": 145900
                     }
                 ],
                 "avgCPU": 37.2865,
@@ -3462,12 +3460,12 @@
                         "-pop",
                         "SAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 9.132
             },
             {
                 "name": "frequency_ID0000076",
                 "type": "compute",
-                "runtime": 90.08,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3476,27 +3474,27 @@
                     {
                         "link": "input",
                         "name": "SAS",
-                        "size": 5248
+                        "sizeInBytes": 5248
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-SAS-freq.tar.gz",
-                        "size": 263238
+                        "sizeInBytes": 263238
                     }
                 ],
                 "avgCPU": 95.4962,
@@ -3512,12 +3510,12 @@
                         "-pop",
                         "SAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 90.08
             },
             {
                 "name": "mutation_overlap_ID0000077",
                 "type": "compute",
-                "runtime": 4.551,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3526,27 +3524,27 @@
                     {
                         "link": "input",
                         "name": "EAS",
-                        "size": 4896
+                        "sizeInBytes": 4896
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-EAS.tar.gz",
-                        "size": 145140
+                        "sizeInBytes": 145140
                     }
                 ],
                 "avgCPU": 73.3465,
@@ -3562,12 +3560,12 @@
                         "-pop",
                         "EAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 4.551
             },
             {
                 "name": "frequency_ID0000078",
                 "type": "compute",
-                "runtime": 89.65,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3576,27 +3574,27 @@
                     {
                         "link": "input",
                         "name": "EAS",
-                        "size": 4896
+                        "sizeInBytes": 4896
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-EAS-freq.tar.gz",
-                        "size": 264566
+                        "sizeInBytes": 264566
                     }
                 ],
                 "avgCPU": 96.1439,
@@ -3612,12 +3610,12 @@
                         "-pop",
                         "EAS"
                     ]
-                }
+                },
+                "runtimeInSeconds": 89.65
             },
             {
                 "name": "mutation_overlap_ID0000079",
                 "type": "compute",
-                "runtime": 2.688,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3626,27 +3624,27 @@
                     {
                         "link": "input",
                         "name": "AMR",
-                        "size": 4248
+                        "sizeInBytes": 4248
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-AMR.tar.gz",
-                        "size": 144356
+                        "sizeInBytes": 144356
                     }
                 ],
                 "avgCPU": 99.628,
@@ -3662,12 +3660,12 @@
                         "-pop",
                         "AMR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 2.688
             },
             {
                 "name": "frequency_ID0000080",
                 "type": "compute",
-                "runtime": 102.678,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3676,27 +3674,27 @@
                     {
                         "link": "input",
                         "name": "AMR",
-                        "size": 4248
+                        "sizeInBytes": 4248
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-AMR-freq.tar.gz",
-                        "size": 260246
+                        "sizeInBytes": 260246
                     }
                 ],
                 "avgCPU": 86.1071,
@@ -3712,12 +3710,12 @@
                         "-pop",
                         "AMR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 102.678
             },
             {
                 "name": "mutation_overlap_ID0000081",
                 "type": "compute",
-                "runtime": 3.679,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3726,27 +3724,27 @@
                     {
                         "link": "input",
                         "name": "EUR",
-                        "size": 5312
+                        "sizeInBytes": 5312
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-EUR.tar.gz",
-                        "size": 143817
+                        "sizeInBytes": 143817
                     }
                 ],
                 "avgCPU": 88.4479,
@@ -3762,12 +3760,12 @@
                         "-pop",
                         "EUR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 3.679
             },
             {
                 "name": "frequency_ID0000082",
                 "type": "compute",
-                "runtime": 104.299,
                 "parents": [
                     "sifting_ID0000054",
                     "individuals_merge_ID0000053"
@@ -3776,27 +3774,27 @@
                     {
                         "link": "input",
                         "name": "EUR",
-                        "size": 5312
+                        "sizeInBytes": 5312
                     },
                     {
                         "link": "input",
                         "name": "sifted.SIFT.chr22.txt",
-                        "size": 480587
+                        "sizeInBytes": 480587
                     },
                     {
                         "link": "input",
                         "name": "chr22n.tar.gz",
-                        "size": 24488
+                        "sizeInBytes": 24488
                     },
                     {
                         "link": "input",
                         "name": "columns.txt",
-                        "size": 20078
+                        "sizeInBytes": 20078
                     },
                     {
                         "link": "output",
                         "name": "chr22-EUR-freq.tar.gz",
-                        "size": 267439
+                        "sizeInBytes": 267439
                     }
                 ],
                 "avgCPU": 85.7707,
@@ -3812,8 +3810,10 @@
                         "-pop",
                         "EUR"
                     ]
-                }
+                },
+                "runtimeInSeconds": 104.299
             }
-        ]
+        ],
+        "makespanInSeconds": 2391.0
     }
 }

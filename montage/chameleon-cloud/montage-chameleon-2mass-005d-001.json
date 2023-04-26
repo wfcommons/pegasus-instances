@@ -2,7 +2,7 @@
     "name": "montage",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2021-03-23T06:25:32.987420",
-    "schemaVersion": "1.3",
+    "schemaVersion": "1.4",
     "author": {
         "name": "cc",
         "email": "support@wfcommons.org"
@@ -14,26 +14,24 @@
     },
     "workflow": {
         "executedAt": "03-23-21T06:04:36Z",
-        "makespan": 1060.0,
         "machines": [
             {
                 "nodeName": "mem",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795956,
                 "release": "4.15.0-134-generic",
                 "cpu": {
                     "count": 48,
                     "speed": 1200,
                     "vendor": "GenuineIntel"
-                }
+                },
+                "memoryInBytes": 131795956000
             }
         ],
         "tasks": [
             {
                 "name": "mProject_ID0000001",
                 "type": "compute",
-                "runtime": 16.712,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000013",
@@ -45,22 +43,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-j0820044.fits",
-                        "size": 1529220
+                        "sizeInBytes": 1529220
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 97.6723,
@@ -77,12 +75,13 @@
                         "p2mass-atlas-980914s-j0820044.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 16.712,
+                "memoryInBytes": 14800000
             },
             {
                 "name": "mProject_ID0000002",
                 "type": "compute",
-                "runtime": 17.916,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000009",
@@ -94,22 +93,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-001020s-j0870233.fits",
-                        "size": 1541940
+                        "sizeInBytes": 1541940
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 96.9804,
@@ -126,12 +125,13 @@
                         "p2mass-atlas-001020s-j0870233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 17.916,
+                "memoryInBytes": 14660000
             },
             {
                 "name": "mProject_ID0000003",
                 "type": "compute",
-                "runtime": 16.735,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000008",
@@ -143,22 +143,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-j0810233.fits",
-                        "size": 1532754
+                        "sizeInBytes": 1532754
                     }
                 ],
                 "avgCPU": 98.9961,
@@ -175,12 +175,13 @@
                         "p2mass-atlas-980914s-j0810233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 16.735,
+                "memoryInBytes": 14640000
             },
             {
                 "name": "mProject_ID0000004",
                 "type": "compute",
-                "runtime": 17.839,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000009",
@@ -192,22 +193,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-001021s-j0490233.fits",
-                        "size": 1537525
+                        "sizeInBytes": 1537525
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 97.1299,
@@ -224,12 +225,13 @@
                         "p2mass-atlas-001021s-j0490233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 17.839,
+                "memoryInBytes": 14716000
             },
             {
                 "name": "mDiffFit_ID0000005",
                 "type": "compute",
-                "runtime": 0.092,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000002"
@@ -241,32 +243,32 @@
                     {
                         "link": "output",
                         "name": "1-fit.000001.000002.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 6.5217,
@@ -286,12 +288,13 @@
                         "1-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.092,
+                "memoryInBytes": 2888000
             },
             {
                 "name": "mDiffFit_ID0000006",
                 "type": "compute",
-                "runtime": 0.14,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000003"
@@ -303,32 +306,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000001.000003.txt",
-                        "size": 261
+                        "sizeInBytes": 261
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 3.5714,
@@ -348,12 +351,13 @@
                         "1-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.14,
+                "memoryInBytes": 2916000
             },
             {
                 "name": "mDiffFit_ID0000007",
                 "type": "compute",
-                "runtime": 0.383,
                 "parents": [
                     "mProject_ID0000001",
                     "mProject_ID0000004"
@@ -365,32 +369,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000001.000004.txt",
-                        "size": 267
+                        "sizeInBytes": 267
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 1.3055,
@@ -410,12 +414,13 @@
                         "1-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.383,
+                "memoryInBytes": 2872000
             },
             {
                 "name": "mDiffFit_ID0000008",
                 "type": "compute",
-                "runtime": 0.818,
                 "parents": [
                     "mProject_ID0000002",
                     "mProject_ID0000003"
@@ -427,32 +432,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000002.000003.txt",
-                        "size": 264
+                        "sizeInBytes": 264
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 0.6112,
@@ -472,12 +477,13 @@
                         "1-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.818,
+                "memoryInBytes": 2868000
             },
             {
                 "name": "mDiffFit_ID0000009",
                 "type": "compute",
-                "runtime": 0.108,
                 "parents": [
                     "mProject_ID0000002",
                     "mProject_ID0000004"
@@ -489,32 +495,32 @@
                     {
                         "link": "output",
                         "name": "1-fit.000002.000004.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 4.6296,
@@ -534,12 +540,13 @@
                         "1-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.108,
+                "memoryInBytes": 2808000
             },
             {
                 "name": "mDiffFit_ID0000010",
                 "type": "compute",
-                "runtime": 0.126,
                 "parents": [
                     "mProject_ID0000003",
                     "mProject_ID0000004"
@@ -551,32 +558,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "1-fit.000003.000004.txt",
-                        "size": 260
+                        "sizeInBytes": 260
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 3.9683,
@@ -596,12 +603,13 @@
                         "1-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.126,
+                "memoryInBytes": 2804000
             },
             {
                 "name": "mConcatFit_ID0000011",
                 "type": "compute",
-                "runtime": 0.195,
                 "parents": [
                     "mDiffFit_ID0000005",
                     "mDiffFit_ID0000006",
@@ -617,42 +625,42 @@
                     {
                         "link": "input",
                         "name": "1-fit.000001.000002.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     },
                     {
                         "link": "output",
                         "name": "1-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000001.000003.txt",
-                        "size": 261
+                        "sizeInBytes": 261
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000002.000003.txt",
-                        "size": 264
+                        "sizeInBytes": 264
                     },
                     {
                         "link": "input",
                         "name": "1-stat.tbl",
-                        "size": 1300
+                        "sizeInBytes": 1300
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000003.000004.txt",
-                        "size": 260
+                        "sizeInBytes": 260
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000001.000004.txt",
-                        "size": 267
+                        "sizeInBytes": 267
                     },
                     {
                         "link": "input",
                         "name": "1-fit.000002.000004.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     }
                 ],
                 "avgCPU": 100.0,
@@ -668,12 +676,13 @@
                         "1-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.195,
+                "memoryInBytes": 70760000
             },
             {
                 "name": "mBgModel_ID0000012",
                 "type": "compute",
-                "runtime": 0.73,
                 "parents": [
                     "mConcatFit_ID0000011"
                 ],
@@ -687,17 +696,17 @@
                     {
                         "link": "output",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "1-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "input",
                         "name": "1-images.tbl",
-                        "size": 2204
+                        "sizeInBytes": 2204
                     }
                 ],
                 "avgCPU": 100.0,
@@ -715,12 +724,13 @@
                         "1-fits.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.73,
+                "memoryInBytes": 137032000
             },
             {
                 "name": "mBackground_ID0000013",
                 "type": "compute",
-                "runtime": 0.644,
                 "parents": [
                     "mProject_ID0000001",
                     "mBgModel_ID0000012"
@@ -733,32 +743,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     }
                 ],
                 "avgCPU": 50.3106,
@@ -776,12 +786,13 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.644,
+                "memoryInBytes": 68952000
             },
             {
                 "name": "mBackground_ID0000014",
                 "type": "compute",
-                "runtime": 0.377,
                 "parents": [
                     "mProject_ID0000002",
                     "mBgModel_ID0000012"
@@ -794,32 +805,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     }
                 ],
                 "avgCPU": 77.7188,
@@ -837,12 +848,13 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.377,
+                "memoryInBytes": 68952000
             },
             {
                 "name": "mBackground_ID0000015",
                 "type": "compute",
-                "runtime": 0.325,
                 "parents": [
                     "mProject_ID0000003",
                     "mBgModel_ID0000012"
@@ -855,32 +867,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     }
                 ],
                 "avgCPU": 91.3846,
@@ -898,12 +910,13 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.325,
+                "memoryInBytes": 69008000
             },
             {
                 "name": "mBackground_ID0000016",
                 "type": "compute",
-                "runtime": 0.341,
                 "parents": [
                     "mProject_ID0000004",
                     "mBgModel_ID0000012"
@@ -916,32 +929,32 @@
                     {
                         "link": "input",
                         "name": "1-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "1-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     }
                 ],
                 "avgCPU": 89.1496,
@@ -959,12 +972,13 @@
                         "1-projected.tbl",
                         "1-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.341,
+                "memoryInBytes": 68980000
             },
             {
                 "name": "mImgtbl_ID0000017",
                 "type": "compute",
-                "runtime": 0.169,
                 "parents": [
                     "mBackground_ID0000013",
                     "mBackground_ID0000014",
@@ -978,32 +992,32 @@
                     {
                         "link": "output",
                         "name": "1-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "1-corrected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     }
                 ],
                 "avgCPU": 99.4083,
@@ -1020,12 +1034,13 @@
                         "1-corrected.tbl",
                         "1-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.169,
+                "memoryInBytes": 71044000
             },
             {
                 "name": "mAdd_ID0000018",
                 "type": "compute",
-                "runtime": 0.182,
                 "parents": [
                     "mBackground_ID0000013",
                     "mBackground_ID0000014",
@@ -1041,62 +1056,62 @@
                     {
                         "link": "output",
                         "name": "1-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "1-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-j0490233.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-j0870233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-j0870233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 271
+                        "sizeInBytes": 271
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "1-mosaic_area.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-j0490233_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0820044.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-j0820044_area.fits",
-                        "size": 4150080
+                        "sizeInBytes": 4150080
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1113,12 +1128,13 @@
                         "region.hdr",
                         "1-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.182,
+                "memoryInBytes": 69952000
             },
             {
                 "name": "mViewer_ID0000019",
                 "type": "compute",
-                "runtime": 0.094,
                 "parents": [
                     "mAdd_ID0000018"
                 ],
@@ -1127,12 +1143,12 @@
                     {
                         "link": "input",
                         "name": "1-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "output",
                         "name": "1-mosaic.png",
-                        "size": 26206
+                        "sizeInBytes": 26206
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1154,12 +1170,13 @@
                         "-png",
                         "1-mosaic.png"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.094,
+                "memoryInBytes": 10752000
             },
             {
                 "name": "mProject_ID0000020",
                 "type": "compute",
-                "runtime": 16.645,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000032",
@@ -1171,22 +1188,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-001020s-h0870233.fits",
-                        "size": 1472485
+                        "sizeInBytes": 1472485
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 98.486,
@@ -1203,12 +1220,13 @@
                         "p2mass-atlas-001020s-h0870233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 16.645,
+                "memoryInBytes": 14680000
             },
             {
                 "name": "mProject_ID0000021",
                 "type": "compute",
-                "runtime": 18.605,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000033",
@@ -1220,22 +1238,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-h0820044.fits",
-                        "size": 1464705
+                        "sizeInBytes": 1464705
                     }
                 ],
                 "avgCPU": 89.8199,
@@ -1252,12 +1270,13 @@
                         "p2mass-atlas-980914s-h0820044.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 18.605,
+                "memoryInBytes": 14896000
             },
             {
                 "name": "mProject_ID0000022",
                 "type": "compute",
-                "runtime": 16.513,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000034",
@@ -1269,22 +1288,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-h0810233.fits",
-                        "size": 1472350
+                        "sizeInBytes": 1472350
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     }
                 ],
                 "avgCPU": 98.9039,
@@ -1301,12 +1320,13 @@
                         "p2mass-atlas-980914s-h0810233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 16.513,
+                "memoryInBytes": 14712000
             },
             {
                 "name": "mProject_ID0000023",
                 "type": "compute",
-                "runtime": 17.976,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000035",
@@ -1318,22 +1338,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-001021s-h0490233.fits",
-                        "size": 1469719
+                        "sizeInBytes": 1469719
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     }
                 ],
                 "avgCPU": 96.9348,
@@ -1350,12 +1370,13 @@
                         "p2mass-atlas-001021s-h0490233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 17.976,
+                "memoryInBytes": 14544000
             },
             {
                 "name": "mDiffFit_ID0000024",
                 "type": "compute",
-                "runtime": 0.096,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000021"
@@ -1367,32 +1388,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000002.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 5.2083,
@@ -1412,12 +1433,13 @@
                         "2-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.096,
+                "memoryInBytes": 2812000
             },
             {
                 "name": "mDiffFit_ID0000025",
                 "type": "compute",
-                "runtime": 0.552,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000022"
@@ -1429,32 +1451,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000003.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 0.9058,
@@ -1474,12 +1496,13 @@
                         "2-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.552,
+                "memoryInBytes": 2804000
             },
             {
                 "name": "mDiffFit_ID0000026",
                 "type": "compute",
-                "runtime": 0.151,
                 "parents": [
                     "mProject_ID0000020",
                     "mProject_ID0000023"
@@ -1491,32 +1514,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000001.000004.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 3.3113,
@@ -1536,12 +1559,13 @@
                         "2-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.151,
+                "memoryInBytes": 2808000
             },
             {
                 "name": "mDiffFit_ID0000027",
                 "type": "compute",
-                "runtime": 0.098,
                 "parents": [
                     "mProject_ID0000021",
                     "mProject_ID0000022"
@@ -1553,32 +1577,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000002.000003.txt",
-                        "size": 261
+                        "sizeInBytes": 261
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 6.1224,
@@ -1598,12 +1622,13 @@
                         "2-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.098,
+                "memoryInBytes": 2816000
             },
             {
                 "name": "mDiffFit_ID0000028",
                 "type": "compute",
-                "runtime": 0.857,
                 "parents": [
                     "mProject_ID0000021",
                     "mProject_ID0000023"
@@ -1615,32 +1640,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000002.000004.txt",
-                        "size": 266
+                        "sizeInBytes": 266
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 0.5834,
@@ -1660,12 +1685,13 @@
                         "2-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.857,
+                "memoryInBytes": 2852000
             },
             {
                 "name": "mDiffFit_ID0000029",
                 "type": "compute",
-                "runtime": 0.114,
                 "parents": [
                     "mProject_ID0000022",
                     "mProject_ID0000023"
@@ -1677,32 +1703,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "output",
                         "name": "2-fit.000003.000004.txt",
-                        "size": 257
+                        "sizeInBytes": 257
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 4.386,
@@ -1722,12 +1748,13 @@
                         "2-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.114,
+                "memoryInBytes": 2812000
             },
             {
                 "name": "mConcatFit_ID0000030",
                 "type": "compute",
-                "runtime": 0.184,
                 "parents": [
                     "mDiffFit_ID0000024",
                     "mDiffFit_ID0000025",
@@ -1743,42 +1770,42 @@
                     {
                         "link": "input",
                         "name": "2-fit.000002.000003.txt",
-                        "size": 261
+                        "sizeInBytes": 261
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000002.000004.txt",
-                        "size": 266
+                        "sizeInBytes": 266
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000001.000004.txt",
-                        "size": 259
+                        "sizeInBytes": 259
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000001.000003.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     },
                     {
                         "link": "output",
                         "name": "2-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000001.000002.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     },
                     {
                         "link": "input",
                         "name": "2-stat.tbl",
-                        "size": 1300
+                        "sizeInBytes": 1300
                     },
                     {
                         "link": "input",
                         "name": "2-fit.000003.000004.txt",
-                        "size": 257
+                        "sizeInBytes": 257
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1794,12 +1821,13 @@
                         "2-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.184,
+                "memoryInBytes": 70748000
             },
             {
                 "name": "mBgModel_ID0000031",
                 "type": "compute",
-                "runtime": 0.832,
                 "parents": [
                     "mConcatFit_ID0000030"
                 ],
@@ -1813,17 +1841,17 @@
                     {
                         "link": "input",
                         "name": "2-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "output",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "2-images.tbl",
-                        "size": 2204
+                        "sizeInBytes": 2204
                     }
                 ],
                 "avgCPU": 99.8798,
@@ -1841,12 +1869,13 @@
                         "2-fits.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.832,
+                "memoryInBytes": 137008000
             },
             {
                 "name": "mBackground_ID0000032",
                 "type": "compute",
-                "runtime": 0.358,
                 "parents": [
                     "mProject_ID0000020",
                     "mBgModel_ID0000031"
@@ -1859,32 +1888,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 84.9162,
@@ -1902,12 +1931,13 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.358,
+                "memoryInBytes": 68980000
             },
             {
                 "name": "mBackground_ID0000033",
                 "type": "compute",
-                "runtime": 0.295,
                 "parents": [
                     "mProject_ID0000021",
                     "mBgModel_ID0000031"
@@ -1920,32 +1950,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -1963,12 +1993,13 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.295,
+                "memoryInBytes": 69012000
             },
             {
                 "name": "mBackground_ID0000034",
                 "type": "compute",
-                "runtime": 0.288,
                 "parents": [
                     "mProject_ID0000022",
                     "mBgModel_ID0000031"
@@ -1981,32 +2012,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2024,12 +2055,13 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.288,
+                "memoryInBytes": 68936000
             },
             {
                 "name": "mBackground_ID0000035",
                 "type": "compute",
-                "runtime": 0.299,
                 "parents": [
                     "mProject_ID0000023",
                     "mBgModel_ID0000031"
@@ -2042,32 +2074,32 @@
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "2-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "2-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2085,12 +2117,13 @@
                         "2-projected.tbl",
                         "2-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.299,
+                "memoryInBytes": 68980000
             },
             {
                 "name": "mImgtbl_ID0000036",
                 "type": "compute",
-                "runtime": 0.17,
                 "parents": [
                     "mBackground_ID0000032",
                     "mBackground_ID0000033",
@@ -2104,32 +2137,32 @@
                     {
                         "link": "output",
                         "name": "2-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "2-corrected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     }
                 ],
                 "avgCPU": 99.4118,
@@ -2146,12 +2179,13 @@
                         "2-corrected.tbl",
                         "2-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.17,
+                "memoryInBytes": 71020000
             },
             {
                 "name": "mAdd_ID0000037",
                 "type": "compute",
-                "runtime": 0.183,
                 "parents": [
                     "mBackground_ID0000032",
                     "mBackground_ID0000033",
@@ -2167,62 +2201,62 @@
                     {
                         "link": "output",
                         "name": "2-mosaic_area.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "2-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     },
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 271
+                        "sizeInBytes": 271
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0820044_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0820044.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0810233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-h0870233_area.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-h0490233.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-h0490233_area.fits",
-                        "size": 4164480
+                        "sizeInBytes": 4164480
                     },
                     {
                         "link": "output",
                         "name": "2-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-h0810233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-h0870233.fits",
-                        "size": 4158720
+                        "sizeInBytes": 4158720
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2239,12 +2273,13 @@
                         "region.hdr",
                         "2-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.183,
+                "memoryInBytes": 69928000
             },
             {
                 "name": "mViewer_ID0000038",
                 "type": "compute",
-                "runtime": 0.094,
                 "parents": [
                     "mAdd_ID0000037"
                 ],
@@ -2253,12 +2288,12 @@
                     {
                         "link": "input",
                         "name": "2-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "output",
                         "name": "2-mosaic.png",
-                        "size": 26068
+                        "sizeInBytes": 26068
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2280,12 +2315,13 @@
                         "-png",
                         "2-mosaic.png"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.094,
+                "memoryInBytes": 10680000
             },
             {
                 "name": "mProject_ID0000039",
                 "type": "compute",
-                "runtime": 15.344,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000045",
@@ -2297,22 +2333,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-001021s-k0490233.fits",
-                        "size": 1473388
+                        "sizeInBytes": 1473388
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 100.0,
@@ -2329,12 +2365,13 @@
                         "p2mass-atlas-001021s-k0490233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 15.344,
+                "memoryInBytes": 14696000
             },
             {
                 "name": "mProject_ID0000040",
                 "type": "compute",
-                "runtime": 18.744,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000047",
@@ -2346,22 +2383,22 @@
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-k0810233.fits",
-                        "size": 1468091
+                        "sizeInBytes": 1468091
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     }
                 ],
                 "avgCPU": 89.7034,
@@ -2378,12 +2415,13 @@
                         "p2mass-atlas-980914s-k0810233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 18.744,
+                "memoryInBytes": 14660000
             },
             {
                 "name": "mProject_ID0000041",
                 "type": "compute",
-                "runtime": 15.714,
                 "parents": [],
                 "children": [
                     "mDiffFit_ID0000048",
@@ -2395,22 +2433,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-001020s-k0870233.fits",
-                        "size": 1417782
+                        "sizeInBytes": 1417782
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     }
                 ],
                 "avgCPU": 99.9936,
@@ -2427,12 +2465,13 @@
                         "p2mass-atlas-001020s-k0870233.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 15.714,
+                "memoryInBytes": 14684000
             },
             {
                 "name": "mProject_ID0000042",
                 "type": "compute",
-                "runtime": 18.834,
                 "parents": [],
                 "children": [
                     "mBackground_ID0000054",
@@ -2444,22 +2483,22 @@
                     {
                         "link": "input",
                         "name": "2mass-atlas-980914s-k0820044.fits",
-                        "size": 1465354
+                        "sizeInBytes": 1465354
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "p2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 88.4624,
@@ -2476,12 +2515,13 @@
                         "p2mass-atlas-980914s-k0820044.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 18.834,
+                "memoryInBytes": 14632000
             },
             {
                 "name": "mDiffFit_ID0000043",
                 "type": "compute",
-                "runtime": 0.136,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000040"
@@ -2493,32 +2533,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000002.txt",
-                        "size": 260
+                        "sizeInBytes": 260
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 3.6765,
@@ -2538,12 +2578,13 @@
                         "3-diff.000001.000002.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.136,
+                "memoryInBytes": 2824000
             },
             {
                 "name": "mDiffFit_ID0000044",
                 "type": "compute",
-                "runtime": 0.105,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000041"
@@ -2555,32 +2596,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000003.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     }
                 ],
                 "avgCPU": 4.7619,
@@ -2600,12 +2641,13 @@
                         "3-diff.000001.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.105,
+                "memoryInBytes": 2864000
             },
             {
                 "name": "mDiffFit_ID0000045",
                 "type": "compute",
-                "runtime": 0.488,
                 "parents": [
                     "mProject_ID0000039",
                     "mProject_ID0000042"
@@ -2617,32 +2659,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000001.000004.txt",
-                        "size": 265
+                        "sizeInBytes": 265
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 1.0246,
@@ -2662,12 +2704,13 @@
                         "3-diff.000001.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.488,
+                "memoryInBytes": 2888000
             },
             {
                 "name": "mDiffFit_ID0000046",
                 "type": "compute",
-                "runtime": 0.473,
                 "parents": [
                     "mProject_ID0000040",
                     "mProject_ID0000041"
@@ -2679,32 +2722,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000002.000003.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 1.0571,
@@ -2724,12 +2767,13 @@
                         "3-diff.000002.000003.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.473,
+                "memoryInBytes": 2868000
             },
             {
                 "name": "mDiffFit_ID0000047",
                 "type": "compute",
-                "runtime": 0.103,
                 "parents": [
                     "mProject_ID0000040",
                     "mProject_ID0000042"
@@ -2741,32 +2785,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     },
                     {
                         "link": "output",
                         "name": "3-fit.000002.000004.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     }
                 ],
                 "avgCPU": 4.8544,
@@ -2786,12 +2830,13 @@
                         "3-diff.000002.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.103,
+                "memoryInBytes": 2916000
             },
             {
                 "name": "mDiffFit_ID0000048",
                 "type": "compute",
-                "runtime": 0.089,
                 "parents": [
                     "mProject_ID0000041",
                     "mProject_ID0000042"
@@ -2803,32 +2848,32 @@
                     {
                         "link": "output",
                         "name": "3-fit.000003.000004.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "region-oversized.hdr",
-                        "size": 277
+                        "sizeInBytes": 277
                     }
                 ],
                 "avgCPU": 5.618,
@@ -2848,12 +2893,13 @@
                         "3-diff.000003.000004.fits",
                         "region-oversized.hdr"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.089,
+                "memoryInBytes": 2868000
             },
             {
                 "name": "mConcatFit_ID0000049",
                 "type": "compute",
-                "runtime": 0.193,
                 "parents": [
                     "mDiffFit_ID0000043",
                     "mDiffFit_ID0000044",
@@ -2869,42 +2915,42 @@
                     {
                         "link": "input",
                         "name": "3-fit.000001.000004.txt",
-                        "size": 265
+                        "sizeInBytes": 265
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000002.000003.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     },
                     {
                         "link": "input",
                         "name": "3-stat.tbl",
-                        "size": 1300
+                        "sizeInBytes": 1300
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000003.000004.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000001.000002.txt",
-                        "size": 260
+                        "sizeInBytes": 260
                     },
                     {
                         "link": "output",
                         "name": "3-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000001.000003.txt",
-                        "size": 262
+                        "sizeInBytes": 262
                     },
                     {
                         "link": "input",
                         "name": "3-fit.000002.000004.txt",
-                        "size": 263
+                        "sizeInBytes": 263
                     }
                 ],
                 "avgCPU": 99.4819,
@@ -2920,12 +2966,13 @@
                         "3-fits.tbl",
                         "."
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.193,
+                "memoryInBytes": 70752000
             },
             {
                 "name": "mBgModel_ID0000050",
                 "type": "compute",
-                "runtime": 0.8,
                 "parents": [
                     "mConcatFit_ID0000049"
                 ],
@@ -2939,17 +2986,17 @@
                     {
                         "link": "input",
                         "name": "3-images.tbl",
-                        "size": 2204
+                        "sizeInBytes": 2204
                     },
                     {
                         "link": "output",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "3-fits.tbl",
-                        "size": 1457
+                        "sizeInBytes": 1457
                     }
                 ],
                 "avgCPU": 99.875,
@@ -2967,12 +3014,13 @@
                         "3-fits.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.8,
+                "memoryInBytes": 137032000
             },
             {
                 "name": "mBackground_ID0000051",
                 "type": "compute",
-                "runtime": 0.526,
                 "parents": [
                     "mProject_ID0000039",
                     "mBgModel_ID0000050"
@@ -2985,32 +3033,32 @@
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     }
                 ],
                 "avgCPU": 56.654,
@@ -3028,12 +3076,13 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.526,
+                "memoryInBytes": 68880000
             },
             {
                 "name": "mBackground_ID0000052",
                 "type": "compute",
-                "runtime": 0.257,
                 "parents": [
                     "mProject_ID0000040",
                     "mBgModel_ID0000050"
@@ -3046,32 +3095,32 @@
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3089,12 +3138,13 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.257,
+                "memoryInBytes": 68940000
             },
             {
                 "name": "mBackground_ID0000053",
                 "type": "compute",
-                "runtime": 0.537,
                 "parents": [
                     "mProject_ID0000041",
                     "mBgModel_ID0000050"
@@ -3107,32 +3157,32 @@
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     }
                 ],
                 "avgCPU": 57.7281,
@@ -3150,12 +3200,13 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.537,
+                "memoryInBytes": 69008000
             },
             {
                 "name": "mBackground_ID0000054",
                 "type": "compute",
-                "runtime": 0.516,
                 "parents": [
                     "mProject_ID0000042",
                     "mBgModel_ID0000050"
@@ -3168,32 +3219,32 @@
                     {
                         "link": "input",
                         "name": "3-corrections.tbl",
-                        "size": 276
+                        "sizeInBytes": 276
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "p2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "c2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "3-projected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     }
                 ],
                 "avgCPU": 56.5891,
@@ -3211,12 +3262,13 @@
                         "3-projected.tbl",
                         "3-corrections.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.516,
+                "memoryInBytes": 68880000
             },
             {
                 "name": "mImgtbl_ID0000055",
                 "type": "compute",
-                "runtime": 0.158,
                 "parents": [
                     "mBackground_ID0000051",
                     "mBackground_ID0000052",
@@ -3230,32 +3282,32 @@
                     {
                         "link": "input",
                         "name": "3-corrected.tbl",
-                        "size": 976
+                        "sizeInBytes": 976
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "output",
                         "name": "3-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     }
                 ],
                 "avgCPU": 99.3671,
@@ -3272,12 +3324,13 @@
                         "3-corrected.tbl",
                         "3-updated-corrected.tbl"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.158,
+                "memoryInBytes": 71084000
             },
             {
                 "name": "mAdd_ID0000056",
                 "type": "compute",
-                "runtime": 0.184,
                 "parents": [
                     "mBackground_ID0000051",
                     "mBackground_ID0000052",
@@ -3293,62 +3346,62 @@
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-k0870233_area.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-k0490233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic_area.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "region.hdr",
-                        "size": 271
+                        "sizeInBytes": 271
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0820044.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0810233.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0820044_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-980914s-k0810233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001021s-k0490233_area.fits",
-                        "size": 4141440
+                        "sizeInBytes": 4141440
                     },
                     {
                         "link": "input",
                         "name": "c2mass-atlas-001020s-k0870233.fits",
-                        "size": 4132800
+                        "sizeInBytes": 4132800
                     },
                     {
                         "link": "input",
                         "name": "3-updated-corrected.tbl",
-                        "size": 2636
+                        "sizeInBytes": 2636
                     }
                 ],
                 "avgCPU": 89.6739,
@@ -3365,12 +3418,13 @@
                         "region.hdr",
                         "3-mosaic.fits"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.184,
+                "memoryInBytes": 69948000
             },
             {
                 "name": "mViewer_ID0000057",
                 "type": "compute",
-                "runtime": 0.098,
                 "parents": [
                     "mAdd_ID0000056"
                 ],
@@ -3379,12 +3433,12 @@
                     {
                         "link": "input",
                         "name": "3-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "output",
                         "name": "3-mosaic.png",
-                        "size": 26270
+                        "sizeInBytes": 26270
                     }
                 ],
                 "avgCPU": 98.9796,
@@ -3406,12 +3460,13 @@
                         "-png",
                         "3-mosaic.png"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.098,
+                "memoryInBytes": 10692000
             },
             {
                 "name": "mViewer_ID0000058",
                 "type": "compute",
-                "runtime": 0.191,
                 "parents": [
                     "mAdd_ID0000018",
                     "mAdd_ID0000037",
@@ -3422,22 +3477,22 @@
                     {
                         "link": "input",
                         "name": "1-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "3-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "input",
                         "name": "2-mosaic.fits",
-                        "size": 262080
+                        "sizeInBytes": 262080
                     },
                     {
                         "link": "output",
                         "name": "mosaic-color.png",
-                        "size": 73944
+                        "sizeInBytes": 73944
                     }
                 ],
                 "avgCPU": 100.0,
@@ -3467,8 +3522,11 @@
                         "-png",
                         "mosaic-color.png"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.191,
+                "memoryInBytes": 11428000
             }
-        ]
+        ],
+        "makespanInSeconds": 1060.0
     }
 }

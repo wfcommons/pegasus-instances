@@ -2,7 +2,7 @@
     "name": "workflow-test",
     "description": "Trace generated with WorkflowHub - https://workflowhub.org",
     "createdAt": "2020-12-19T23:38:32.986156",
-    "schemaVersion": "1.3",
+    "schemaVersion": "1.4",
     "author": {
         "name": "rafsilva",
         "email": "support@workflowhub.org"
@@ -14,26 +14,24 @@
     },
     "workflow": {
         "executedAt": "12-19-20T21:31:53Z",
-        "makespan": 3488.0,
         "machines": [
             {
                 "nodeName": "worker-4",
                 "system": "linux",
                 "architecture": "x86_64",
-                "memory": 131795960,
                 "release": "4.15.0-121-generic",
                 "cpu": {
                     "count": 48,
                     "speed": 1274,
                     "vendor": "GenuineIntel"
-                }
+                },
+                "memoryInBytes": 131795960000
             }
         ],
         "tasks": [
             {
                 "name": "bowtie2-build_ID0000001",
                 "type": "compute",
-                "runtime": 6.352,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000003",
@@ -51,37 +49,37 @@
                     {
                         "link": "output",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "output",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "output",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "reference.fna",
-                        "size": 98721
+                        "sizeInBytes": 98721
                     }
                 ],
                 "avgCPU": 6.1398,
@@ -96,12 +94,13 @@
                         "reference.fna",
                         "reference"
                     ]
-                }
+                },
+                "runtimeInSeconds": 6.352,
+                "memoryInBytes": 94720000
             },
             {
                 "name": "fasterq-dump_ID0000002",
                 "type": "compute",
-                "runtime": 896.867,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000003"
@@ -110,12 +109,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152141_2.fastq",
-                        "size": 734761744
+                        "sizeInBytes": 734761744
                     },
                     {
                         "link": "output",
                         "name": "SRR3152141_1.fastq",
-                        "size": 734761744
+                        "sizeInBytes": 734761744
                     }
                 ],
                 "avgCPU": 3.5286,
@@ -130,12 +129,13 @@
                         "--split-files",
                         "SRR3152141"
                     ]
-                }
+                },
+                "runtimeInSeconds": 896.867,
+                "memoryInBytes": 324392000
             },
             {
                 "name": "bowtie2_ID0000003",
                 "type": "compute",
-                "runtime": 54.137,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000002"
@@ -147,52 +147,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "output",
                         "name": "SRR3152141.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152141_1.fastq",
-                        "size": 734761744
+                        "sizeInBytes": 734761744
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "SRR3152141.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "SRR3152141_2.fastq",
-                        "size": 734761744
+                        "sizeInBytes": 734761744
                     }
                 ],
                 "avgCPU": 103.8255,
@@ -206,12 +206,13 @@
                     "arguments": [
                         "SRR3152141"
                     ]
-                }
+                },
+                "runtimeInSeconds": 54.137,
+                "memoryInBytes": 27096000
             },
             {
                 "name": "fasterq-dump_ID0000004",
                 "type": "compute",
-                "runtime": 452.479,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000005"
@@ -220,12 +221,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152151_1.fastq",
-                        "size": 345787144
+                        "sizeInBytes": 345787144
                     },
                     {
                         "link": "output",
                         "name": "SRR3152151_2.fastq",
-                        "size": 345787144
+                        "sizeInBytes": 345787144
                     }
                 ],
                 "avgCPU": 3.4026,
@@ -240,12 +241,13 @@
                         "--split-files",
                         "SRR3152151"
                     ]
-                }
+                },
+                "runtimeInSeconds": 452.479,
+                "memoryInBytes": 187340000
             },
             {
                 "name": "bowtie2_ID0000005",
                 "type": "compute",
-                "runtime": 48.456,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000004"
@@ -257,52 +259,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "SRR3152151.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "SRR3152151.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152151_1.fastq",
-                        "size": 345787144
+                        "sizeInBytes": 345787144
                     },
                     {
                         "link": "input",
                         "name": "SRR3152151_2.fastq",
-                        "size": 345787144
+                        "sizeInBytes": 345787144
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 59.9327,
@@ -316,12 +318,13 @@
                     "arguments": [
                         "SRR3152151"
                     ]
-                }
+                },
+                "runtimeInSeconds": 48.456,
+                "memoryInBytes": 27176000
             },
             {
                 "name": "fasterq-dump_ID0000006",
                 "type": "compute",
-                "runtime": 620.62,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000007"
@@ -330,12 +333,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152142_2.fastq",
-                        "size": 489999184
+                        "sizeInBytes": 489999184
                     },
                     {
                         "link": "output",
                         "name": "SRR3152142_1.fastq",
-                        "size": 489999184
+                        "sizeInBytes": 489999184
                     }
                 ],
                 "avgCPU": 3.476,
@@ -350,12 +353,13 @@
                         "--split-files",
                         "SRR3152142"
                     ]
-                }
+                },
+                "runtimeInSeconds": 620.62,
+                "memoryInBytes": 255192000
             },
             {
                 "name": "bowtie2_ID0000007",
                 "type": "compute",
-                "runtime": 57.24,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000006"
@@ -367,52 +371,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "SRR3152142_1.fastq",
-                        "size": 489999184
+                        "sizeInBytes": 489999184
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "output",
                         "name": "SRR3152142.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "SRR3152142.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152142_2.fastq",
-                        "size": 489999184
+                        "sizeInBytes": 489999184
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 68.6461,
@@ -426,12 +430,13 @@
                     "arguments": [
                         "SRR3152142"
                     ]
-                }
+                },
+                "runtimeInSeconds": 57.24,
+                "memoryInBytes": 25480000
             },
             {
                 "name": "fasterq-dump_ID0000008",
                 "type": "compute",
-                "runtime": 419.761,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000009"
@@ -440,12 +445,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152143_2.fastq",
-                        "size": 277305024
+                        "sizeInBytes": 277305024
                     },
                     {
                         "link": "output",
                         "name": "SRR3152143_1.fastq",
-                        "size": 277305024
+                        "sizeInBytes": 277305024
                     }
                 ],
                 "avgCPU": 3.1225,
@@ -460,12 +465,13 @@
                         "--split-files",
                         "SRR3152143"
                     ]
-                }
+                },
+                "runtimeInSeconds": 419.761,
+                "memoryInBytes": 172556000
             },
             {
                 "name": "bowtie2_ID0000009",
                 "type": "compute",
-                "runtime": 44.824,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000008"
@@ -477,52 +483,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "SRR3152143.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "SRR3152143_1.fastq",
-                        "size": 277305024
+                        "sizeInBytes": 277305024
                     },
                     {
                         "link": "input",
                         "name": "SRR3152143_2.fastq",
-                        "size": 277305024
+                        "sizeInBytes": 277305024
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "SRR3152143.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 50.1071,
@@ -536,12 +542,13 @@
                     "arguments": [
                         "SRR3152143"
                     ]
-                }
+                },
+                "runtimeInSeconds": 44.824,
+                "memoryInBytes": 25488000
             },
             {
                 "name": "fasterq-dump_ID0000010",
                 "type": "compute",
-                "runtime": 647.983,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000011"
@@ -550,12 +557,12 @@
                     {
                         "link": "output",
                         "name": "SRR3177945_1.fastq",
-                        "size": 646024704
+                        "sizeInBytes": 646024704
                     },
                     {
                         "link": "output",
                         "name": "SRR3177945_2.fastq",
-                        "size": 646024704
+                        "sizeInBytes": 646024704
                     }
                 ],
                 "avgCPU": 5.2764,
@@ -570,12 +577,13 @@
                         "--split-files",
                         "SRR3177945"
                     ]
-                }
+                },
+                "runtimeInSeconds": 647.983,
+                "memoryInBytes": 323468000
             },
             {
                 "name": "bowtie2_ID0000011",
                 "type": "compute",
-                "runtime": 43.347,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000010"
@@ -587,52 +595,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "SRR3177945.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "SRR3177945_1.fastq",
-                        "size": 646024704
+                        "sizeInBytes": 646024704
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "SRR3177945_2.fastq",
-                        "size": 646024704
+                        "sizeInBytes": 646024704
                     },
                     {
                         "link": "output",
                         "name": "SRR3177945.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 115.6943,
@@ -646,12 +654,13 @@
                     "arguments": [
                         "SRR3177945"
                     ]
-                }
+                },
+                "runtimeInSeconds": 43.347,
+                "memoryInBytes": 25484000
             },
             {
                 "name": "fasterq-dump_ID0000012",
                 "type": "compute",
-                "runtime": 543.883,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000013"
@@ -660,12 +669,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152147_2.fastq",
-                        "size": 418891784
+                        "sizeInBytes": 418891784
                     },
                     {
                         "link": "output",
                         "name": "SRR3152147_1.fastq",
-                        "size": 418891784
+                        "sizeInBytes": 418891784
                     }
                 ],
                 "avgCPU": 3.4294,
@@ -680,12 +689,13 @@
                         "--split-files",
                         "SRR3152147"
                     ]
-                }
+                },
+                "runtimeInSeconds": 543.883,
+                "memoryInBytes": 229052000
             },
             {
                 "name": "bowtie2_ID0000013",
                 "type": "compute",
-                "runtime": 47.562,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000012"
@@ -697,52 +707,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "SRR3152147_1.fastq",
-                        "size": 418891784
+                        "sizeInBytes": 418891784
                     },
                     {
                         "link": "input",
                         "name": "SRR3152147_2.fastq",
-                        "size": 418891784
+                        "sizeInBytes": 418891784
                     },
                     {
                         "link": "output",
                         "name": "SRR3152147.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "output",
                         "name": "SRR3152147.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 71.1682,
@@ -756,12 +766,13 @@
                     "arguments": [
                         "SRR3152147"
                     ]
-                }
+                },
+                "runtimeInSeconds": 47.562,
+                "memoryInBytes": 25528000
             },
             {
                 "name": "fasterq-dump_ID0000014",
                 "type": "compute",
-                "runtime": 397.278,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000015"
@@ -770,12 +781,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152152_2.fastq",
-                        "size": 247705800
+                        "sizeInBytes": 247705800
                     },
                     {
                         "link": "output",
                         "name": "SRR3152152_1.fastq",
-                        "size": 247705800
+                        "sizeInBytes": 247705800
                     }
                 ],
                 "avgCPU": 2.909,
@@ -790,12 +801,13 @@
                         "--split-files",
                         "SRR3152152"
                     ]
-                }
+                },
+                "runtimeInSeconds": 397.278,
+                "memoryInBytes": 160640000
             },
             {
                 "name": "bowtie2_ID0000015",
                 "type": "compute",
-                "runtime": 31.903,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000014"
@@ -807,52 +819,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "SRR3152152_2.fastq",
-                        "size": 247705800
+                        "sizeInBytes": 247705800
                     },
                     {
                         "link": "output",
                         "name": "SRR3152152.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "SRR3152152_1.fastq",
-                        "size": 247705800
+                        "sizeInBytes": 247705800
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "SRR3152152.bam",
-                        "size": 315
+                        "sizeInBytes": 315
                     }
                 ],
                 "avgCPU": 63.0505,
@@ -866,12 +878,13 @@
                     "arguments": [
                         "SRR3152152"
                     ]
-                }
+                },
+                "runtimeInSeconds": 31.903,
+                "memoryInBytes": 25560000
             },
             {
                 "name": "fasterq-dump_ID0000016",
                 "type": "compute",
-                "runtime": 839.484,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000017"
@@ -880,12 +893,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152148_1.fastq",
-                        "size": 704075704
+                        "sizeInBytes": 704075704
                     },
                     {
                         "link": "output",
                         "name": "SRR3152148_2.fastq",
-                        "size": 704075704
+                        "sizeInBytes": 704075704
                     }
                 ],
                 "avgCPU": 3.9508,
@@ -900,12 +913,13 @@
                         "--split-files",
                         "SRR3152148"
                     ]
-                }
+                },
+                "runtimeInSeconds": 839.484,
+                "memoryInBytes": 324192000
             },
             {
                 "name": "bowtie2_ID0000017",
                 "type": "compute",
-                "runtime": 67.658,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000016"
@@ -917,52 +931,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "SRR3152148_2.fastq",
-                        "size": 704075704
+                        "sizeInBytes": 704075704
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "output",
                         "name": "SRR3152148.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "output",
                         "name": "SRR3152148.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152148_1.fastq",
-                        "size": 704075704
+                        "sizeInBytes": 704075704
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 85.4829,
@@ -976,12 +990,13 @@
                     "arguments": [
                         "SRR3152148"
                     ]
-                }
+                },
+                "runtimeInSeconds": 67.658,
+                "memoryInBytes": 25532000
             },
             {
                 "name": "fasterq-dump_ID0000018",
                 "type": "compute",
-                "runtime": 706.216,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000019"
@@ -990,12 +1005,12 @@
                     {
                         "link": "output",
                         "name": "SRR3152150_1.fastq",
-                        "size": 581965744
+                        "sizeInBytes": 581965744
                     },
                     {
                         "link": "output",
                         "name": "SRR3152150_2.fastq",
-                        "size": 581965744
+                        "sizeInBytes": 581965744
                     }
                 ],
                 "avgCPU": 3.7355,
@@ -1010,12 +1025,13 @@
                         "--split-files",
                         "SRR3152150"
                     ]
-                }
+                },
+                "runtimeInSeconds": 706.216,
+                "memoryInBytes": 303908000
             },
             {
                 "name": "bowtie2_ID0000019",
                 "type": "compute",
-                "runtime": 64.871,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000018"
@@ -1027,52 +1043,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "SRR3152150_2.fastq",
-                        "size": 581965744
+                        "sizeInBytes": 581965744
                     },
                     {
                         "link": "input",
                         "name": "SRR3152150_1.fastq",
-                        "size": 581965744
+                        "sizeInBytes": 581965744
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "output",
                         "name": "SRR3152150.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "output",
                         "name": "SRR3152150.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 73.1698,
@@ -1086,12 +1102,13 @@
                     "arguments": [
                         "SRR3152150"
                     ]
-                }
+                },
+                "runtimeInSeconds": 64.871,
+                "memoryInBytes": 25592000
             },
             {
                 "name": "fasterq-dump_ID0000020",
                 "type": "compute",
-                "runtime": 921.24,
                 "parents": [],
                 "children": [
                     "bowtie2_ID0000021"
@@ -1100,12 +1117,12 @@
                     {
                         "link": "output",
                         "name": "SRR3178075_1.fastq",
-                        "size": 892578704
+                        "sizeInBytes": 892578704
                     },
                     {
                         "link": "output",
                         "name": "SRR3178075_2.fastq",
-                        "size": 892578704
+                        "sizeInBytes": 892578704
                     }
                 ],
                 "avgCPU": 4.7528,
@@ -1120,12 +1137,13 @@
                         "--split-files",
                         "SRR3178075"
                     ]
-                }
+                },
+                "runtimeInSeconds": 921.24,
+                "memoryInBytes": 325304000
             },
             {
                 "name": "bowtie2_ID0000021",
                 "type": "compute",
-                "runtime": 84.503,
                 "parents": [
                     "bowtie2-build_ID0000001",
                     "fasterq-dump_ID0000020"
@@ -1137,52 +1155,52 @@
                     {
                         "link": "input",
                         "name": "reference.rev.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "reference.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     },
                     {
                         "link": "output",
                         "name": "SRR3178075.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "reference.4.bt2",
-                        "size": 24273
+                        "sizeInBytes": 24273
                     },
                     {
                         "link": "input",
                         "name": "reference.3.bt2",
-                        "size": 17
+                        "sizeInBytes": 17
                     },
                     {
                         "link": "input",
                         "name": "SRR3178075_1.fastq",
-                        "size": 892578704
+                        "sizeInBytes": 892578704
                     },
                     {
                         "link": "output",
                         "name": "SRR3178075.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "reference.1.bt2",
-                        "size": 4226858
+                        "sizeInBytes": 4226858
                     },
                     {
                         "link": "input",
                         "name": "SRR3178075_2.fastq",
-                        "size": 892578704
+                        "sizeInBytes": 892578704
                     },
                     {
                         "link": "input",
                         "name": "reference.rev.2.bt2",
-                        "size": 24280
+                        "sizeInBytes": 24280
                     }
                 ],
                 "avgCPU": 87.862,
@@ -1196,12 +1214,13 @@
                     "arguments": [
                         "SRR3178075"
                     ]
-                }
+                },
+                "runtimeInSeconds": 84.503,
+                "memoryInBytes": 27036000
             },
             {
                 "name": "merge_ID0000022",
                 "type": "compute",
-                "runtime": 0.115,
                 "parents": [
                     "bowtie2_ID0000003",
                     "bowtie2_ID0000005",
@@ -1219,107 +1238,107 @@
                     {
                         "link": "input",
                         "name": "SRR3178075.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152147.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3178075.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "output",
                         "name": "results.tar.gz",
-                        "size": 2412
+                        "sizeInBytes": 2412
                     },
                     {
                         "link": "input",
                         "name": "SRR3177945.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152151.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152142.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152152.bam",
-                        "size": 315
+                        "sizeInBytes": 315
                     },
                     {
                         "link": "input",
                         "name": "SRR3177945.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152152.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152148.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152141.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152142.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152148.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152147.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152150.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152143.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152141.bam.bai",
-                        "size": 24
+                        "sizeInBytes": 24
                     },
                     {
                         "link": "input",
                         "name": "SRR3152151.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152143.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     },
                     {
                         "link": "input",
                         "name": "SRR3152150.bam",
-                        "size": 316
+                        "sizeInBytes": 316
                     }
                 ],
                 "avgCPU": 114.7826,
@@ -1353,8 +1372,11 @@
                         "SRR3178075.bam.bai",
                         "SRR3178075.bam"
                     ]
-                }
+                },
+                "runtimeInSeconds": 0.115,
+                "memoryInBytes": 3592000
             }
-        ]
+        ],
+        "makespanInSeconds": 3488.0
     }
 }
